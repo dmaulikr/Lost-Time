@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  TrackController.h
 //  LostTime
 //
 //  Created by Stefan Kendall on 5/7/15.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SecondViewController : UIViewController
+@interface TrackController : UIViewController
 
 
 @end

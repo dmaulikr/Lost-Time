@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
-		5459032CFBCA2BD239D207E7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* SecondViewController.m */; };
+		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
-		5459095BB1EF3329D823C738 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590062A7279B723FFC4470 /* FirstViewController.m */; };
+		545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsScene.m */; };
+		5459095BB1EF3329D823C738 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590062A7279B723FFC4470 /* TimerController.m */; };
+		54590A8A02260558688AECEB /* TimeTickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
@@ -28,18 +31,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54590062A7279B723FFC4470 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		54590062A7279B723FFC4470 /* TimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54590247D9BBC515C9F5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		545904BCC81CC284345F2645 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		545904BCC81CC284345F2645 /* TrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
+		545905C8756B6771B6A1D889 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		54590609CFCB1F43173AA97E /* LostTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTimeTests.m; sourceTree = "<group>"; };
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		545906387603651EEBD84131 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		545906387603651EEBD84131 /* TrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackController.m; sourceTree = "<group>"; };
+		545906D01743A2CDFC0B3EAA /* SecondsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsScene.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54590BD91A6F8AB9510726DB /* SecondsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsScene.m; sourceTree = "<group>"; };
+		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		54590DBF0CF7E21C0F4FB29D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		54590DBF0CF7E21C0F4FB29D /* TimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
+		54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickScene.m; sourceTree = "<group>"; };
 		54590FB21AF563F18A7C0AC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54590FD7BDBD45ED259783F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		54590FEC7EDAA642C29CAF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +81,11 @@
 				54590FB21AF563F18A7C0AC0 /* AppDelegate.h */,
 				5459062EE5FDEC882473A1C0 /* AppDelegate.m */,
 				54590D1AA258ED83E8EAD809 /* Main.storyboard */,
-				54590DBF0CF7E21C0F4FB29D /* FirstViewController.h */,
-				54590062A7279B723FFC4470 /* FirstViewController.m */,
-				545904BCC81CC284345F2645 /* SecondViewController.h */,
-				545906387603651EEBD84131 /* SecondViewController.m */,
+				54590DBF0CF7E21C0F4FB29D /* TimerController.h */,
+				54590062A7279B723FFC4470 /* TimerController.m */,
+				545904BCC81CC284345F2645 /* TrackController.h */,
+				545906387603651EEBD84131 /* TrackController.m */,
+				5459092BA4665827523A8971 /* TimerScenes */,
 			);
 			path = LostTime;
 			sourceTree = "<group>";
@@ -115,12 +125,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		545904D482CEDC50AFA9A704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545905C8756B6771B6A1D889 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5459092BA4665827523A8971 /* TimerScenes */ = {
+			isa = PBXGroup;
+			children = (
+				54590BD91A6F8AB9510726DB /* SecondsScene.m */,
+				545906D01743A2CDFC0B3EAA /* SecondsScene.h */,
+				54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */,
+				54590C2DA1D4DACA618465BC /* TimeTickScene.h */,
+			);
+			path = TimerScenes;
+			sourceTree = "<group>";
+		};
 		545909C429100DB60B9A577C = {
 			isa = PBXGroup;
 			children = (
 				5459007352914AC40E6B0573 /* Products */,
 				545900422A235D28CC7ECA70 /* LostTime */,
 				54590282FE9DEE4A77614F2A /* LostTimeTests */,
+				545904D482CEDC50AFA9A704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,8 +245,10 @@
 			files = (
 				54590AA1911C662336AF8398 /* main.m in Sources */,
 				54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */,
-				5459095BB1EF3329D823C738 /* FirstViewController.m in Sources */,
-				5459032CFBCA2BD239D207E7 /* SecondViewController.m in Sources */,
+				5459095BB1EF3329D823C738 /* TimerController.m in Sources */,
+				5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */,
+				545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */,
+				54590A8A02260558688AECEB /* TimeTickScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +430,7 @@
 				5459018CB49A145F3BB41923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5459028BBD1F364A79D58DCA /* Build configuration list for PBXNativeTarget "LostTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +439,7 @@
 				54590955897A176BDBA25B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54590B1AD8EAA3F93B98ECA9 /* Build configuration list for PBXProject "LostTime" */ = {
 			isa = XCConfigurationList;
