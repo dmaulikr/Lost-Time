@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5459016BD06E5B51D5C9F773 /* HoursScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902BC3E000D4FF5A87D8E /* HoursScene.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
 		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
 		545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsScene.m */; };
+		5459091E7EF62E6CA52B0A66 /* MinutesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesScene.m */; };
 		5459095BB1EF3329D823C738 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590062A7279B723FFC4470 /* TimerController.m */; };
 		54590A8A02260558688AECEB /* TimeTickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
@@ -34,8 +36,10 @@
 		54590062A7279B723FFC4470 /* TimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54590247D9BBC515C9F5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		545902BC3E000D4FF5A87D8E /* HoursScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursScene.m; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		545904BCC81CC284345F2645 /* TrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
+		54590567A5E9C425BC05DD8F /* MinutesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutesScene.m; sourceTree = "<group>"; };
 		545905C8756B6771B6A1D889 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		54590609CFCB1F43173AA97E /* LostTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTimeTests.m; sourceTree = "<group>"; };
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,9 +49,11 @@
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsScene.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
+		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590DBF0CF7E21C0F4FB29D /* TimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickScene.m; sourceTree = "<group>"; };
+		54590F5A8A84DBFF6044A0B8 /* MinutesScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinutesScene.h; sourceTree = "<group>"; };
 		54590FB21AF563F18A7C0AC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54590FD7BDBD45ED259783F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		54590FEC7EDAA642C29CAF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 				545906D01743A2CDFC0B3EAA /* SecondsScene.h */,
 				54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */,
 				54590C2DA1D4DACA618465BC /* TimeTickScene.h */,
+				54590567A5E9C425BC05DD8F /* MinutesScene.m */,
+				54590F5A8A84DBFF6044A0B8 /* MinutesScene.h */,
+				545902BC3E000D4FF5A87D8E /* HoursScene.m */,
+				54590CB913D1972F1B7895FC /* HoursScene.h */,
 			);
 			path = TimerScenes;
 			sourceTree = "<group>";
@@ -249,6 +259,8 @@
 				5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */,
 				545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */,
 				54590A8A02260558688AECEB /* TimeTickScene.m in Sources */,
+				5459091E7EF62E6CA52B0A66 /* MinutesScene.m in Sources */,
+				5459016BD06E5B51D5C9F773 /* HoursScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
