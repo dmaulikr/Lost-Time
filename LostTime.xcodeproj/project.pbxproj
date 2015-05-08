@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */; };
 		5459016BD06E5B51D5C9F773 /* HoursScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902BC3E000D4FF5A87D8E /* HoursScene.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
@@ -18,8 +19,10 @@
 		5459095BB1EF3329D823C738 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590062A7279B723FFC4470 /* TimerController.m */; };
 		54590A8A02260558688AECEB /* TimeTickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
+		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
+		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +48,14 @@
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		545906387603651EEBD84131 /* TrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackController.m; sourceTree = "<group>"; };
 		545906D01743A2CDFC0B3EAA /* SecondsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsScene.h; sourceTree = "<group>"; };
+		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
+		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsScene.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
+		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590DBF0CF7E21C0F4FB29D /* TimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickScene.m; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 				545904BCC81CC284345F2645 /* TrackController.h */,
 				545906387603651EEBD84131 /* TrackController.m */,
 				5459092BA4665827523A8971 /* TimerScenes */,
+				54590D50E5BF95BC757224CF /* sprites.atlas */,
 			);
 			path = LostTime;
 			sourceTree = "<group>";
@@ -162,6 +169,16 @@
 				54590282FE9DEE4A77614F2A /* LostTimeTests */,
 				545904D482CEDC50AFA9A704 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		54590D50E5BF95BC757224CF /* sprites.atlas */ = {
+			isa = PBXGroup;
+			children = (
+				545906E45400E1058080B77E /* circlequarter-green@2x.png */,
+				54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */,
+				545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */,
+			);
+			path = sprites.atlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +253,9 @@
 				54590D089674A6C2EA908B1A /* Images.xcassets in Resources */,
 				54590286540292D90B3073AD /* LaunchScreen.xib in Resources */,
 				54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */,
+				54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */,
+				54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */,
+				545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
