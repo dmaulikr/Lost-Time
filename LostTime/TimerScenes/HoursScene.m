@@ -7,7 +7,7 @@
 }
 
 - (NSString *)outlineImage {
-    return @"circlequarter-green";
+    return @"circlequarter-red";
 }
 
 @end
