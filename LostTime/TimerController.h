@@ -12,4 +12,5 @@
 @property(nonatomic) int secondsPassed;
 @property(nonatomic, strong) MinutesScene *minutesScene;
 @property(nonatomic, strong) HoursScene *hoursScene;
+@property(nonatomic) BOOL running;
 @end

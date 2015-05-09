@@ -5,6 +5,7 @@
 #import "HoursScene.h"
 
 @interface TimerController ()
+@property(weak, nonatomic) IBOutlet UIButton *startStopButton;
 @property(weak, nonatomic) IBOutlet SKView *secondsView;
 @property(weak, nonatomic) IBOutlet SKView *minutesView;
 @property(weak, nonatomic) IBOutlet SKView *hoursView;
@@ -35,6 +36,8 @@
                                                 selector:@selector(tick:)
                                                 userInfo:nil
                                                  repeats:YES];
+
+    self.running = YES;
 }
 
 - (void)updateTimerLabels {
@@ -46,6 +49,25 @@
 - (void)tick:(id)tick {
     self.secondsPassed++;
     [self updateTimerLabels];
+}
+
+- (IBAction)startStopTapped:(id)sender {
+    self.running = !self.running;
+    [self.timer invalidate];
+    if (!self.running) {
+        [self logTime];
+        [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
+//        [self.startStopButton setBackgroundImage: forState: UIControlStateNormal];
+    }
+    else {
+        [self.startStopButton setTitle:@"Done!" forState:UIControlStateNormal];
+//        [self.startStopButton setBackgroundImage: forState: UIControlStateNormal];
+    }
+}
+
+- (void)logTime {
+    self.secondsPassed = 0;
+
 }
 
 @end
