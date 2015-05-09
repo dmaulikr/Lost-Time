@@ -60,10 +60,11 @@
         [self logTime];
         [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
         [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+        [self.tabBarController setSelectedIndex:1];
     }
     else {
         [self.startStopButton setTitle:@"Done!" forState:UIControlStateNormal];
-        [self.startStopButton setBackgroundImage:
+        [self.startStopButton                                            setBackgroundImage:
                 [UIImage imageWithColor:[AVHexColor colorWithHexString:@"87D37C"]] forState:UIControlStateNormal];
     }
 }
