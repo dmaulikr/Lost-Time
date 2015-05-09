@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05CDC66B24D41ADD44D6DD18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831E524566F5676C085D6C70 /* Foundation.framework */; };
+		2AEB7925447FF51F576DD7A7 /* UIImage+ImageWithColor.h in Headers */ = {isa = PBXBuildFile; fileRef = EA17FB31BE70CF9E0563C71B /* UIImage+ImageWithColor.h */; };
+		437C830D3AC6D83C7D790A72 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C320B94D08AD8E3CAEC665D3 /* UIImage+ImageWithColor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		63FB2D3DAA8540A03E36AF25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831E524566F5676C085D6C70 /* Foundation.framework */; };
+		7174D9CCB5DED72027D14B5C /* AVHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5CD2A98D2717C3AAB7661 /* AVHexColor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96F9410AB3D89669FF63A87F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831E524566F5676C085D6C70 /* Foundation.framework */; };
+		BAEF9D8973880B60AA97F39D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 376FC647FB3EBBB400709D05 /* Pods-dummy.m */; };
+		C132609651825A15839A0E1F /* Pods-UIImage+ImageWithColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAD756C193E4C1EA0897AD /* Pods-UIImage+ImageWithColor-dummy.m */; };
+		C46518978292754C7539BC74 /* AVHexColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD2D3B16D7B8113ADB0D261 /* AVHexColor.h */; };
+		F2CC1611FBE528EA37CA5D74 /* Pods-AVHexColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 890AA8DAD85568849FBEDDF7 /* Pods-AVHexColor-dummy.m */; };
+		F5C1214561075818E4F6EC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955345BFEBF4EFA1A753A903 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		218910CCCF404C60B1ABA482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E936A505E859F7BBF8ACAA38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F412C69AE82A668FF2F33D;
+			remoteInfo = "Pods-UIImage+ImageWithColor";
+		};
+		DA8D5745A39586AF373CEE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E936A505E859F7BBF8ACAA38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6B6C487FF1A9521E7978E88;
+			remoteInfo = "Pods-AVHexColor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13C7308F8C31685E6160114C /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		1EA5CD2A98D2717C3AAB7661 /* AVHexColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AVHexColor.m; sourceTree = "<group>"; };
+		376FC647FB3EBBB400709D05 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		577AAA3D9261820998CBCE0A /* Pods-AVHexColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVHexColor.xcconfig"; sourceTree = "<group>"; };
+		5E45E0DA0ADA0FF2344C3057 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		60B0254925D8D86001A0856B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		66A27FFE16BE653471DB182F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		7BD2D3B16D7B8113ADB0D261 /* AVHexColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVHexColor.h; sourceTree = "<group>"; };
+		81A21929B520E5FC1A5AF18E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		831E524566F5676C085D6C70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8336668B863537070EDA2BAF /* libPods-UIImage+ImageWithColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIImage+ImageWithColor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		890AA8DAD85568849FBEDDF7 /* Pods-AVHexColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVHexColor-dummy.m"; sourceTree = "<group>"; };
+		955345BFEBF4EFA1A753A903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9BCCBC0EDDD6F01A5B4EB739 /* Pods-UIImage+ImageWithColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIImage+ImageWithColor-prefix.pch"; sourceTree = "<group>"; };
+		A13BE4E54E472FD18717067B /* libPods-AVHexColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVHexColor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3947B969EFE99D99FC7EA8 /* Pods-AVHexColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVHexColor-prefix.pch"; sourceTree = "<group>"; };
+		B09E9EFF64F8516AFD505F14 /* Pods-UIImage+ImageWithColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImage+ImageWithColor.xcconfig"; sourceTree = "<group>"; };
+		C320B94D08AD8E3CAEC665D3 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		D80AE0C3B3D7DF78D88CC041 /* Pods-UIImage+ImageWithColor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImage+ImageWithColor-Private.xcconfig"; sourceTree = "<group>"; };
+		DF5908126710A007719F3FF2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E1E59D96BBA136D5BB2C5133 /* Pods-AVHexColor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVHexColor-Private.xcconfig"; sourceTree = "<group>"; };
+		EA17FB31BE70CF9E0563C71B /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		EB8557CBFD84190DABEE8C5B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AAD756C193E4C1EA0897AD /* Pods-UIImage+ImageWithColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIImage+ImageWithColor-dummy.m"; sourceTree = "<group>"; };
+		FB31B379941EA74957563B34 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		533F9D978BA2F714CE5029D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CDC66B24D41ADD44D6DD18 /* Foundation.framework in Frameworks */,
+				F5C1214561075818E4F6EC8C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA216B2A855B257CF36CE5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FB2D3DAA8540A03E36AF25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA97BE78C617C18930957F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F9410AB3D89669FF63A87F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BE5AD8A0D558B466D99DDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF066AD0378404C7E269214F /* AVHexColor */,
+				C621232A93A6D192DDC47F0C /* UIImage+ImageWithColor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		118EFB88C3DC5121E3467B2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B09E9EFF64F8516AFD505F14 /* Pods-UIImage+ImageWithColor.xcconfig */,
+				D80AE0C3B3D7DF78D88CC041 /* Pods-UIImage+ImageWithColor-Private.xcconfig */,
+				F9AAD756C193E4C1EA0897AD /* Pods-UIImage+ImageWithColor-dummy.m */,
+				9BCCBC0EDDD6F01A5B4EB739 /* Pods-UIImage+ImageWithColor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-UIImage+ImageWithColor";
+			sourceTree = "<group>";
+		};
+		33B4EBFB86A339AE07429A01 = {
+			isa = PBXGroup;
+			children = (
+				5E45E0DA0ADA0FF2344C3057 /* Podfile */,
+				43095C6E44D348B08BBAC125 /* Frameworks */,
+				06BE5AD8A0D558B466D99DDB /* Pods */,
+				55262029C75EEEBB08F55C09 /* Products */,
+				CF2828174969CC5356D7C47F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		43095C6E44D348B08BBAC125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1BC07711C6799E975488EB3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55262029C75EEEBB08F55C09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB8557CBFD84190DABEE8C5B /* libPods.a */,
+				A13BE4E54E472FD18717067B /* libPods-AVHexColor.a */,
+				8336668B863537070EDA2BAF /* libPods-UIImage+ImageWithColor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1BC07711C6799E975488EB3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				831E524566F5676C085D6C70 /* Foundation.framework */,
+				955345BFEBF4EFA1A753A903 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C21BB01191E9F0909EEDA3E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				577AAA3D9261820998CBCE0A /* Pods-AVHexColor.xcconfig */,
+				E1E59D96BBA136D5BB2C5133 /* Pods-AVHexColor-Private.xcconfig */,
+				890AA8DAD85568849FBEDDF7 /* Pods-AVHexColor-dummy.m */,
+				AD3947B969EFE99D99FC7EA8 /* Pods-AVHexColor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AVHexColor";
+			sourceTree = "<group>";
+		};
+		C621232A93A6D192DDC47F0C /* UIImage+ImageWithColor */ = {
+			isa = PBXGroup;
+			children = (
+				EA17FB31BE70CF9E0563C71B /* UIImage+ImageWithColor.h */,
+				C320B94D08AD8E3CAEC665D3 /* UIImage+ImageWithColor.m */,
+				118EFB88C3DC5121E3467B2F /* Support Files */,
+			);
+			path = "UIImage+ImageWithColor";
+			sourceTree = "<group>";
+		};
+		CF2828174969CC5356D7C47F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E10C91E25C27526E01DB9A2D /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E10C91E25C27526E01DB9A2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A21929B520E5FC1A5AF18E /* Pods-acknowledgements.markdown */,
+				66A27FFE16BE653471DB182F /* Pods-acknowledgements.plist */,
+				376FC647FB3EBBB400709D05 /* Pods-dummy.m */,
+				13C7308F8C31685E6160114C /* Pods-environment.h */,
+				FB31B379941EA74957563B34 /* Pods-resources.sh */,
+				60B0254925D8D86001A0856B /* Pods.debug.xcconfig */,
+				DF5908126710A007719F3FF2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		FF066AD0378404C7E269214F /* AVHexColor */ = {
+			isa = PBXGroup;
+			children = (
+				7BD2D3B16D7B8113ADB0D261 /* AVHexColor.h */,
+				1EA5CD2A98D2717C3AAB7661 /* AVHexColor.m */,
+				C21BB01191E9F0909EEDA3E6 /* Support Files */,
+			);
+			path = AVHexColor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5B54314B2FF08E9278E1948C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AEB7925447FF51F576DD7A7 /* UIImage+ImageWithColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C09C3D1A7C844497249A749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46518978292754C7539BC74 /* AVHexColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		49105255119CB822FEB367D0 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECA60A0D834DF3D51A55A7D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				592094F411EFEF3ED44A98CB /* Sources */,
+				EA216B2A855B257CF36CE5D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181ED73FD041A4BF071048E5 /* PBXTargetDependency */,
+				FB4734678C0DC6A06091D059 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = EB8557CBFD84190DABEE8C5B /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C6B6C487FF1A9521E7978E88 /* Pods-AVHexColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20429E0A73E4F73B3A3D07D3 /* Build configuration list for PBXNativeTarget "Pods-AVHexColor" */;
+			buildPhases = (
+				2A8A7F18BB119CB1C1CB7111 /* Sources */,
+				EA97BE78C617C18930957F93 /* Frameworks */,
+				6C09C3D1A7C844497249A749 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AVHexColor";
+			productName = "Pods-AVHexColor";
+			productReference = A13BE4E54E472FD18717067B /* libPods-AVHexColor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7F412C69AE82A668FF2F33D /* Pods-UIImage+ImageWithColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8540FAE5AA17FCB841324C6 /* Build configuration list for PBXNativeTarget "Pods-UIImage+ImageWithColor" */;
+			buildPhases = (
+				40183D82258AE9A06910320C /* Sources */,
+				533F9D978BA2F714CE5029D5 /* Frameworks */,
+				5B54314B2FF08E9278E1948C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UIImage+ImageWithColor";
+			productName = "Pods-UIImage+ImageWithColor";
+			productReference = 8336668B863537070EDA2BAF /* libPods-UIImage+ImageWithColor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E936A505E859F7BBF8ACAA38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 72E7DE4DCC097FED5B40E14F /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 33B4EBFB86A339AE07429A01;
+			productRefGroup = 55262029C75EEEBB08F55C09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49105255119CB822FEB367D0 /* Pods */,
+				C6B6C487FF1A9521E7978E88 /* Pods-AVHexColor */,
+				E7F412C69AE82A668FF2F33D /* Pods-UIImage+ImageWithColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A8A7F18BB119CB1C1CB7111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7174D9CCB5DED72027D14B5C /* AVHexColor.m in Sources */,
+				F2CC1611FBE528EA37CA5D74 /* Pods-AVHexColor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40183D82258AE9A06910320C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C132609651825A15839A0E1F /* Pods-UIImage+ImageWithColor-dummy.m in Sources */,
+				437C830D3AC6D83C7D790A72 /* UIImage+ImageWithColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592094F411EFEF3ED44A98CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEF9D8973880B60AA97F39D /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		181ED73FD041A4BF071048E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AVHexColor";
+			target = C6B6C487FF1A9521E7978E88 /* Pods-AVHexColor */;
+			targetProxy = DA8D5745A39586AF373CEE81 /* PBXContainerItemProxy */;
+		};
+		FB4734678C0DC6A06091D059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UIImage+ImageWithColor";
+			target = E7F412C69AE82A668FF2F33D /* Pods-UIImage+ImageWithColor */;
+			targetProxy = 218910CCCF404C60B1ABA482 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06BC1AA34CFCD2C2315FD73F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20690A014339CB3BD9CEB938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80AE0C3B3D7DF78D88CC041 /* Pods-UIImage+ImageWithColor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UIImage+ImageWithColor/Pods-UIImage+ImageWithColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E283FB1653F4971EBC7A917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E59D96BBA136D5BB2C5133 /* Pods-AVHexColor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVHexColor/Pods-AVHexColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2EA896176942F3FBA97123B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2E4CD1A27F28EB82BE9357F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B0254925D8D86001A0856B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E348660B2079481FBCAB6CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E59D96BBA136D5BB2C5133 /* Pods-AVHexColor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVHexColor/Pods-AVHexColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EBA910CD0A86AE3B298827ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80AE0C3B3D7DF78D88CC041 /* Pods-UIImage+ImageWithColor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UIImage+ImageWithColor/Pods-UIImage+ImageWithColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FDB62E9E48089C3DE00F8ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5908126710A007719F3FF2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ECA60A0D834DF3D51A55A7D /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E4CD1A27F28EB82BE9357F /* Debug */,
+				FDB62E9E48089C3DE00F8ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20429E0A73E4F73B3A3D07D3 /* Build configuration list for PBXNativeTarget "Pods-AVHexColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E283FB1653F4971EBC7A917 /* Debug */,
+				E348660B2079481FBCAB6CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72E7DE4DCC097FED5B40E14F /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EA896176942F3FBA97123B /* Debug */,
+				06BC1AA34CFCD2C2315FD73F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8540FAE5AA17FCB841324C6 /* Build configuration list for PBXNativeTarget "Pods-UIImage+ImageWithColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20690A014339CB3BD9CEB938 /* Debug */,
+				EBA910CD0A86AE3B298827ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E936A505E859F7BBF8ACAA38 /* Project object */;
+}

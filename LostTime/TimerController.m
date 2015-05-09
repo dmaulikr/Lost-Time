@@ -3,6 +3,8 @@
 #import "SecondsScene.h"
 #import "MinutesScene.h"
 #import "HoursScene.h"
+#import "UIImage+ImageWithColor.h"
+#import "AVHexColor.h"
 
 @interface TimerController ()
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
@@ -57,11 +59,12 @@
     if (!self.running) {
         [self logTime];
         [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
-//        [self.startStopButton setBackgroundImage: forState: UIControlStateNormal];
+        [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
     }
     else {
         [self.startStopButton setTitle:@"Done!" forState:UIControlStateNormal];
-//        [self.startStopButton setBackgroundImage: forState: UIControlStateNormal];
+        [self.startStopButton setBackgroundImage:
+                [UIImage imageWithColor:[AVHexColor colorWithHexString:@"87D37C"]] forState:UIControlStateNormal];
     }
 }
 

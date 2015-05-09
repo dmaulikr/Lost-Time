@@ -1,0 +1,13 @@
+PODS:
+  - AVHexColor (1.2.0)
+  - UIImage+ImageWithColor (1.2)
+
+DEPENDENCIES:
+  - AVHexColor
+  - UIImage+ImageWithColor
+
+SPEC CHECKSUMS:
+  AVHexColor: e78a36a48e58d26b3a5326d9d0daf8ccde8d694c
+  UIImage+ImageWithColor: efe9aee4bf87f99e98e9a23433a44824d1ef4576
+
+COCOAPODS: 0.36.3
