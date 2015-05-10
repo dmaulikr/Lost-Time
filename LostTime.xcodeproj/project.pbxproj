@@ -16,6 +16,7 @@
 		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
 		5459061DDE4CAE330B16096A /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908F3C027F4978E24B135 /* TrackCell.m */; };
+		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
 		545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsScene.m */; };
 		545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E983348DC88815EB27D /* LostTimeDataStore.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesScene.m */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		136313DD2F2BD938AA30A747 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStoreTests.m; sourceTree = "<group>"; };
 		54590062A7279B723FFC4470 /* TimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
@@ -62,7 +64,6 @@
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		54590871316988551796F513 /* LostTimeRecordTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecordTests.h; sourceTree = "<group>"; };
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
@@ -136,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */,
-				54590871316988551796F513 /* LostTimeRecordTests.h */,
+				545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -392,6 +393,7 @@
 			files = (
 				545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */,
 				54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */,
+				5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

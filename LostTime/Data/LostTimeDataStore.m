@@ -12,12 +12,28 @@
     return instance;
 }
 
-- (NSArray *)findAll {
-    return @[];
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.data = [@[] mutableCopy];
+    }
+
+    return self;
 }
 
-- (void)addEntry: (LostTimeRecord *) record {
 
+- (NSArray *)findAll {
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    return [self.data sortedArrayUsingDescriptors:sortDescriptors];
+}
+
+- (void)addEntry:(LostTimeRecord *)record {
+    [self.data addObject:record];
+}
+
+- (void)empty {
+    self.data = [@[] mutableCopy];
 }
 
 @end
