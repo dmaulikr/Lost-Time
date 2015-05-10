@@ -26,6 +26,7 @@
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
+		54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */; };
 		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
 		DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 136313DD2F2BD938AA30A747 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -61,9 +62,11 @@
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54590871316988551796F513 /* LostTimeRecordTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecordTests.h; sourceTree = "<group>"; };
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
+		54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecordTests.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsScene.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5459005ED7A3AA8EC59C85DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */,
+				54590871316988551796F513 /* LostTimeRecordTests.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5459007352914AC40E6B0573 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 			children = (
 				545900449C288A151D60E2A3 /* Supporting Files */,
 				54590609CFCB1F43173AA97E /* LostTimeTests.m */,
+				5459005ED7A3AA8EC59C85DD /* Data */,
 			);
 			path = LostTimeTests;
 			sourceTree = "<group>";
@@ -378,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */,
+				54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

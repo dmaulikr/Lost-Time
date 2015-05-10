@@ -18,11 +18,26 @@
 }
 
 - (NSDictionary *)toDictionary {
-    return @{};
+    NSDateFormatter *formatter = [LostTimeRecord dateFormatter];
+
+    return @{
+            @"date" : [formatter stringFromDate:self.date],
+            @"seconds" : self.seconds,
+            @"reason" : self.reason
+    };
+}
+
++ (NSDateFormatter *)dateFormatter {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZ"];
+    return dateFormatter;
 }
 
 + (LostTimeRecord *)fromDictionary:(NSDictionary *)dict {
-    return nil;
+    return [LostTimeRecord recordWithDate:[self.dateFormatter dateFromString:dict[@"date"]]
+                                  seconds:dict[@"seconds"]
+                                   reason:dict[@"reason"]];
 };
 
 @end

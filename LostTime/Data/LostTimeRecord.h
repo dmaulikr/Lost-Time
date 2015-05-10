@@ -13,6 +13,8 @@
 
 - (NSDictionary *)toDictionary;
 
++ (NSDateFormatter *)dateFormatter;
+
 + (LostTimeRecord *)fromDictionary:(NSDictionary *)dict;
 
 @end
