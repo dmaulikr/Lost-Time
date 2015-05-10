@@ -14,4 +14,8 @@
 - (void)addEntry:(LostTimeRecord *)record;
 
 - (void)empty;
+
+- (void)save;
+
+- (void)loadFromStore;
 @end

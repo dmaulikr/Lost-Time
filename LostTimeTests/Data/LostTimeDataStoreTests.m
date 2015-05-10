@@ -34,7 +34,20 @@
     XCTAssertEqual(records[1], record1);
     XCTAssertEqual(records[2], record4);
     XCTAssertEqual(records[3], record2);
+}
 
+- (void)testCanSaveAndLoadData {
+    LostTimeRecord *record1 = [LostTimeRecord    recordWithDate:[[LostTimeRecord dateFormatter]
+            dateFromString:@"2015-05-10T00:00:00-0000"] seconds:@35 reason:@"a"];
+    [[LostTimeDataStore instance] addEntry:record1];
+    [[LostTimeDataStore instance] save];
+    [[LostTimeDataStore instance] empty];
+    [[LostTimeDataStore instance] loadFromStore];
+    XCTAssertEqual([[[LostTimeDataStore instance] findAll] count], 1U);
+
+    LostTimeRecord *record = [[LostTimeDataStore instance] findAll][0];
+    XCTAssertEqualObjects(record.seconds, @35);
+    XCTAssertEqualObjects(record.reason, @"a");
 }
 
 @end
