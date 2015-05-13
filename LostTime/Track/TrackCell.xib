@@ -58,6 +58,13 @@
                     <constraint firstItem="TKg-Ie-9PV" firstAttribute="top" secondItem="Bsc-bt-fdI" secondAttribute="bottom" id="pTZ-wO-L0Z"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="TKg-Ie-9PV" id="bhN-sc-pTu"/>
+                <outlet property="hours" destination="amH-vm-1J5" id="DGe-jf-CBV"/>
+                <outlet property="minutes" destination="HNJ-eR-JKN" id="WsK-Rp-dcB"/>
+                <outlet property="reason" destination="6XU-JP-oEv" id="Lr0-8U-hdp"/>
+                <outlet property="seconds" destination="Bsc-bt-fdI" id="0Po-RR-9JG"/>
+            </connections>
             <point key="canvasLocation" x="324" y="220.5"/>
         </tableViewCell>
     </objects>

@@ -14,16 +14,19 @@
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
 		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
+		54590455F594B12AF44C5892 /* ReasonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A97DED75DD3FD0993F7 /* ReasonController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
 		5459061DDE4CAE330B16096A /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908F3C027F4978E24B135 /* TrackCell.m */; };
 		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
+		5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459047CA5ED46BBD7653C29 /* TrackCellTests.m */; };
 		545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsScene.m */; };
 		545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E983348DC88815EB27D /* LostTimeDataStore.m */; };
+		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesScene.m */; };
-		5459095BB1EF3329D823C738 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590062A7279B723FFC4470 /* TimerController.m */; };
 		54590A8A02260558688AECEB /* TimeTickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
 		54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */; };
+		54590B68EC6B6331DEFA4AB1 /* ReasonController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590878D6C560687F112486 /* ReasonController.storyboard */; };
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
@@ -45,13 +48,15 @@
 /* Begin PBXFileReference section */
 		136313DD2F2BD938AA30A747 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStoreTests.m; sourceTree = "<group>"; };
-		54590062A7279B723FFC4470 /* TimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545900DC7DEC3228AFF57E19 /* TimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		54590247D9BBC515C9F5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursScene.m; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590431A1EB7AE831ACF450 /* LostTimeDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeDataStore.h; sourceTree = "<group>"; };
+		5459047CA5ED46BBD7653C29 /* TrackCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCellTests.m; sourceTree = "<group>"; };
 		545904BCC81CC284345F2645 /* TrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590567A5E9C425BC05DD8F /* MinutesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutesScene.m; sourceTree = "<group>"; };
 		545905800149CDF6DABBB105 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
@@ -63,17 +68,20 @@
 		545906D01743A2CDFC0B3EAA /* SecondsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsScene.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
+		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
+		54590A97DED75DD3FD0993F7 /* ReasonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReasonController.m; sourceTree = "<group>"; };
 		54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecordTests.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsScene.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
+		54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonDelegate.h; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		54590DBF0CF7E21C0F4FB29D /* TimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickScene.m; sourceTree = "<group>"; };
 		54590F5A8A84DBFF6044A0B8 /* MinutesScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinutesScene.h; sourceTree = "<group>"; };
@@ -113,14 +121,13 @@
 				54590FB21AF563F18A7C0AC0 /* AppDelegate.h */,
 				5459062EE5FDEC882473A1C0 /* AppDelegate.m */,
 				54590D1AA258ED83E8EAD809 /* Main.storyboard */,
-				54590DBF0CF7E21C0F4FB29D /* TimerController.h */,
-				54590062A7279B723FFC4470 /* TimerController.m */,
 				545904BCC81CC284345F2645 /* TrackController.h */,
 				545906387603651EEBD84131 /* TrackController.m */,
 				5459092BA4665827523A8971 /* TimerScenes */,
 				54590D50E5BF95BC757224CF /* sprites.atlas */,
 				54590777A2DDBEAD5AD43150 /* Track */,
 				54590871C36CF844EE614586 /* Data */,
+				54590FD7BC58D2DF21155D55 /* Timer */,
 			);
 			path = LostTime;
 			sourceTree = "<group>";
@@ -157,8 +164,17 @@
 				545900449C288A151D60E2A3 /* Supporting Files */,
 				54590609CFCB1F43173AA97E /* LostTimeTests.m */,
 				5459005ED7A3AA8EC59C85DD /* Data */,
+				5459031C907702E11EF175AF /* Track */,
 			);
 			path = LostTimeTests;
+			sourceTree = "<group>";
+		};
+		5459031C907702E11EF175AF /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				5459047CA5ED46BBD7653C29 /* TrackCellTests.m */,
+			);
+			path = Track;
 			sourceTree = "<group>";
 		};
 		545904345108690B5E023293 /* Supporting Files */ = {
@@ -234,6 +250,19 @@
 				545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */,
 			);
 			path = sprites.atlas;
+			sourceTree = "<group>";
+		};
+		54590FD7BC58D2DF21155D55 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				5459024D3B6C157A764AAC57 /* TimerController.h */,
+				545900DC7DEC3228AFF57E19 /* TimerController.m */,
+				54590A97DED75DD3FD0993F7 /* ReasonController.m */,
+				5459071614D86254632935E0 /* ReasonController.h */,
+				54590878D6C560687F112486 /* ReasonController.storyboard */,
+				54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		9C5E3C46969B8761FADEEE7E /* Pods */ = {
@@ -323,6 +352,7 @@
 				54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */,
 				545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */,
 				545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */,
+				54590B68EC6B6331DEFA4AB1 /* ReasonController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +405,6 @@
 			files = (
 				54590AA1911C662336AF8398 /* main.m in Sources */,
 				54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */,
-				5459095BB1EF3329D823C738 /* TimerController.m in Sources */,
 				5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */,
 				545906E8AFC01A594A5A715C /* SecondsScene.m in Sources */,
 				54590A8A02260558688AECEB /* TimeTickScene.m in Sources */,
@@ -384,6 +413,8 @@
 				5459061DDE4CAE330B16096A /* TrackCell.m in Sources */,
 				545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */,
 				54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */,
+				545908382AE827E5F288605E /* TimerController.m in Sources */,
+				54590455F594B12AF44C5892 /* ReasonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +425,7 @@
 				545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */,
 				54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */,
 				5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */,
+				5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

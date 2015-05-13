@@ -5,12 +5,18 @@
 #import "HoursScene.h"
 #import "UIImage+ImageWithColor.h"
 #import "AVHexColor.h"
+#import "LostTimeRecord.h"
+#import "LostTimeDataStore.h"
+#import "ReasonController.h"
+#import "ReasonDelegate.h"
 
-@interface TimerController ()
+@interface TimerController () <ReasonDelegate>
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
 @property(weak, nonatomic) IBOutlet SKView *secondsView;
 @property(weak, nonatomic) IBOutlet SKView *minutesView;
 @property(weak, nonatomic) IBOutlet SKView *hoursView;
+
+@property(nonatomic, strong) NSString *reason;
 @end
 
 @implementation TimerController
@@ -33,13 +39,23 @@
     self.secondsPassed = 0;
     [self updateTimerLabels];
 
+    [self createAndStartTimer];
+    self.running = YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    ReasonController *controller = [[UIStoryboard storyboardWithName:@"ReasonController" bundle:nil] instantiateInitialViewController];
+    [controller setDelegate:self];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)createAndStartTimer {
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
                                                 selector:@selector(tick:)
                                                 userInfo:nil
                                                  repeats:YES];
-
-    self.running = YES;
 }
 
 - (void)updateTimerLabels {
@@ -57,21 +73,24 @@
     self.running = !self.running;
     [self.timer invalidate];
     if (!self.running) {
-        [self logTime];
+        LostTimeRecord *record = [LostTimeRecord recordWithDate:[NSDate date] seconds:@(self.secondsPassed) reason:
+                self.reason ? self.reason : @""];
+        [[LostTimeDataStore instance] addEntry:record];
+        [[LostTimeDataStore instance] save];
+
         [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
         [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+        self.secondsPassed = 0;
+        [self updateTimerLabels];
+
         [self.tabBarController setSelectedIndex:1];
     }
     else {
+        [self createAndStartTimer];
         [self.startStopButton setTitle:@"Done!" forState:UIControlStateNormal];
         [self.startStopButton                                            setBackgroundImage:
                 [UIImage imageWithColor:[AVHexColor colorWithHexString:@"87D37C"]] forState:UIControlStateNormal];
     }
-}
-
-- (void)logTime {
-    self.secondsPassed = 0;
-
 }
 
 @end

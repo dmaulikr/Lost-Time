@@ -6,6 +6,25 @@
     </dependencies>
     <scenes>
         <!--Lose Time-->
+        <scene sceneID="kBj-yr-W07">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="m8r-W2-wck" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lose Time" image="914-skull-and-crossbones" id="lRl-dM-Div"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="10O-XP-TvT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="zk7-vh-VMK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbr-iB-NJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-350"/>
+        </scene>
+        <!--Lose Time-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="TimerController" sceneMemberID="viewController">
@@ -63,6 +82,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lose Time" image="914-skull-and-crossbones" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="GX1-hl-ffk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="hoursView" destination="GYs-yy-DLc" id="wnO-lA-YLK"/>
@@ -73,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1172" y="-350"/>
         </scene>
         <!--Track Controller-->
         <scene sceneID="V98-5u-xG8">
@@ -116,7 +136,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="m8r-W2-wck" kind="relationship" relationship="viewControllers" id="7Zr-mK-ZFm"/>
                         <segue destination="6Bl-FX-BNc" kind="relationship" relationship="viewControllers" id="4rb-KL-jyC"/>
                     </connections>
                 </tabBarController>

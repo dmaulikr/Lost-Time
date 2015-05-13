@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UeW-H1-kKb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reason Controller-->
+        <scene sceneID="Bux-AH-nOq">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="UeW-H1-kKb" customClass="ReasonController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZFQ-qJ-LTS"/>
+                        <viewControllerLayoutGuide type="bottom" id="CuD-mj-D02"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SwT-YG-aOR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you wasting time on today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-vL-B4P">
+                                <rect key="frame" x="16" y="28" width="288" height="77"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e61-Ao-gpc">
+                                <rect key="frame" x="0.0" y="480" width="320" height="88"/>
+                                <color key="backgroundColor" red="0.52941176470588236" green="0.82745098039215681" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="jTA-9e-FAQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Commute">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="commuteButtonTapped:" destination="UeW-H1-kKb" eventType="touchUpInside" id="sGf-ph-t8a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7wh-vL-B4P" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leadingMargin" id="7uy-CB-Dt1"/>
+                            <constraint firstItem="e61-Ao-gpc" firstAttribute="trailing" secondItem="SwT-YG-aOR" secondAttribute="trailing" id="Ew6-lI-PTj"/>
+                            <constraint firstItem="e61-Ao-gpc" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leading" id="Mcr-ay-zfj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7wh-vL-B4P" secondAttribute="trailing" id="W45-fo-Als"/>
+                            <constraint firstItem="CuD-mj-D02" firstAttribute="bottom" secondItem="e61-Ao-gpc" secondAttribute="bottom" id="eKs-QR-EVP"/>
+                            <constraint firstItem="7wh-vL-B4P" firstAttribute="top" secondItem="ZFQ-qJ-LTS" secondAttribute="bottom" constant="8" id="lp0-eu-TMi"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8e-AQ-DaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="79"/>
+        </scene>
+    </scenes>
+</document>

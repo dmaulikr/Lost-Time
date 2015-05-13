@@ -1,10 +1,17 @@
 #import "TrackController.h"
 #import "TrackCell.h"
+#import "LostTimeDataStore.h"
+#import "LostTimeRecord.h"
 
 @interface TrackController ()
 @end
 
 @implementation TrackController
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
+}
 
 - (void)registerCellNib:(Class)klass {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass(klass) bundle:nil];
@@ -20,11 +27,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [[[LostTimeDataStore instance] findAll] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LostTimeRecord *record = [[LostTimeDataStore instance] findAll][(NSUInteger) indexPath.row];
     TrackCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(TrackCell.class) forIndexPath:indexPath];
+    [cell setRecord: record];
     return cell;
 }
 
