@@ -13,4 +13,5 @@
 @property(nonatomic, strong) MinutesScene *minutesScene;
 @property(nonatomic, strong) HoursScene *hoursScene;
 @property(nonatomic) BOOL running;
+@property(nonatomic) NSTimeInterval startTime;
 @end

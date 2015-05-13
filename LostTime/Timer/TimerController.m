@@ -59,6 +59,7 @@
 }
 
 - (void)createAndStartTimer {
+    self.startTime = [NSDate timeIntervalSinceReferenceDate];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
                                                 selector:@selector(tick:)
@@ -73,7 +74,7 @@
 }
 
 - (void)tick:(id)tick {
-    self.secondsPassed++;
+    self.secondsPassed = (int) ([NSDate timeIntervalSinceReferenceDate] - self.startTime);
     [self updateTimerLabels];
 }
 
