@@ -60,6 +60,22 @@
                                 <rect key="frame" x="0.0" y="274" width="320" height="127"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j69-43-iLd">
+                                <rect key="frame" x="160" y="237" width="160" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="IZw-x6-n2z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Reason" image="830-pencil">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reasonButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Dhd-wa-eLS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -71,9 +87,12 @@
                             <constraint firstAttribute="trailing" secondItem="GYs-yy-DLc" secondAttribute="trailing" id="D9V-m1-cvD"/>
                             <constraint firstAttribute="trailing" secondItem="Dca-QZ-QU6" secondAttribute="trailing" id="Erk-5k-931"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="S7V-8E-kOS" secondAttribute="bottom" id="Ft5-u5-WEu"/>
+                            <constraint firstAttribute="centerY" secondItem="j69-43-iLd" secondAttribute="centerY" constant="10" id="Gzj-pN-b5y"/>
+                            <constraint firstItem="j69-43-iLd" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.5" id="JtS-2r-QIV"/>
                             <constraint firstItem="6IT-uW-n7k" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.223" id="KCp-bE-gJZ"/>
                             <constraint firstAttribute="trailing" secondItem="S7V-8E-kOS" secondAttribute="trailing" id="KpF-bn-H8c"/>
                             <constraint firstItem="Dca-QZ-QU6" firstAttribute="top" secondItem="6IT-uW-n7k" secondAttribute="bottom" id="PGH-6D-dAo"/>
+                            <constraint firstAttribute="trailing" secondItem="j69-43-iLd" secondAttribute="trailing" id="S4W-6B-Xbs"/>
                             <constraint firstItem="S7V-8E-kOS" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="TJi-VR-hTC"/>
                             <constraint firstItem="Dca-QZ-QU6" firstAttribute="height" secondItem="6IT-uW-n7k" secondAttribute="height" id="cUs-VQ-g1k"/>
                             <constraint firstItem="GYs-yy-DLc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ttp-bL-MQ8"/>
@@ -146,6 +165,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="830-pencil" width="28" height="28"/>
         <image name="914-skull-and-crossbones" width="25" height="28"/>
     </resources>
 </document>

@@ -13,6 +13,7 @@
 		545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905800149CDF6DABBB105 /* TrackCell.xib */; };
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
+		545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */; };
 		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
 		54590455F594B12AF44C5892 /* ReasonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A97DED75DD3FD0993F7 /* ReasonController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
@@ -50,6 +51,7 @@
 		545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStoreTests.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		545900DC7DEC3228AFF57E19 /* TimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
+		545900E0FBBBD9B5999E0CC1 /* UIImageViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewHelper.h; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		54590247D9BBC515C9F5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		54590C2DA1D4DACA618465BC /* TimeTickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickScene.h; sourceTree = "<group>"; };
 		54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonDelegate.h; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
+		54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewHelper.m; sourceTree = "<group>"; };
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 				54590777A2DDBEAD5AD43150 /* Track */,
 				54590871C36CF844EE614586 /* Data */,
 				54590FD7BC58D2DF21155D55 /* Timer */,
+				54590EB3B20FCB0D29269195 /* Helper */,
 			);
 			path = LostTime;
 			sourceTree = "<group>";
@@ -250,6 +254,15 @@
 				545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */,
 			);
 			path = sprites.atlas;
+			sourceTree = "<group>";
+		};
+		54590EB3B20FCB0D29269195 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */,
+				545900E0FBBBD9B5999E0CC1 /* UIImageViewHelper.h */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		54590FD7BC58D2DF21155D55 /* Timer */ = {
@@ -415,6 +428,7 @@
 				54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */,
 				545908382AE827E5F288605E /* TimerController.m in Sources */,
 				54590455F594B12AF44C5892 /* ReasonController.m in Sources */,
+				545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

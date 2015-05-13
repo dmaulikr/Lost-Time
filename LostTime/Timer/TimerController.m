@@ -43,13 +43,6 @@
     self.running = YES;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    ReasonController *controller = [[UIStoryboard storyboardWithName:@"ReasonController" bundle:nil] instantiateInitialViewController];
-    [controller setDelegate:self];
-    [self.navigationController pushViewController:controller animated:YES];
-}
-
 - (void)createAndStartTimer {
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
@@ -80,7 +73,9 @@
 
         [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
         [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+
         self.secondsPassed = 0;
+        self.reason = nil;
         [self updateTimerLabels];
 
         [self.tabBarController setSelectedIndex:1];
@@ -91,6 +86,12 @@
         [self.startStopButton                                            setBackgroundImage:
                 [UIImage imageWithColor:[AVHexColor colorWithHexString:@"87D37C"]] forState:UIControlStateNormal];
     }
+}
+
+- (IBAction)reasonButtonTapped:(id)sender {
+    ReasonController *controller = [[UIStoryboard storyboardWithName:@"ReasonController" bundle:nil] instantiateInitialViewController];
+    [controller setDelegate:self];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

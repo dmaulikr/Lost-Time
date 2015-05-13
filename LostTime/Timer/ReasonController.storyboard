@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e61-Ao-gpc">
-                                <rect key="frame" x="0.0" y="480" width="320" height="88"/>
+                                <rect key="frame" x="0.0" y="392" width="320" height="88"/>
                                 <color key="backgroundColor" red="0.52941176470588236" green="0.82745098039215681" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="jTA-9e-FAQ"/>
@@ -39,22 +39,85 @@
                                     <action selector="commuteButtonTapped:" destination="UeW-H1-kKb" eventType="touchUpInside" id="sGf-ph-t8a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-Ei-Ed3">
+                                <rect key="frame" x="0.0" y="307" width="320" height="88"/>
+                                <color key="backgroundColor" red="0.61176470588235299" green="0.33333333333333331" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Meetings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="meetingButtonTapped:" destination="UeW-H1-kKb" eventType="touchUpInside" id="7Fy-6z-T19"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCs-zN-39S">
+                                <rect key="frame" x="0.0" y="480" width="320" height="88"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="G6O-Av-2tr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="UeW-H1-kKb" eventType="touchUpInside" id="neU-Id-w9E"/>
+                                    <action selector="commuteButtonTapped:" destination="UeW-H1-kKb" eventType="touchUpInside" id="qCd-c0-xc1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="815-car" translatesAutoresizingMaskIntoConstraints="NO" id="Itv-L8-6oH">
+                                <rect key="frame" x="16" y="411" width="56" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3T5-vX-jAs"/>
+                                    <constraint firstAttribute="width" constant="56" id="cLE-w4-Txz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="870-smile" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-Ay-3vc">
+                                <rect key="frame" x="16" y="323" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="2gp-2B-E74"/>
+                                    <constraint firstAttribute="width" constant="56" id="UMg-AT-4VF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CuD-mj-D02" firstAttribute="bottom" secondItem="qCs-zN-39S" secondAttribute="bottom" id="0Vp-Ph-dCd"/>
                             <constraint firstItem="7wh-vL-B4P" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leadingMargin" id="7uy-CB-Dt1"/>
+                            <constraint firstItem="tQc-Ay-3vc" firstAttribute="leading" secondItem="YXl-Ei-Ed3" secondAttribute="leading" constant="16" id="8bQ-zz-ZFl"/>
+                            <constraint firstItem="Itv-L8-6oH" firstAttribute="leading" secondItem="e61-Ao-gpc" secondAttribute="leading" constant="16" id="E1Y-Wa-KEP"/>
                             <constraint firstItem="e61-Ao-gpc" firstAttribute="trailing" secondItem="SwT-YG-aOR" secondAttribute="trailing" id="Ew6-lI-PTj"/>
                             <constraint firstItem="e61-Ao-gpc" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leading" id="Mcr-ay-zfj"/>
+                            <constraint firstItem="qCs-zN-39S" firstAttribute="top" secondItem="e61-Ao-gpc" secondAttribute="bottom" id="NLI-gc-2T2"/>
+                            <constraint firstItem="e61-Ao-gpc" firstAttribute="top" secondItem="YXl-Ei-Ed3" secondAttribute="bottom" constant="-3" id="Rxg-W2-qSc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7wh-vL-B4P" secondAttribute="trailing" id="W45-fo-Als"/>
-                            <constraint firstItem="CuD-mj-D02" firstAttribute="bottom" secondItem="e61-Ao-gpc" secondAttribute="bottom" id="eKs-QR-EVP"/>
+                            <constraint firstAttribute="trailing" secondItem="qCs-zN-39S" secondAttribute="trailing" id="XL4-zD-V3I"/>
+                            <constraint firstItem="YXl-Ei-Ed3" firstAttribute="height" secondItem="e61-Ao-gpc" secondAttribute="height" id="abu-dT-qBm"/>
+                            <constraint firstItem="YXl-Ei-Ed3" firstAttribute="centerY" secondItem="tQc-Ay-3vc" secondAttribute="centerY" id="hg0-Xu-LKu"/>
+                            <constraint firstItem="YXl-Ei-Ed3" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leading" id="iSF-Dl-Kul"/>
+                            <constraint firstItem="Itv-L8-6oH" firstAttribute="centerY" secondItem="e61-Ao-gpc" secondAttribute="centerY" id="k3v-f9-eU8"/>
+                            <constraint firstAttribute="trailing" secondItem="YXl-Ei-Ed3" secondAttribute="trailing" id="kGJ-Qy-Cdm"/>
                             <constraint firstItem="7wh-vL-B4P" firstAttribute="top" secondItem="ZFQ-qJ-LTS" secondAttribute="bottom" constant="8" id="lp0-eu-TMi"/>
+                            <constraint firstItem="qCs-zN-39S" firstAttribute="leading" secondItem="SwT-YG-aOR" secondAttribute="leading" id="nOJ-8S-8hI"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="commuteImageView" destination="Itv-L8-6oH" id="QjH-NY-Tc6"/>
+                        <outlet property="meetingImageView" destination="tQc-Ay-3vc" id="FN6-Ov-09V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8e-AQ-DaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="724" y="79"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="815-car" width="28" height="25"/>
+        <image name="870-smile" width="28" height="28"/>
+    </resources>
 </document>
