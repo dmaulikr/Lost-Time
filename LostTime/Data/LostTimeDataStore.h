@@ -18,4 +18,6 @@
 - (void)save;
 
 - (void)loadFromStore;
+
+- (void)removeAtIndex:(NSInteger)index;
 @end

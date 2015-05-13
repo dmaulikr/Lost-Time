@@ -63,4 +63,8 @@
     }
 }
 
+- (void)removeAtIndex:(NSInteger)index {
+    [self.data removeObjectAtIndex:(NSUInteger) index];
+}
+
 @end
