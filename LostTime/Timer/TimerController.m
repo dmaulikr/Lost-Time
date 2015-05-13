@@ -16,6 +16,7 @@
 @property(weak, nonatomic) IBOutlet SKView *minutesView;
 @property(weak, nonatomic) IBOutlet SKView *hoursView;
 
+@property(weak, nonatomic) IBOutlet UILabel *reasonLabel;
 @property(nonatomic, strong) NSString *reason;
 @end
 
@@ -37,10 +38,24 @@
     [self.hoursView presentScene:self.hoursScene];
 
     self.secondsPassed = 0;
-    [self updateTimerLabels];
-
+    self.reason = nil;
+    [self updateLabels];
     [self createAndStartTimer];
     self.running = YES;
+}
+
+- (void)updateLabels {
+    [self updateTimerLabels];
+    [self updateReasonLabel];
+}
+
+- (void)updateReasonLabel {
+    [self.reasonLabel setText:self.reason];
+}
+
+- (void)setReason:(NSString *)reason {
+    _reason = reason;
+    [self updateReasonLabel];
 }
 
 - (void)createAndStartTimer {

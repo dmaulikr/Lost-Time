@@ -66,7 +66,6 @@
                                 </state>
                                 <connections>
                                     <action selector="cancel:" destination="UeW-H1-kKb" eventType="touchUpInside" id="neU-Id-w9E"/>
-                                    <action selector="commuteButtonTapped:" destination="UeW-H1-kKb" eventType="touchUpInside" id="qCd-c0-xc1"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="815-car" translatesAutoresizingMaskIntoConstraints="NO" id="Itv-L8-6oH">

@@ -8,6 +8,7 @@
 
 
 #import "AppDelegate.h"
+#import "LostTimeDataStore.h"
 
 
 @interface AppDelegate ()
@@ -20,7 +21,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[LostTimeDataStore instance] loadFromStore];
     return YES;
 }
 

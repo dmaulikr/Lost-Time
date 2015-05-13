@@ -76,9 +76,19 @@
                                     <action selector="reasonButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Dhd-wa-eLS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="commute" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-rr-bSl">
+                                <rect key="frame" x="212" y="291" width="100" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1x0-lC-e84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GYs-yy-DLc" firstAttribute="trailing" secondItem="tRz-rr-bSl" secondAttribute="trailing" constant="8" id="0EM-ag-RAB"/>
                             <constraint firstItem="Dca-QZ-QU6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="2pr-pG-198"/>
                             <constraint firstItem="6IT-uW-n7k" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3bB-en-ySa"/>
                             <constraint firstItem="Dca-QZ-QU6" firstAttribute="height" secondItem="GYs-yy-DLc" secondAttribute="height" id="3xy-AO-Rdh"/>
@@ -95,6 +105,7 @@
                             <constraint firstAttribute="trailing" secondItem="j69-43-iLd" secondAttribute="trailing" id="S4W-6B-Xbs"/>
                             <constraint firstItem="S7V-8E-kOS" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="TJi-VR-hTC"/>
                             <constraint firstItem="Dca-QZ-QU6" firstAttribute="height" secondItem="6IT-uW-n7k" secondAttribute="height" id="cUs-VQ-g1k"/>
+                            <constraint firstItem="tRz-rr-bSl" firstAttribute="top" secondItem="j69-43-iLd" secondAttribute="bottom" constant="-21" id="t4R-rn-fZz"/>
                             <constraint firstItem="GYs-yy-DLc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ttp-bL-MQ8"/>
                             <constraint firstItem="6IT-uW-n7k" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="xWE-1m-Z3L"/>
                             <constraint firstAttribute="trailing" secondItem="6IT-uW-n7k" secondAttribute="trailing" id="yPl-P8-gm7"/>
@@ -106,6 +117,7 @@
                     <connections>
                         <outlet property="hoursView" destination="GYs-yy-DLc" id="wnO-lA-YLK"/>
                         <outlet property="minutesView" destination="Dca-QZ-QU6" id="Wh2-i4-jj7"/>
+                        <outlet property="reasonLabel" destination="tRz-rr-bSl" id="hvH-mD-ITK"/>
                         <outlet property="secondsView" destination="6IT-uW-n7k" id="gUm-5i-adE"/>
                         <outlet property="startStopButton" destination="S7V-8E-kOS" id="StI-BA-WZS"/>
                     </connections>
