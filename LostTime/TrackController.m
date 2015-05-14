@@ -8,6 +8,8 @@
 
 @implementation TrackController
 
+const int EMPTY_VIEW = 1;
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.tableView reloadData];
@@ -26,8 +28,32 @@
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
 }
 
+- (void)addEmptyView {
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"TrackEmptyView" owner:self options:nil][0];
+    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width,
+            self.view.frame.size.height -
+                    self.navigationController.navigationBar.frame.size.height -
+                    [UIApplication sharedApplication].statusBarFrame.size.height);
+    [view setFrame:frame];
+    [view setTag:EMPTY_VIEW];
+    [self.view addSubview:view];
+}
+
+- (void)removeEmptyView {
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [[self.view viewWithTag:EMPTY_VIEW] removeFromSuperview];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[[LostTimeDataStore instance] findAll] count];
+    NSUInteger count = [[[LostTimeDataStore instance] findAll] count];
+    if( count == 0 ){
+        [self addEmptyView];
+    }
+    else {
+        [self removeEmptyView];
+    }
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
