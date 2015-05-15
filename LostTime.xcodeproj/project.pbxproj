@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545900DFF509A58532D16F7E /* FirstAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459001633720D7B724CFAAB /* FirstAchievement.m */; };
+		545900E73F6BB9D6ADE0FA9F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590188524F4D6430B8F34A /* GameKit.framework */; };
 		545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */; };
 		5459016BD06E5B51D5C9F773 /* HoursScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902BC3E000D4FF5A87D8E /* HoursScene.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
@@ -14,9 +16,11 @@
 		54590286540292D90B3073AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590A245FD74E1F4587FC3F /* LaunchScreen.xib */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
 		545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */; };
+		5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459068DABB6666B34EA666E /* HourAchievementTest.m */; };
 		5459032CFBCA2BD239D207E7 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906387603651EEBD84131 /* TrackController.m */; };
 		54590455F594B12AF44C5892 /* ReasonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A97DED75DD3FD0993F7 /* ReasonController.m */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
+		54590591B406424328143825 /* Achievements.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904A46F4C245032776171 /* Achievements.m */; };
 		5459061DDE4CAE330B16096A /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908F3C027F4978E24B135 /* TrackCell.m */; };
 		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
 		5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459047CA5ED46BBD7653C29 /* TrackCellTests.m */; };
@@ -31,6 +35,7 @@
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
+		54590DA7E8F14D9E2167D580 /* HourAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459033542846DA9776E602B /* HourAchievement.m */; };
 		54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */; };
 		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
 		DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 136313DD2F2BD938AA30A747 /* libPods.a */; };
@@ -48,17 +53,23 @@
 
 /* Begin PBXFileReference section */
 		136313DD2F2BD938AA30A747 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5459001633720D7B724CFAAB /* FirstAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstAchievement.m; sourceTree = "<group>"; };
 		545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStoreTests.m; sourceTree = "<group>"; };
+		5459005538AD25548E4F94F4 /* HourAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourAchievement.h; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		545900DC7DEC3228AFF57E19 /* TimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		545900E0FBBBD9B5999E0CC1 /* UIImageViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewHelper.h; sourceTree = "<group>"; };
+		54590188524F4D6430B8F34A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		545901C0B01F59F23B3A0B71 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		54590247D9BBC515C9F5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursScene.m; sourceTree = "<group>"; };
+		5459033542846DA9776E602B /* HourAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievement.m; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590431A1EB7AE831ACF450 /* LostTimeDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeDataStore.h; sourceTree = "<group>"; };
 		5459047CA5ED46BBD7653C29 /* TrackCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCellTests.m; sourceTree = "<group>"; };
+		545904A46F4C245032776171 /* Achievements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievements.m; sourceTree = "<group>"; };
 		545904BCC81CC284345F2645 /* TrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590567A5E9C425BC05DD8F /* MinutesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutesScene.m; sourceTree = "<group>"; };
 		545905800149CDF6DABBB105 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
@@ -67,10 +78,12 @@
 		54590609CFCB1F43173AA97E /* LostTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTimeTests.m; sourceTree = "<group>"; };
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		545906387603651EEBD84131 /* TrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackController.m; sourceTree = "<group>"; };
+		5459068DABB6666B34EA666E /* HourAchievementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievementTest.m; sourceTree = "<group>"; };
 		545906D01743A2CDFC0B3EAA /* SecondsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsScene.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
+		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
@@ -88,6 +101,7 @@
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickScene.m; sourceTree = "<group>"; };
 		54590F5A8A84DBFF6044A0B8 /* MinutesScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinutesScene.h; sourceTree = "<group>"; };
+		54590F73DC510DF9764F8635 /* FirstAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstAchievement.h; sourceTree = "<group>"; };
 		54590FB21AF563F18A7C0AC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54590FD7BDBD45ED259783F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		54590FEC7EDAA642C29CAF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +116,7 @@
 			files = (
 				545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */,
 				DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */,
+				545900E73F6BB9D6ADE0FA9F /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +147,7 @@
 				54590871C36CF844EE614586 /* Data */,
 				54590FD7BC58D2DF21155D55 /* Timer */,
 				54590EB3B20FCB0D29269195 /* Helper */,
+				54590B26EF5616FEB81FB1F8 /* Achievements */,
 			);
 			path = LostTime;
 			sourceTree = "<group>";
@@ -169,6 +185,7 @@
 				54590609CFCB1F43173AA97E /* LostTimeTests.m */,
 				5459005ED7A3AA8EC59C85DD /* Data */,
 				5459031C907702E11EF175AF /* Track */,
+				5459038F722B1C86899E4276 /* Achievements */,
 			);
 			path = LostTimeTests;
 			sourceTree = "<group>";
@@ -179,6 +196,14 @@
 				5459047CA5ED46BBD7653C29 /* TrackCellTests.m */,
 			);
 			path = Track;
+			sourceTree = "<group>";
+		};
+		5459038F722B1C86899E4276 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				5459068DABB6666B34EA666E /* HourAchievementTest.m */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 		545904345108690B5E023293 /* Supporting Files */ = {
@@ -195,6 +220,7 @@
 			children = (
 				545905C8756B6771B6A1D889 /* SpriteKit.framework */,
 				136313DD2F2BD938AA30A747 /* libPods.a */,
+				54590188524F4D6430B8F34A /* GameKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,6 +270,20 @@
 				545904D482CEDC50AFA9A704 /* Frameworks */,
 				9C5E3C46969B8761FADEEE7E /* Pods */,
 			);
+			sourceTree = "<group>";
+		};
+		54590B26EF5616FEB81FB1F8 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				545901C0B01F59F23B3A0B71 /* Achievements.h */,
+				545904A46F4C245032776171 /* Achievements.m */,
+				5459033542846DA9776E602B /* HourAchievement.m */,
+				5459005538AD25548E4F94F4 /* HourAchievement.h */,
+				545907B7BFAC7F2A370B02A0 /* AchievementTest.h */,
+				5459001633720D7B724CFAAB /* FirstAchievement.m */,
+				54590F73DC510DF9764F8635 /* FirstAchievement.h */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 		54590D50E5BF95BC757224CF /* sprites.atlas */ = {
@@ -334,6 +374,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Usable Design LLC";
+				TargetAttributes = {
+					5459067595F685C78DD9BE67 = {
+						DevelopmentTeam = 255V99ZU6N;
+					};
+				};
 			};
 			buildConfigurationList = 54590B1AD8EAA3F93B98ECA9 /* Build configuration list for PBXProject "LostTime" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -429,6 +474,9 @@
 				545908382AE827E5F288605E /* TimerController.m in Sources */,
 				54590455F594B12AF44C5892 /* ReasonController.m in Sources */,
 				545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */,
+				54590591B406424328143825 /* Achievements.m in Sources */,
+				54590DA7E8F14D9E2167D580 /* HourAchievement.m in Sources */,
+				545900DFF509A58532D16F7E /* FirstAchievement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +488,7 @@
 				54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */,
 				5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */,
 				5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */,
+				5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +564,7 @@
 			baseConfigurationReference = C1A8A28B9826578B583E7CE7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LostTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +576,7 @@
 			baseConfigurationReference = C354819D1FEC55B0816CDBE8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LostTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
