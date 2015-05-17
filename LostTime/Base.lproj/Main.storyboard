@@ -126,6 +126,56 @@
             </objects>
             <point key="canvasLocation" x="1172" y="-350"/>
         </scene>
+        <!--Achievements-->
+        <scene sceneID="YzN-iB-evm">
+            <objects>
+                <viewController id="p7Z-a5-9fW" customClass="AchievementController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V4H-UV-gcd"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlD-8m-MnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3jk-k8-flo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlx-eg-kmx">
+                                <rect key="frame" x="1" y="0.0" width="320" height="480"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="Open Game Center">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameCenterButtonTapped:" destination="p7Z-a5-9fW" eventType="touchUpInside" id="Hwy-r6-uQs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-tap to open-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kea-ST-i4D">
+                                <rect key="frame" x="111" y="399" width="101" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81568627449999997" green="0.44705882349999998" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Tlx-eg-kmx" secondAttribute="centerY" id="IJX-Sq-7Tl"/>
+                            <constraint firstAttribute="centerX" secondItem="Kea-ST-i4D" secondAttribute="centerX" constant="-1.5" id="Xrb-P6-QYX"/>
+                            <constraint firstAttribute="height" secondItem="Tlx-eg-kmx" secondAttribute="height" id="Xro-HL-Kaf"/>
+                            <constraint firstItem="hlD-8m-MnK" firstAttribute="top" secondItem="Kea-ST-i4D" secondAttribute="bottom" constant="8" id="Y5a-YE-nJj"/>
+                            <constraint firstAttribute="width" secondItem="Tlx-eg-kmx" secondAttribute="width" id="m0C-un-Zm1"/>
+                            <constraint firstAttribute="centerX" secondItem="Tlx-eg-kmx" secondAttribute="centerX" constant="-0.5" id="rYt-tr-FhU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Achievements" image="achievement" id="6J2-kd-nKb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="openGameCenterButton" destination="Tlx-eg-kmx" id="SnB-V7-O3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udn-0V-qdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="685"/>
+        </scene>
         <!--Track Controller-->
         <scene sceneID="V98-5u-xG8">
             <objects>
@@ -169,6 +219,7 @@
                     <connections>
                         <segue destination="m8r-W2-wck" kind="relationship" relationship="viewControllers" id="7Zr-mK-ZFm"/>
                         <segue destination="6Bl-FX-BNc" kind="relationship" relationship="viewControllers" id="4rb-KL-jyC"/>
+                        <segue destination="p7Z-a5-9fW" kind="relationship" relationship="viewControllers" id="7nF-B7-hLo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -179,5 +230,6 @@
     <resources>
         <image name="830-pencil" width="28" height="28"/>
         <image name="914-skull-and-crossbones" width="25" height="28"/>
+        <image name="achievement" width="32" height="32"/>
     </resources>
 </document>

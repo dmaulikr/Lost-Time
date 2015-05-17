@@ -4,6 +4,7 @@
 #import "LostTimeDataStore.h"
 #import "LostTimeRecord.h"
 #import "Achievements.h"
+#import "GameKitHelper.h"
 
 @interface TrackController ()
 @end
@@ -15,8 +16,8 @@ const int EMPTY_VIEW = 1;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.tableView reloadData];
-
-    [self authenticateLocalPlayer];
+    [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+    }];
 }
 
 - (void)registerCellNib:(Class)klass {
@@ -30,20 +31,6 @@ const int EMPTY_VIEW = 1;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
-}
-
-- (void)authenticateLocalPlayer {
-    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
-    localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error) {
-        if (viewController != nil) {
-            [self presentViewController:viewController animated:YES completion:nil];
-        }
-        else if (localPlayer.isAuthenticated) {
-            [Achievements checkForAchievements];
-        }
-        else {
-        }
-    };
 }
 
 - (void)addEmptyView {

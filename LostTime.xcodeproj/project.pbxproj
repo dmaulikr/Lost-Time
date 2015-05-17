@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		545900DFF509A58532D16F7E /* FirstAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459001633720D7B724CFAAB /* FirstAchievement.m */; };
 		545900E73F6BB9D6ADE0FA9F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590188524F4D6430B8F34A /* GameKit.framework */; };
+		5459010F1F62557EDD9BB359 /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907177C647A87656B433C /* GameKitHelper.m */; };
 		545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */; };
 		5459016BD06E5B51D5C9F773 /* HoursScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902BC3E000D4FF5A87D8E /* HoursScene.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
@@ -33,6 +34,7 @@
 		54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */; };
 		54590B68EC6B6331DEFA4AB1 /* ReasonController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590878D6C560687F112486 /* ReasonController.storyboard */; };
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
+		54590CB7EACF3AD61B0997F0 /* AchievementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459089708CA9C0344A17DB4 /* AchievementController.m */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
 		54590DA7E8F14D9E2167D580 /* HourAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459033542846DA9776E602B /* HourAchievement.m */; };
@@ -79,13 +81,16 @@
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		545906387603651EEBD84131 /* TrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackController.m; sourceTree = "<group>"; };
 		5459068DABB6666B34EA666E /* HourAchievementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievementTest.m; sourceTree = "<group>"; };
+		545906BA585CD8E228734F1C /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
 		545906D01743A2CDFC0B3EAA /* SecondsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsScene.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
+		545907177C647A87656B433C /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
+		5459089708CA9C0344A17DB4 /* AchievementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementController.m; sourceTree = "<group>"; };
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonDelegate.h; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursScene.h; sourceTree = "<group>"; };
 		54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewHelper.m; sourceTree = "<group>"; };
+		54590D2E70EC27D80307F5E1 /* AchievementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementController.h; sourceTree = "<group>"; };
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
@@ -282,6 +288,8 @@
 				545907B7BFAC7F2A370B02A0 /* AchievementTest.h */,
 				5459001633720D7B724CFAAB /* FirstAchievement.m */,
 				54590F73DC510DF9764F8635 /* FirstAchievement.h */,
+				5459089708CA9C0344A17DB4 /* AchievementController.m */,
+				54590D2E70EC27D80307F5E1 /* AchievementController.h */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -301,6 +309,8 @@
 			children = (
 				54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */,
 				545900E0FBBBD9B5999E0CC1 /* UIImageViewHelper.h */,
+				545907177C647A87656B433C /* GameKitHelper.m */,
+				545906BA585CD8E228734F1C /* GameKitHelper.h */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -477,6 +487,8 @@
 				54590591B406424328143825 /* Achievements.m in Sources */,
 				54590DA7E8F14D9E2167D580 /* HourAchievement.m in Sources */,
 				545900DFF509A58532D16F7E /* FirstAchievement.m in Sources */,
+				54590CB7EACF3AD61B0997F0 /* AchievementController.m in Sources */,
+				5459010F1F62557EDD9BB359 /* GameKitHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

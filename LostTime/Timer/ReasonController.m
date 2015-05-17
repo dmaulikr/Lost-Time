@@ -8,6 +8,7 @@
     [super viewDidLoad];
     [UIImageViewHelper makeWhite:self.commuteImageView];
     [UIImageViewHelper makeWhite:self.meetingImageView];
+    [UIImageViewHelper makeWhite:self.pencilImageView];
 }
 
 - (IBAction)commuteButtonTapped:(id)sender {

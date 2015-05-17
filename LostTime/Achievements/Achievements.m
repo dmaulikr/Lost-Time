@@ -20,7 +20,6 @@
         if (error) NSLog(@"error");
         for (GKAchievement *ach in achievements) {
             if ([ach.identifier isEqualToString:achievementId]) {
-                NSLog(@"Already submitted");
                 return;
             }
         }
