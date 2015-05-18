@@ -1,6 +1,6 @@
-#import "MinutesScene.h"
+#import "MinutesNode.h"
 
-@implementation MinutesScene
+@implementation MinutesNode
 
 - (CGFloat)rotationPerSecond {
     return (CGFloat) (M_2_PI);

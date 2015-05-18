@@ -1,9 +1,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "TimerController.h"
-#import "SecondsScene.h"
-#import "MinutesScene.h"
-#import "HoursScene.h"
 #import "UIImage+ImageWithColor.h"
+#import "TimeScene.h"
 #import "AVHexColor.h"
 #import "LostTimeRecord.h"
 #import "LostTimeDataStore.h"
@@ -12,9 +10,6 @@
 
 @interface TimerController () <ReasonDelegate>
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
-@property(weak, nonatomic) IBOutlet SKView *secondsView;
-@property(weak, nonatomic) IBOutlet SKView *minutesView;
-@property(weak, nonatomic) IBOutlet SKView *hoursView;
 
 @property(weak, nonatomic) IBOutlet UILabel *reasonLabel;
 @property(nonatomic, strong) NSString *reason;
@@ -25,17 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.secondsView setAllowsTransparency:YES];
-    self.secondsScene = [[SecondsScene alloc] initWithSize:self.secondsView.frame.size];
-    [self.secondsView presentScene:self.secondsScene];
-
-    [self.minutesView setAllowsTransparency:YES];
-    self.minutesScene = [[MinutesScene alloc] initWithSize:self.minutesView.frame.size];
-    [self.minutesView presentScene:self.minutesScene];
-
-    [self.hoursView setAllowsTransparency:YES];
-    self.hoursScene = [[HoursScene alloc] initWithSize:self.hoursView.frame.size];
-    [self.hoursView presentScene:self.hoursScene];
+    [self.timeView setAllowsTransparency:YES];
+    self.timeScene = [[TimeScene alloc] initWithSize:self.timeView.frame.size];
+    [self.timeView presentScene:self.timeScene];
 
     self.secondsPassed = 0;
     self.reason = nil;
@@ -68,13 +55,17 @@
 }
 
 - (void)updateTimerLabels {
-    [self.secondsScene setText:[NSString stringWithFormat:@"%ds", self.secondsPassed % 60]];
-    [self.minutesScene setText:[NSString stringWithFormat:@"%dm", self.secondsPassed / 60]];
-    [self.hoursScene setText:[NSString stringWithFormat:@"%dh", self.secondsPassed / (60 * 60)]];
+    [self.timeScene setSeconds:self.secondsPassed];
 }
 
 - (void)tick:(id)tick {
-    self.secondsPassed = (int) ([NSDate timeIntervalSinceReferenceDate] - self.startTime);
+    NSTimeInterval diff = [NSDate timeIntervalSinceReferenceDate] - self.startTime;
+    if (diff - self.secondsPassed > 3) {
+        self.secondsPassed = (int) diff;
+    }
+    else {
+        self.secondsPassed++;
+    }
     [self updateTimerLabels];
 }
 

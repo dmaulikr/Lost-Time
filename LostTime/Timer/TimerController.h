@@ -1,17 +1,14 @@
 #import <UIKit/UIKit.h>
 
-@class SecondsScene;
-@class MinutesScene;
-@class HoursScene;
+@class TimeScene;
 
 @interface TimerController : UIViewController
 
+@property(weak, nonatomic) IBOutlet SKView *timeView;
 
-@property(nonatomic, strong) SecondsScene *secondsScene;
+@property(nonatomic, strong) TimeScene *timeScene;
 @property(nonatomic, weak) NSTimer *timer;
 @property(nonatomic) int secondsPassed;
-@property(nonatomic, strong) MinutesScene *minutesScene;
-@property(nonatomic, strong) HoursScene *hoursScene;
 @property(nonatomic) BOOL running;
 @property(nonatomic) NSTimeInterval startTime;
 @end

@@ -1,6 +1,6 @@
-#import "HoursScene.h"
+#import "HoursNode.h"
 
-@implementation HoursScene
+@implementation HoursNode
 
 - (CGFloat)rotationPerSecond {
     return (CGFloat) (M_2_PI) / 4;

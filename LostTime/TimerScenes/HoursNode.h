@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TimeTickScene.h"
+#import "TimeTickNode.h"
 
-@interface HoursScene : TimeTickScene
+@interface HoursNode : TimeTickNode
 @end
