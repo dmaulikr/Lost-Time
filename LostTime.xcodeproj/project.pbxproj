@@ -27,6 +27,7 @@
 		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
 		5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459047CA5ED46BBD7653C29 /* TrackCellTests.m */; };
 		545906E8AFC01A594A5A715C /* SecondsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsNode.m */; };
+		5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */; };
 		545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E983348DC88815EB27D /* LostTimeDataStore.m */; };
 		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesNode.m */; };
@@ -88,6 +89,7 @@
 		545906D01743A2CDFC0B3EAA /* SecondsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsNode.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
+		54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackEmptyView.xib; sourceTree = "<group>"; };
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
 		545907177C647A87656B433C /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				545908F3C027F4978E24B135 /* TrackCell.m */,
 				545905FB64CE481A0937F154 /* TrackCell.h */,
 				545905800149CDF6DABBB105 /* TrackCell.xib */,
+				54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				545901374D1EB79C01B9492F /* circlequarter-red@2x.png in Resources */,
 				545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */,
 				54590B68EC6B6331DEFA4AB1 /* ReasonController.storyboard in Resources */,
+				5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
