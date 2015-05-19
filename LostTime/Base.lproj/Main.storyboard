@@ -109,6 +109,26 @@
             </objects>
             <point key="canvasLocation" x="1172" y="-350"/>
         </scene>
+        <!--Graph-->
+        <scene sceneID="522-PY-dwu">
+            <objects>
+                <viewController id="H9d-50-5aN" customClass="GraphController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wFY-c5-02S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wyx-T7-Z5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m75-C3-eco">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Graph" image="858-line-chart" id="cfa-fv-ZUI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-7p-7Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="685"/>
+        </scene>
         <!--Achievements-->
         <scene sceneID="YzN-iB-evm">
             <objects>
@@ -194,6 +214,7 @@
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -203,6 +224,7 @@
                         <segue destination="m8r-W2-wck" kind="relationship" relationship="viewControllers" id="7Zr-mK-ZFm"/>
                         <segue destination="6Bl-FX-BNc" kind="relationship" relationship="viewControllers" id="4rb-KL-jyC"/>
                         <segue destination="p7Z-a5-9fW" kind="relationship" relationship="viewControllers" id="7nF-B7-hLo"/>
+                        <segue destination="H9d-50-5aN" kind="relationship" relationship="viewControllers" id="xZn-9O-McA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -212,6 +234,7 @@
     </scenes>
     <resources>
         <image name="830-pencil" width="28" height="28"/>
+        <image name="858-line-chart" width="28" height="14"/>
         <image name="914-skull-and-crossbones" width="25" height="28"/>
         <image name="achievement" width="32" height="32"/>
     </resources>
