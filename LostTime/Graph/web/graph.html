@@ -9,24 +9,25 @@
 <div id="container">
 </div>
 <script type="text/javascript">
-    $(function () {
-        var formatSeconds = function (totalSeconds) {
-            var seconds = totalSeconds % 60;
-            var minutes = parseInt(totalSeconds / 60) % 60;
-            var hours = parseInt(totalSeconds / 3600);
+    var formatSeconds = function (totalSeconds) {
+        var seconds = totalSeconds % 60;
+        var minutes = parseInt(totalSeconds / 60) % 60;
+        var hours = parseInt(totalSeconds / 3600);
 
-            var label = "";
-            if (hours > 0) {
-                label += hours + "h";
-            }
-            if (minutes > 0) {
-                label += minutes + "m";
-            }
-            if (seconds > 0) {
-                label += seconds + "s"
-            }
-            return label;
-        };
+        var label = "";
+        if (hours > 0) {
+            label += hours + "h";
+        }
+        if (minutes > 0) {
+            label += minutes + "m";
+        }
+        if (seconds > 0) {
+            label += seconds + "s"
+        }
+        return label;
+    };
+
+    window.buildGraph = function (series) {
         $('#container').highcharts({
             chart: {
                 type: 'area'
@@ -50,7 +51,11 @@
                 }
             },
             xAxis: {
-                categories: ['03/01', '03/02', '03/03', '03/04'],
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    day: '%m/%d/%Y',
+                    month: '%m/%d/%Y'
+                },
                 tickmarkPlacement: 'on',
                 title: {
                     text: 'Day'
@@ -66,14 +71,30 @@
                     }
                 }
             },
-            series: [{
+            series: series
+        });
+    };
+
+    $(function () {
+        if (/chrome/i.test(navigator.userAgent)) {
+            window.buildGraph([{
                 name: 'commute',
-                data: [55, 31, 0, 75]
+                data: [
+                    [Date.UTC(2012, 1, 2), 55],
+                    [Date.UTC(2012, 2, 2), 31],
+                    [Date.UTC(2012, 3, 2), 0],
+                    [Date.UTC(2012, 4, 2), 75]
+                ]
             }, {
                 name: 'meetings',
-                data: [20, 120, 1800, 15]
-            }]
-        });
+                data: [
+                    [Date.UTC(2012, 1, 2), 155],
+                    [Date.UTC(2012, 2, 2), 180],
+                    [Date.UTC(2012, 3, 2), 20],
+                    [Date.UTC(2012, 4, 2), 30]
+                ]
+            }]);
+        }
     });
 </script>
 </body>
