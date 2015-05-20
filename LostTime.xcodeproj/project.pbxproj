@@ -15,6 +15,7 @@
 		545901B258CCC877777B4C6F /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590986DD8029469F541ACC /* PaddedTextField.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
 		545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905800149CDF6DABBB105 /* TrackCell.xib */; };
+		5459028204A5A7143286C806 /* GraphHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459069F57F4D0202BF82D9A /* GraphHelper.m */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
 		545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */; };
 		5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459068DABB6666B34EA666E /* HourAchievementTest.m */; };
@@ -32,6 +33,7 @@
 		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
 		545908E206CF295E3263F890 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901657A8C5ABE65408C6A /* TrackController.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesNode.m */; };
+		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
 		54590A8A02260558688AECEB /* TimeTickNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
 		54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */; };
@@ -85,6 +87,7 @@
 		54590609CFCB1F43173AA97E /* LostTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTimeTests.m; sourceTree = "<group>"; };
 		5459062EE5FDEC882473A1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5459068DABB6666B34EA666E /* HourAchievementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievementTest.m; sourceTree = "<group>"; };
+		5459069F57F4D0202BF82D9A /* GraphHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphHelper.m; sourceTree = "<group>"; };
 		545906BA585CD8E228734F1C /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
 		545906D01743A2CDFC0B3EAA /* SecondsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsNode.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
 		54590A4FF9C67BA265970A21 /* TrackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590A97DED75DD3FD0993F7 /* ReasonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReasonController.m; sourceTree = "<group>"; };
+		54590AAC36AAEB568019B6CF /* GraphHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphHelper.h; sourceTree = "<group>"; };
 		54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecordTests.m; sourceTree = "<group>"; };
 		54590AFE2827F952F9BE04A4 /* TimeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeScene.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsNode.m; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		54590CB913D1972F1B7895FC /* HoursNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursNode.h; sourceTree = "<group>"; };
 		54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewHelper.m; sourceTree = "<group>"; };
 		54590D2E70EC27D80307F5E1 /* AchievementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementController.h; sourceTree = "<group>"; };
+		54590D35D8E317C121003C9F /* GraphHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphHelperTests.m; sourceTree = "<group>"; };
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
@@ -204,6 +209,7 @@
 				5459005ED7A3AA8EC59C85DD /* Data */,
 				5459031C907702E11EF175AF /* Track */,
 				5459038F722B1C86899E4276 /* Achievements */,
+				54590B5AC23CE48CF70BC58F /* Graph */,
 			);
 			path = LostTimeTests;
 			sourceTree = "<group>";
@@ -249,6 +255,8 @@
 				545907378EB828BF041CA440 /* GraphController.m */,
 				545908FC15ABF7F3F3073ABA /* GraphController.h */,
 				54590F823D63D2EC73F68159 /* web */,
+				5459069F57F4D0202BF82D9A /* GraphHelper.m */,
+				54590AAC36AAEB568019B6CF /* GraphHelper.h */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -319,6 +327,14 @@
 				54590D2E70EC27D80307F5E1 /* AchievementController.h */,
 			);
 			path = Achievements;
+			sourceTree = "<group>";
+		};
+		54590B5AC23CE48CF70BC58F /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				54590D35D8E317C121003C9F /* GraphHelperTests.m */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 		54590D50E5BF95BC757224CF /* sprites.atlas */ = {
@@ -523,6 +539,7 @@
 				54590E692AE90658135C0D52 /* TimeScene.m in Sources */,
 				545908E206CF295E3263F890 /* TrackController.m in Sources */,
 				54590D9A7C2C0422F9F38F3B /* GraphController.m in Sources */,
+				5459028204A5A7143286C806 /* GraphHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +552,7 @@
 				5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */,
 				5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */,
 				5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */,
+				54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
