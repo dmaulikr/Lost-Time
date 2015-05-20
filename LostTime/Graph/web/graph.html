@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/highcharts-release/highcharts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="container">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var formatSeconds = function (totalSeconds) {
+            var seconds = totalSeconds % 60;
+            var minutes = parseInt(totalSeconds / 60) % 60;
+            var hours = parseInt(totalSeconds / 3600);
+
+            var label = "";
+            if (hours > 0) {
+                label += hours + "h";
+            }
+            if (minutes > 0) {
+                label += minutes + "m";
+            }
+            if (seconds > 0) {
+                label += seconds + "s"
+            }
+            return label;
+        };
+        $('#container').highcharts({
+            chart: {
+                type: 'area'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: 'Time Lost'
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'normal',
+                    trackByArea: true,
+                    tooltip: {
+                        pointFormatter: function () {
+                            return this.series.name + " " + formatSeconds(this.stackTotal);
+                        },
+                        shared: true
+                    }
+                }
+            },
+            xAxis: {
+                categories: ['03/01', '03/02', '03/03', '03/04'],
+                tickmarkPlacement: 'on',
+                title: {
+                    text: 'Day'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Time'
+                },
+                labels: {
+                    formatter: function () {
+                        return formatSeconds(this.value);
+                    }
+                }
+            },
+            series: [{
+                name: 'commute',
+                data: [55, 31, 0, 75]
+            }, {
+                name: 'meetings',
+                data: [20, 120, 1800, 15]
+            }]
+        });
+    });
+</script>
+</body>
+</html>

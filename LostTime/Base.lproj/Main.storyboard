@@ -120,10 +120,25 @@
                     <view key="view" contentMode="scaleToFill" id="m75-C3-eco">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-IP-iuE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cyU-IP-iuE" firstAttribute="leading" secondItem="m75-C3-eco" secondAttribute="leading" id="6NG-8R-sMr"/>
+                            <constraint firstAttribute="trailing" secondItem="cyU-IP-iuE" secondAttribute="trailing" id="YxV-BR-6fW"/>
+                            <constraint firstItem="Wyx-T7-Z5o" firstAttribute="top" secondItem="cyU-IP-iuE" secondAttribute="bottom" id="clY-Ci-8Qo"/>
+                            <constraint firstItem="cyU-IP-iuE" firstAttribute="top" secondItem="wFY-c5-02S" secondAttribute="bottom" id="rQV-iG-VRL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" image="858-line-chart" id="cfa-fv-ZUI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="cyU-IP-iuE" id="mOn-Vx-mWq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-7p-7Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
