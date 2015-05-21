@@ -43,6 +43,7 @@
                     stacking: 'normal',
                     trackByArea: true,
                     tooltip: {
+                        headerFormat: '',
                         pointFormatter: function () {
                             return this.series.name + " " + formatSeconds(this.stackTotal);
                         },
@@ -53,9 +54,13 @@
             xAxis: {
                 type: 'datetime',
                 dateTimeLabelFormats: {
+                    second: '%m/%d/%Y',
+                    minute: '%m/%d/%Y',
+                    hour: '%m/%d/%Y',
                     day: '%m/%d/%Y',
                     month: '%m/%d/%Y'
                 },
+                minTickInterval: 1000 * 60 * 60 * 24,
                 tickmarkPlacement: 'on',
                 title: {
                     text: 'Day'

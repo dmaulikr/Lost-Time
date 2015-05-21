@@ -51,7 +51,7 @@ const int EMPTY_VIEW = 1;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSUInteger count = [[[LostTimeDataStore instance] findAll] count];
-    if (count == 0) {
+    if (count == 0 && ![self.view viewWithTag:EMPTY_VIEW]) {
         [self addEmptyView];
     }
     else {

@@ -26,6 +26,26 @@
             </objects>
             <point key="canvasLocation" x="1023" y="287"/>
         </scene>
+        <!--Graph-->
+        <scene sceneID="92v-n2-rO2">
+            <objects>
+                <viewController id="Gxp-dp-0Tf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXO-pb-k9g"/>
+                        <viewControllerLayoutGuide type="bottom" id="zqR-QW-gqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Hp-Es-apy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Graph" image="858-line-chart" id="NgB-ih-DrO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdN-or-QVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="818"/>
+        </scene>
         <!--Achievements-->
         <scene sceneID="MCV-kw-TDx">
             <objects>
@@ -92,6 +112,7 @@
                         <segue destination="cFl-4A-alc" kind="relationship" relationship="viewControllers" id="fSJ-c3-U7u"/>
                         <segue destination="Qti-Ox-Mbj" kind="relationship" relationship="viewControllers" id="a0S-l5-3q1"/>
                         <segue destination="3Ts-kO-DzT" kind="relationship" relationship="viewControllers" id="NW4-WH-68R"/>
+                        <segue destination="Gxp-dp-0Tf" kind="relationship" relationship="viewControllers" id="6cA-F2-dMN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgk-RG-lSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="858-line-chart" width="28" height="14"/>
         <image name="914-skull-and-crossbones" width="25" height="28"/>
         <image name="achievement" width="32" height="32"/>
     </resources>
