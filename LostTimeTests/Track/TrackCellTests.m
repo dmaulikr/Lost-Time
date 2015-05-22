@@ -29,7 +29,19 @@
 }
 
 - (void)testSetsTimeStartEnd {
-    XCTFail(@"");
+    TrackCell *cell = [[NSBundle mainBundle] loadNibNamed:@"TrackCell" owner:self options:nil][0];
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateFormat:@"h:mm:ssa"];
+    [cell setRecord:[LostTimeRecord recordWithDate:[formatter dateFromString:@"10:01:32PM"] seconds:@(51 * 60) reason:@"test"]];
+    XCTAssertEqualObjects([cell.timeStartEnd text], @"9:10PM - 10:01PM");
+}
+
+- (void)testHandlesEmptyReason {
+    TrackCell *cell = [[NSBundle mainBundle] loadNibNamed:@"TrackCell" owner:self options:nil][0];
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateFormat:@"h:mm:ssa"];
+    [cell setRecord:[LostTimeRecord recordWithDate:[formatter dateFromString:@"10:01:32PM"] seconds:@(51 * 60) reason:@""]];
+    XCTAssertEqualObjects([cell.reason text], @"no reason");
 }
 
 @end

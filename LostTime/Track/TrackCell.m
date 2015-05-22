@@ -4,12 +4,16 @@
 @implementation TrackCell
 
 - (void)setRecord:(LostTimeRecord *)record {
-    [self.reason setText:record.reason];
+    [self.reason setText:[record.reason isEqualToString:@""] ? @"no reason" : record.reason];
 
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
     [timeFormatter setDateFormat:@"h:mma"];
 
-    [self.timeStartEnd setText:[NSString stringWithFormat:@"%@ - %@", [timeFormatter stringFromDate:record.date], @""]];
+    NSDate *startTime = [record.date dateByAddingTimeInterval:-[record.seconds intValue]];
+    [self.timeStartEnd setText:[NSString stringWithFormat:@"%@ - %@",
+                                                          [timeFormatter stringFromDate:startTime],
+                                                          [timeFormatter stringFromDate:record.date]]];
+
 
     int hours = [record.seconds intValue] / 3600;
     [self.hours setText:[NSString stringWithFormat:@"%dh", hours]];
