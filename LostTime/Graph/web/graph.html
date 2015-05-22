@@ -27,10 +27,10 @@
         return label;
     };
 
-    window.buildGraph = function (series) {
+    window.buildTimeGraph = function (series) {
         $('#container').highcharts({
             chart: {
-                type: 'area'
+                type: 'column'
             },
             credits: {
                 enabled: false
@@ -39,31 +39,33 @@
                 text: 'Time Lost'
             },
             plotOptions: {
-                area: {
+                column: {
                     stacking: 'normal',
-                    trackByArea: true,
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            return formatSeconds(this.y);
+                        }
+                    },
                     tooltip: {
-                        headerFormat: '',
                         pointFormatter: function () {
-                            return this.series.name + " " + formatSeconds(this.stackTotal);
-                        },
-                        shared: true
+                            return "<strong>" + this.series.name + ":</strong> " + formatSeconds(this.y);
+                        }
                     }
                 }
             },
             xAxis: {
                 type: 'datetime',
                 dateTimeLabelFormats: {
-                    second: '%m/%d/%Y',
-                    minute: '%m/%d/%Y',
-                    hour: '%m/%d/%Y',
-                    day: '%m/%d/%Y',
-                    month: '%m/%d/%Y'
+                    second: '%m/%d',
+                    minute: '%m/%d',
+                    hour: '%m/%d',
+                    day: '%m/%d',
+                    month: '%m/%d',
+                    year: '%m/%d'
                 },
-                minTickInterval: 1000 * 60 * 60 * 24,
-                tickmarkPlacement: 'on',
                 title: {
-                    text: 'Day'
+                    text: 'Date'
                 }
             },
             yAxis: {
@@ -82,21 +84,21 @@
 
     $(function () {
         if (/chrome/i.test(navigator.userAgent)) {
-            window.buildGraph([{
+            window.buildTimeGraph([{
                 name: 'commute',
                 data: [
                     [Date.UTC(2012, 1, 2), 55],
-                    [Date.UTC(2012, 2, 2), 31],
-                    [Date.UTC(2012, 3, 2), 0],
-                    [Date.UTC(2012, 4, 2), 75]
+                    [Date.UTC(2012, 1, 3), 31],
+                    [Date.UTC(2012, 1, 4), 0],
+                    [Date.UTC(2012, 1, 11), 75]
                 ]
             }, {
                 name: 'meetings',
                 data: [
                     [Date.UTC(2012, 1, 2), 155],
-                    [Date.UTC(2012, 2, 2), 180],
-                    [Date.UTC(2012, 3, 2), 20],
-                    [Date.UTC(2012, 4, 2), 30]
+                    [Date.UTC(2012, 1, 3), 180],
+                    [Date.UTC(2012, 1, 5), 20],
+                    [Date.UTC(2012, 1, 10), 30]
                 ]
             }]);
         }

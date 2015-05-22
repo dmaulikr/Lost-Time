@@ -1,6 +1,6 @@
-
 #import "AppDelegate.h"
 #import "LostTimeDataStore.h"
+#import "LostTimeRecord.h"
 
 
 @interface AppDelegate ()
@@ -12,6 +12,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[LostTimeDataStore instance] loadFromStore];
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat:@"MM-dd-yyyy"];
+//    for (int i = 1; i < 30; i++) {
+//        [[LostTimeDataStore instance] addEntry:[LostTimeRecord  recordWithDate:
+//                [formatter dateFromString:
+//                        [NSString stringWithFormat:@"03-%2d-2015", i]] seconds:@1000 reason:@"A reason"]];
+//    }
+//
+//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-11-2015"] seconds:@1200 reason:@"A reason"]];
+//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-11-2015"] seconds:@300 reason:@""]];
+//
+//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-17-2015"] seconds:@900 reason:@"A reason"]];
+//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-17-2015"] seconds:@550 reason:@""]];
+
     return YES;
 }
 
