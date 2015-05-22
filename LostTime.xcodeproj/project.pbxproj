@@ -23,14 +23,17 @@
 		54590455F594B12AF44C5892 /* ReasonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A97DED75DD3FD0993F7 /* ReasonController.m */; };
 		54590477C97059B77455EBF9 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 54590F823D63D2EC73F68159 /* web */; };
 		54590494AC60A4AD907D5E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459062EE5FDEC882473A1C0 /* AppDelegate.m */; };
+		545904CF63EC7BC94F50A420 /* WorkDayInWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907A2D535AC2F0E9ACDDF /* WorkDayInWeekAchievement.m */; };
 		54590591B406424328143825 /* Achievements.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904A46F4C245032776171 /* Achievements.m */; };
 		5459061DDE4CAE330B16096A /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908F3C027F4978E24B135 /* TrackCell.m */; };
 		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
 		5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459047CA5ED46BBD7653C29 /* TrackCellTests.m */; };
+		545906DAA645351950969A00 /* WorkDayInWeekAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902CA606884FE06189ABB /* WorkDayInWeekAchievementTests.m */; };
 		545906E8AFC01A594A5A715C /* SecondsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsNode.m */; };
 		5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */; };
 		545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E983348DC88815EB27D /* LostTimeDataStore.m */; };
 		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
+		545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A16BAD70D01AB13079B /* DayHelper.m */; };
 		545908E206CF295E3263F890 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901657A8C5ABE65408C6A /* TrackController.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesNode.m */; };
 		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
@@ -74,6 +77,7 @@
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursNode.m; sourceTree = "<group>"; };
+		545902CA606884FE06189ABB /* WorkDayInWeekAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkDayInWeekAchievementTests.m; sourceTree = "<group>"; };
 		5459033542846DA9776E602B /* HourAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievement.m; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590431A1EB7AE831ACF450 /* LostTimeDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeDataStore.h; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		545904A46F4C245032776171 /* Achievements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievements.m; sourceTree = "<group>"; };
 		5459052948B867D4DDFB069D /* PaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddedTextField.h; sourceTree = "<group>"; };
 		54590567A5E9C425BC05DD8F /* MinutesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutesNode.m; sourceTree = "<group>"; };
+		5459057CFB6D3583EA31ABED /* DayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayHelper.h; sourceTree = "<group>"; };
 		545905800149CDF6DABBB105 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		545905C8756B6771B6A1D889 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		545905FB64CE481A0937F154 /* TrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackCell.h; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
 		545907177C647A87656B433C /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		545907378EB828BF041CA440 /* GraphController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphController.m; sourceTree = "<group>"; };
+		545907A2D535AC2F0E9ACDDF /* WorkDayInWeekAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkDayInWeekAchievement.m; sourceTree = "<group>"; };
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 		54590986DD8029469F541ACC /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
+		54590A16BAD70D01AB13079B /* DayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHelper.m; sourceTree = "<group>"; };
 		54590A4FF9C67BA265970A21 /* TrackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590A97DED75DD3FD0993F7 /* ReasonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReasonController.m; sourceTree = "<group>"; };
 		54590AAC36AAEB568019B6CF /* GraphHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphHelper.h; sourceTree = "<group>"; };
@@ -122,6 +129,7 @@
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
+		54590EA018350B508CB94746 /* WorkDayInWeekAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkDayInWeekAchievement.h; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickNode.m; sourceTree = "<group>"; };
 		54590F5A8A84DBFF6044A0B8 /* MinutesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinutesNode.h; sourceTree = "<group>"; };
 		54590F73DC510DF9764F8635 /* FirstAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstAchievement.h; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				5459068DABB6666B34EA666E /* HourAchievementTest.m */,
+				545902CA606884FE06189ABB /* WorkDayInWeekAchievementTests.m */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -325,6 +334,10 @@
 				54590F73DC510DF9764F8635 /* FirstAchievement.h */,
 				5459089708CA9C0344A17DB4 /* AchievementController.m */,
 				54590D2E70EC27D80307F5E1 /* AchievementController.h */,
+				545907A2D535AC2F0E9ACDDF /* WorkDayInWeekAchievement.m */,
+				54590EA018350B508CB94746 /* WorkDayInWeekAchievement.h */,
+				54590A16BAD70D01AB13079B /* DayHelper.m */,
+				5459057CFB6D3583EA31ABED /* DayHelper.h */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -540,6 +553,8 @@
 				545908E206CF295E3263F890 /* TrackController.m in Sources */,
 				54590D9A7C2C0422F9F38F3B /* GraphController.m in Sources */,
 				5459028204A5A7143286C806 /* GraphHelper.m in Sources */,
+				545904CF63EC7BC94F50A420 /* WorkDayInWeekAchievement.m in Sources */,
+				545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +568,7 @@
 				5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */,
 				5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */,
 				54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */,
+				545906DAA645351950969A00 /* WorkDayInWeekAchievementTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

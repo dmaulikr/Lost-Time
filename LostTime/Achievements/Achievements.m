@@ -2,16 +2,20 @@
 #import "Achievements.h"
 #import "HourAchievement.h"
 #import "FirstAchievement.h"
+#import "WorkDayInWeekAchievement.h"
 
 @implementation Achievements
 
 + (void)checkForAchievements {
-    if ([[FirstAchievement new] achieved]) {
-        [self achievementComplete:@"firstloss"];
-    }
-
-    if ([[HourAchievement new] achieved]) {
-        [self achievementComplete:@"hour"];
+    NSArray *achievements = @[
+            [FirstAchievement new],
+            [HourAchievement new],
+            [WorkDayInWeekAchievement new]
+    ];
+    for (NSObject <AchievementTest> *achievement in achievements) {
+        if ([achievement achieved]) {
+            [self achievementComplete:achievement.achievementId];
+        }
     }
 }
 

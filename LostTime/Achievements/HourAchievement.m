@@ -33,4 +33,8 @@
     return [formatter stringFromDate:date];
 }
 
+- (NSString *)achievementId {
+    return @"hour";
+}
+
 @end

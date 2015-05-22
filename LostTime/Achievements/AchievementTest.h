@@ -2,6 +2,8 @@
 
 @protocol AchievementTest <NSObject>
 
--(BOOL) achieved;
+- (BOOL)achieved;
+
+- (NSString *)achievementId;
 
 @end

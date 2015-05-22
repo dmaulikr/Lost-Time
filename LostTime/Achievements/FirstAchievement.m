@@ -7,4 +7,8 @@
     return [[[LostTimeDataStore instance] findAll] count] > 0;
 }
 
+- (NSString *)achievementId {
+    return @"firstloss";
+}
+
 @end

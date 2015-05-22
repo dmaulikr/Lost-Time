@@ -8,6 +8,11 @@
 
 @implementation LostTimeDataStoreTests
 
+- (void)setUp {
+    [super setUp];
+    [[LostTimeDataStore instance] empty];
+}
+
 - (void)testCanAddRecords {
     [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[NSDate new] seconds:@30 reason:@"tap on shoulder"]];
     XCTAssertEqual([[[LostTimeDataStore instance] findAll] count], 1U);

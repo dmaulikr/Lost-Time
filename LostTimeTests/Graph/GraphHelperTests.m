@@ -9,7 +9,7 @@
 
 @implementation GraphHelperTests
 
-+ (void)setUp {
+- (void)setUp {
     [super setUp];
     [[LostTimeDataStore instance] empty];
 }
@@ -43,9 +43,9 @@
     XCTAssertEqualObjects(data[0][@"data"][1][1], @2000);
     XCTAssertEqualObjects(data[0][@"data"][2][1], @3000);
 
-    XCTAssertEqualObjects(data[0][@"data"][0][0], @1426392000);
-    XCTAssertEqualObjects(data[0][@"data"][1][0], @1426564800);
-    XCTAssertEqualObjects(data[0][@"data"][2][0], @1426651200);
+    XCTAssertEqualObjects(data[0][@"data"][0][0], @1426392000000);
+    XCTAssertEqualObjects(data[0][@"data"][1][0], @1426564800000);
+    XCTAssertEqualObjects(data[0][@"data"][2][0], @1426651200000);
 
 }
 
