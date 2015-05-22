@@ -17,4 +17,19 @@
     XCTAssertEqualObjects([cell.seconds text], @"30s");
 }
 
+- (void)testHides0Values {
+    TrackCell *cell = [[NSBundle mainBundle] loadNibNamed:@"TrackCell" owner:self options:nil][0];
+    [cell setRecord:[LostTimeRecord recordWithDate:[NSDate date] seconds:@3500 reason:@"test"]];
+    XCTAssertTrue([cell.hours isHidden]);
+    XCTAssertFalse([cell.minutes isHidden]);
+    XCTAssertFalse([cell.seconds isHidden]);
+
+    [cell setRecord:[LostTimeRecord recordWithDate:[NSDate date] seconds:@59 reason:@"test"]];
+    XCTAssertTrue([cell.minutes isHidden]);
+}
+
+- (void)testSetsTimeStartEnd {
+    XCTFail(@"");
+}
+
 @end

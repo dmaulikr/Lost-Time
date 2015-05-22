@@ -6,13 +6,21 @@
 - (void)setRecord:(LostTimeRecord *)record {
     [self.reason setText:record.reason];
 
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateStyle:NSDateFormatterShortStyle];
-    [self.date setText:[df stringFromDate:record.date]];
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"h:mma"];
 
-    [self.hours setText:[NSString stringWithFormat:@"%dh", [record.seconds intValue] / 3600]];
-    [self.minutes setText:[NSString stringWithFormat:@"%dm", [record.seconds intValue] / 60 % 60]];
-    [self.seconds setText:[NSString stringWithFormat:@"%ds", [record.seconds intValue] % 60]];
+    [self.timeStartEnd setText:[NSString stringWithFormat:@"%@ - %@", [timeFormatter stringFromDate:record.date], @""]];
+
+    int hours = [record.seconds intValue] / 3600;
+    [self.hours setText:[NSString stringWithFormat:@"%dh", hours]];
+    [self.hours setHidden:hours == 0];
+
+    int minutes = [record.seconds intValue] / 60 % 60;
+    [self.minutes setHidden:minutes == 0];
+    [self.minutes setText:[NSString stringWithFormat:@"%dm", minutes]];
+
+    int seconds = [record.seconds intValue] % 60;
+    [self.seconds setText:[NSString stringWithFormat:@"%ds", seconds]];
 }
 
 @end
