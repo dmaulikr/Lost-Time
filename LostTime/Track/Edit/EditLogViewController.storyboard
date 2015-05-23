@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Log View Controller-->
+        <scene sceneID="76A-iP-sSt">
+            <objects>
+                <viewController id="U0X-dR-zwE" customClass="EditLogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0XS-xm-KtN"/>
+                        <viewControllerLayoutGuide type="bottom" id="AaN-j1-IzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bz8-3y-PnE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-Ti-WGk">
+                                <rect key="frame" x="16" y="20" width="56" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="commute" borderStyle="roundedRect" placeholder="no reason" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-l7-IyZ">
+                                <rect key="frame" x="16" y="52" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="N62-7q-dGF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="03/09/2015 4:51PM" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saX-8q-6h0">
+                                <rect key="frame" x="16" y="137" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eLo-hD-mAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsl-SG-YYb">
+                                <rect key="frame" x="16" y="105" width="78" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-fl-P9x">
+                                <rect key="frame" x="16" y="190" width="73" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-QQ-nqp">
+                                <rect key="frame" x="16" y="279" width="106" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="03/09/2015 4:51PM" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJO-Br-FOF">
+                                <rect key="frame" x="16" y="222" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DTK-Pu-p7p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-iS-oqO">
+                                <rect key="frame" x="255" y="275" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HAd-fl-P9x" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="4qh-Gt-fPr"/>
+                            <constraint firstItem="jJO-Br-FOF" firstAttribute="top" secondItem="HAd-fl-P9x" secondAttribute="bottom" constant="8" id="5hr-xe-oky"/>
+                            <constraint firstItem="saX-8q-6h0" firstAttribute="top" secondItem="Xsl-SG-YYb" secondAttribute="bottom" constant="8" id="5nw-Ko-IEF"/>
+                            <constraint firstItem="fvf-Ti-WGk" firstAttribute="top" secondItem="0XS-xm-KtN" secondAttribute="bottom" id="6A9-2Z-UQC"/>
+                            <constraint firstItem="Xsl-SG-YYb" firstAttribute="top" secondItem="7Si-l7-IyZ" secondAttribute="bottom" constant="8" id="7lL-87-qXQ"/>
+                            <constraint firstItem="Zc2-iS-oqO" firstAttribute="trailing" secondItem="Bz8-3y-PnE" secondAttribute="trailingMargin" id="7ub-9q-M3O"/>
+                            <constraint firstItem="HAd-fl-P9x" firstAttribute="top" secondItem="saX-8q-6h0" secondAttribute="bottom" constant="8" id="8eI-a0-58K"/>
+                            <constraint firstItem="Zc2-iS-oqO" firstAttribute="top" secondItem="jJO-Br-FOF" secondAttribute="bottom" constant="8" id="9hK-Lb-O6B"/>
+                            <constraint firstItem="7Si-l7-IyZ" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="N7D-RJ-kyq"/>
+                            <constraint firstItem="jJO-Br-FOF" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="QWP-oH-ORX"/>
+                            <constraint firstItem="saX-8q-6h0" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="ROA-b8-5dE"/>
+                            <constraint firstItem="7Si-l7-IyZ" firstAttribute="top" secondItem="fvf-Ti-WGk" secondAttribute="bottom" constant="8" id="TBP-eu-osV"/>
+                            <constraint firstItem="saX-8q-6h0" firstAttribute="trailing" secondItem="Bz8-3y-PnE" secondAttribute="trailingMargin" id="X3l-Jf-cdn"/>
+                            <constraint firstItem="WQw-QQ-nqp" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="X56-gn-woX"/>
+                            <constraint firstItem="jJO-Br-FOF" firstAttribute="trailing" secondItem="Bz8-3y-PnE" secondAttribute="trailingMargin" id="YLN-6C-HDp"/>
+                            <constraint firstItem="Xsl-SG-YYb" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="ZnR-uv-jrx"/>
+                            <constraint firstItem="7Si-l7-IyZ" firstAttribute="trailing" secondItem="Bz8-3y-PnE" secondAttribute="trailingMargin" id="keX-z9-ZjJ"/>
+                            <constraint firstItem="fvf-Ti-WGk" firstAttribute="leading" secondItem="Bz8-3y-PnE" secondAttribute="leadingMargin" id="mA7-ZX-rTF"/>
+                            <constraint firstItem="Zc2-iS-oqO" firstAttribute="centerY" secondItem="WQw-QQ-nqp" secondAttribute="centerY" id="wrh-Ta-qld"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ud-xY-R7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="405"/>
+        </scene>
+    </scenes>
+</document>

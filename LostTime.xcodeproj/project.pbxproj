@@ -35,11 +35,13 @@
 		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
 		545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A16BAD70D01AB13079B /* DayHelper.m */; };
 		545908E206CF295E3263F890 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901657A8C5ABE65408C6A /* TrackController.m */; };
+		545909023F3E02E1D194E248 /* EditLogViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545909B76749A0B4259D79AE /* EditLogViewController.storyboard */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesNode.m */; };
 		54590967294B733A81300402 /* TrackControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B85D40B36A45D82F357 /* TrackControllerTests.m */; };
 		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
 		54590A8A02260558688AECEB /* TimeTickNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
+		54590AD39F936714E26609CB /* EditLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BF65FEF819DAF85C4FB /* EditLogViewController.m */; };
 		54590B143220CBCC5CA17F24 /* LostTimeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */; };
 		54590B68EC6B6331DEFA4AB1 /* ReasonController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590878D6C560687F112486 /* ReasonController.storyboard */; };
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
@@ -77,6 +79,7 @@
 		545901C0B01F59F23B3A0B71 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
+		5459029F686CA4E72AB765FC /* EditLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditLogViewController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursNode.m; sourceTree = "<group>"; };
 		545902CA606884FE06189ABB /* WorkDayInWeekAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkDayInWeekAchievementTests.m; sourceTree = "<group>"; };
 		5459033542846DA9776E602B /* HourAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievement.m; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		545908FC15ABF7F3F3073ABA /* GraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphController.h; sourceTree = "<group>"; };
 		5459097678D4578C3F94DE07 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		54590986DD8029469F541ACC /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
+		545909B76749A0B4259D79AE /* EditLogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditLogViewController.storyboard; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
 		54590A16BAD70D01AB13079B /* DayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHelper.m; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		54590AFE2827F952F9BE04A4 /* TimeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeScene.m; sourceTree = "<group>"; };
 		54590B85D40B36A45D82F357 /* TrackControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackControllerTests.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsNode.m; sourceTree = "<group>"; };
+		54590BF65FEF819DAF85C4FB /* EditLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditLogViewController.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickNode.h; sourceTree = "<group>"; };
 		54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonDelegate.h; sourceTree = "<group>"; };
 		54590C89A5FEF19752A2DAAC /* TimeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeScene.h; sourceTree = "<group>"; };
@@ -282,6 +287,7 @@
 				54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */,
 				54590A4FF9C67BA265970A21 /* TrackController.h */,
 				545901657A8C5ABE65408C6A /* TrackController.m */,
+				54590E1ECDE8C19DC4AD04EC /* Edit */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -361,6 +367,16 @@
 				545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */,
 			);
 			path = sprites.atlas;
+			sourceTree = "<group>";
+		};
+		54590E1ECDE8C19DC4AD04EC /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				54590BF65FEF819DAF85C4FB /* EditLogViewController.m */,
+				5459029F686CA4E72AB765FC /* EditLogViewController.h */,
+				545909B76749A0B4259D79AE /* EditLogViewController.storyboard */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		54590EB3B20FCB0D29269195 /* Helper */ = {
@@ -484,6 +500,7 @@
 				5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */,
 				54590330B53DC74C6CE1FFA8 /* Launch.storyboard in Resources */,
 				54590477C97059B77455EBF9 /* web in Resources */,
+				545909023F3E02E1D194E248 /* EditLogViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +575,7 @@
 				5459028204A5A7143286C806 /* GraphHelper.m in Sources */,
 				545904CF63EC7BC94F50A420 /* WorkDayInWeekAchievement.m in Sources */,
 				545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */,
+				54590AD39F936714E26609CB /* EditLogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
