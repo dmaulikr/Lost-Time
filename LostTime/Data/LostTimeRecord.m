@@ -34,6 +34,10 @@
     return dateFormatter;
 }
 
+- (NSDate *)startDate {
+    return [self.date dateByAddingTimeInterval:-[self.seconds intValue]];
+}
+
 + (LostTimeRecord *)fromDictionary:(NSDictionary *)dict {
     return [LostTimeRecord recordWithDate:[self.dateFormatter dateFromString:dict[@"date"]]
                                   seconds:dict[@"seconds"]

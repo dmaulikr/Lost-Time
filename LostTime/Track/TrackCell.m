@@ -9,9 +9,8 @@
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
     [timeFormatter setDateFormat:@"h:mma"];
 
-    NSDate *startTime = [record.date dateByAddingTimeInterval:-[record.seconds intValue]];
     [self.timeStartEnd setText:[NSString stringWithFormat:@"%@ - %@",
-                                                          [timeFormatter stringFromDate:startTime],
+                                                          [timeFormatter stringFromDate:[record startDate]],
                                                           [timeFormatter stringFromDate:record.date]]];
 
 

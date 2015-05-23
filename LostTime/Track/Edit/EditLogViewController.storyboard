@@ -67,6 +67,9 @@
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-iS-oqO">
                                 <rect key="frame" x="255" y="283" width="51" height="31"/>
+                                <connections>
+                                    <action selector="durationLockChanged:" destination="U0X-dR-zwE" eventType="valueChanged" id="0Hk-re-oB4"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,6 +96,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="durationLock" destination="Zc2-iS-oqO" id="L2O-TA-d2l"/>
+                        <outlet property="endTimeField" destination="jJO-Br-FOF" id="FMq-XV-W2b"/>
+                        <outlet property="reasonTextField" destination="7Si-l7-IyZ" id="e5q-4z-ASn"/>
+                        <outlet property="startTimeField" destination="saX-8q-6h0" id="EPT-m6-FIH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ud-xY-R7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

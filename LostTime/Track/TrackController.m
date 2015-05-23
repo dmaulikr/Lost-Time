@@ -133,6 +133,7 @@ const int EMPTY_VIEW = 1;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EditLogViewController *controller = [[UIStoryboard storyboardWithName:NSStringFromClass([EditLogViewController class]) bundle:nil] instantiateInitialViewController];
+    controller.record = [self recordsGroupedByDay][(NSUInteger) indexPath.section][(NSUInteger) indexPath.row];
     [self.navigationController pushViewController:controller animated:YES];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

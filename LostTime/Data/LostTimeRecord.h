@@ -15,6 +15,8 @@
 
 + (NSDateFormatter *)dateFormatter;
 
+- (NSDate *)startDate;
+
 + (LostTimeRecord *)fromDictionary:(NSDictionary *)dict;
 
 @end
