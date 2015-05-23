@@ -14,9 +14,13 @@ const int EMPTY_VIEW = 1;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.tableView reloadData];
     [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)registerCellNib:(Class)klass {

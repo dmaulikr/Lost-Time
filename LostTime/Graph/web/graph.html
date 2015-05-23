@@ -29,14 +29,26 @@
         return label;
     };
 
+    var trueTimeCacheById = {};
     var putOnStartOfDay = function (serieses) {
+        var idCounter = 0;
         var startOfDaySerieses = _.clone(serieses, true);
         _.forEach(startOfDaySerieses, function (series) {
-            _.each(series.data, function (entry) {
-                entry[0] = moment(entry[0]).startOf('day').unix() * 1000;
+            series.data = _.map(series.data, function (entry) {
+                var id = idCounter++;
+                trueTimeCacheById[id] = moment(entry[0]);
+                return {
+                    x: moment(entry[0]).startOf('day').unix() * 1000,
+                    y: entry[1],
+                    id: id
+                };
             });
         });
         return startOfDaySerieses;
+    };
+
+    var formatTooltipHeader = function () {
+        return "";
     };
 
     window.buildTimeGraph = function (series) {
@@ -61,8 +73,13 @@
                         }
                     },
                     tooltip: {
+                        headerFormat: '',
                         pointFormatter: function () {
-                            return "<strong>" + this.series.name + ":</strong> " + formatSeconds(this.y);
+                            console.log(this.id);
+                            var header = '<span>started at: ' +
+                                    trueTimeCacheById[this.id].subtract(this.y, 'seconds').format("h:mmA") +
+                                    '</span><br/>';
+                            return header + "<strong>" + this.series.name + ":</strong> " + formatSeconds(this.y);
                         }
                     }
                 }
@@ -99,13 +116,14 @@
 
     $(function () {
         if (/chrome/i.test(navigator.userAgent)) {
+            var format = "M-D-YYYY h:mmA";
             window.buildTimeGraph([{
                 name: 'commute',
                 data: [
-                    [Date.UTC(2012, 1, 2), 55],
-                    [Date.UTC(2012, 1, 3), 31],
-                    [Date.UTC(2012, 1, 4), 0],
-                    [Date.UTC(2012, 1, 11), 75]
+                    [moment("2-1-2012 9:55AM", format).unix() * 1000, 55],
+                    [moment("2-1-2012 10:31AM", format).unix() * 1000, 31],
+                    [moment("2-3-2012 8:55AM", format).unix() * 1000, 310],
+                    [moment("2-11-2012 7PM", format).unix() * 1000, 310]
                 ]
             }, {
                 name: 'meetings',
