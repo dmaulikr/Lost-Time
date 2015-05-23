@@ -49,15 +49,65 @@ const int EMPTY_VIEW = 1;
     [[self.view viewWithTag:EMPTY_VIEW] removeFromSuperview];
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.tableView beginUpdates];
+        NSArray *recordsInSection = [self recordsGroupedByDay][(NSUInteger) indexPath.section];
+        BOOL removeSection = [recordsInSection count] == 1;
+        [[LostTimeDataStore instance] remove:recordsInSection[(NSUInteger) indexPath.row]];
+        [[LostTimeDataStore instance] save];
+        if (removeSection) {
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:(NSUInteger) indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        else {
+            [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        [self.tableView endUpdates];
+        [self checkAddEmptyView];
+    }
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [[self recordsGroupedByDay] count];
+}
+
+- (NSArray *)recordsGroupedByDay {
+    NSArray *records = [[LostTimeDataStore instance] findAll];
+    NSString *previousDay = nil;
+    NSMutableArray *groups = [@[] mutableCopy];
+
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM-dd-yyyy"];
+    for (LostTimeRecord *record in records) {
+        NSString *dateString = [formatter stringFromDate:[record.date
+                dateByAddingTimeInterval:-[record.seconds intValue]]];
+        if (!previousDay || ![previousDay isEqualToString:dateString]) {
+            previousDay = dateString;
+            [groups addObject:[@[] mutableCopy]];
+        }
+
+        [[groups lastObject] addObject:record];
+    }
+    return groups;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [self.sectionTitleDateFormatter stringFromDate:[self.recordsGroupedByDay[(NSUInteger) section][0] date]];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSUInteger count = [[[LostTimeDataStore instance] findAll] count];
+    [self checkAddEmptyView];
+    return [[self recordsGroupedByDay][(NSUInteger) section] count];
+}
+
+- (void)checkAddEmptyView {
+    int count = [[[LostTimeDataStore instance] findAll] count];
     if (count == 0 && ![self.view viewWithTag:EMPTY_VIEW]) {
         [self addEmptyView];
     }
     else {
         [self removeEmptyView];
     }
-    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,12 +117,12 @@ const int EMPTY_VIEW = 1;
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [[LostTimeDataStore instance] removeAtIndex:indexPath.row];
-        [[LostTimeDataStore instance] save];
-        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+- (NSDateFormatter *)sectionTitleDateFormatter {
+    if (!_sectionTitleDateFormatter) {
+        _sectionTitleDateFormatter = [NSDateFormatter new];
+        [_sectionTitleDateFormatter setDateFormat:@"MMMM d"];
     }
+    return _sectionTitleDateFormatter;
 }
 
 @end

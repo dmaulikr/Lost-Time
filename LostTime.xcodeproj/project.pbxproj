@@ -36,6 +36,7 @@
 		545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A16BAD70D01AB13079B /* DayHelper.m */; };
 		545908E206CF295E3263F890 /* TrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901657A8C5ABE65408C6A /* TrackController.m */; };
 		5459091E7EF62E6CA52B0A66 /* MinutesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590567A5E9C425BC05DD8F /* MinutesNode.m */; };
+		54590967294B733A81300402 /* TrackControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B85D40B36A45D82F357 /* TrackControllerTests.m */; };
 		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
 		54590A8A02260558688AECEB /* TimeTickNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
@@ -118,6 +119,7 @@
 		54590AAC36AAEB568019B6CF /* GraphHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphHelper.h; sourceTree = "<group>"; };
 		54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecordTests.m; sourceTree = "<group>"; };
 		54590AFE2827F952F9BE04A4 /* TimeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeScene.m; sourceTree = "<group>"; };
+		54590B85D40B36A45D82F357 /* TrackControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackControllerTests.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsNode.m; sourceTree = "<group>"; };
 		54590C2DA1D4DACA618465BC /* TimeTickNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTickNode.h; sourceTree = "<group>"; };
 		54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonDelegate.h; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				5459047CA5ED46BBD7653C29 /* TrackCellTests.m */,
+				54590B85D40B36A45D82F357 /* TrackControllerTests.m */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				5459031BB42E477180AEC151 /* HourAchievementTest.m in Sources */,
 				54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */,
 				545906DAA645351950969A00 /* WorkDayInWeekAchievementTests.m in Sources */,
+				54590967294B733A81300402 /* TrackControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

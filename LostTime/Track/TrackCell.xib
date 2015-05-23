@@ -7,40 +7,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="32" id="qNK-UU-DIk" customClass="TrackCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="43" id="qNK-UU-DIk" customClass="TrackCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qNK-UU-DIk" id="K2y-qx-QeS">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNJ-eR-JKN">
-                        <rect key="frame" x="251" y="8" width="34" height="24"/>
+                        <rect key="frame" x="251" y="9" width="34" height="24"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <color key="textColor" red="0.79629629629999998" green="0.68200143069999997" blue="0.29566348539999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-bt-fdI">
-                        <rect key="frame" x="285" y="8" width="27" height="24"/>
+                        <rect key="frame" x="285" y="9" width="27" height="24"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <color key="textColor" red="0.52941176469999995" green="0.77849993144895091" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="commute" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XU-JP-oEv">
-                        <rect key="frame" x="8" y="8" width="72" height="15"/>
+                        <rect key="frame" x="8" y="12" width="72" height="18"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amH-vm-1J5">
-                        <rect key="frame" x="232" y="8" width="19" height="24"/>
+                        <rect key="frame" x="232" y="9" width="19" height="24"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <color key="textColor" red="0.80419580419580416" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9AM - 12:30PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqT-4s-tAL">
-                        <rect key="frame" x="111" y="6" width="98" height="20"/>
+                        <rect key="frame" x="111" y="11" width="98" height="20"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -48,13 +48,13 @@
                     <constraint firstItem="HNJ-eR-JKN" firstAttribute="leading" secondItem="amH-vm-1J5" secondAttribute="trailing" id="8ym-S0-Qmz"/>
                     <constraint firstItem="Bsc-bt-fdI" firstAttribute="leading" secondItem="HNJ-eR-JKN" secondAttribute="trailing" id="9gO-bJ-orO"/>
                     <constraint firstAttribute="centerX" secondItem="fqT-4s-tAL" secondAttribute="centerX" id="FBN-TZ-tIH"/>
-                    <constraint firstItem="HNJ-eR-JKN" firstAttribute="top" secondItem="K2y-qx-QeS" secondAttribute="topMargin" id="Ol9-xI-Dsr"/>
-                    <constraint firstItem="Bsc-bt-fdI" firstAttribute="top" secondItem="K2y-qx-QeS" secondAttribute="topMargin" id="Plz-99-6jg"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="6XU-JP-oEv" secondAttribute="bottom" id="g79-3r-EFg"/>
-                    <constraint firstItem="6XU-JP-oEv" firstAttribute="top" secondItem="K2y-qx-QeS" secondAttribute="topMargin" id="mur-w4-BOY"/>
+                    <constraint firstItem="HNJ-eR-JKN" firstAttribute="centerY" secondItem="6XU-JP-oEv" secondAttribute="centerY" id="GdH-qe-Ja2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6XU-JP-oEv" secondAttribute="bottom" constant="4" id="g79-3r-EFg"/>
+                    <constraint firstItem="amH-vm-1J5" firstAttribute="centerY" secondItem="6XU-JP-oEv" secondAttribute="centerY" id="hQ0-cn-tvA"/>
+                    <constraint firstItem="6XU-JP-oEv" firstAttribute="top" secondItem="K2y-qx-QeS" secondAttribute="topMargin" constant="4" id="mur-w4-BOY"/>
                     <constraint firstItem="6XU-JP-oEv" firstAttribute="centerY" secondItem="fqT-4s-tAL" secondAttribute="centerY" id="nCa-Zz-4rU"/>
                     <constraint firstItem="Bsc-bt-fdI" firstAttribute="trailing" secondItem="K2y-qx-QeS" secondAttribute="trailingMargin" id="qNq-JO-Hl0"/>
-                    <constraint firstItem="amH-vm-1J5" firstAttribute="top" secondItem="K2y-qx-QeS" secondAttribute="topMargin" id="tIr-T9-kcq"/>
+                    <constraint firstItem="6XU-JP-oEv" firstAttribute="centerY" secondItem="Bsc-bt-fdI" secondAttribute="centerY" id="rYA-FT-VtC"/>
                     <constraint firstItem="6XU-JP-oEv" firstAttribute="leading" secondItem="K2y-qx-QeS" secondAttribute="leadingMargin" id="ykG-Nz-Hdp"/>
                 </constraints>
             </tableViewCellContentView>
@@ -65,7 +65,7 @@
                 <outlet property="seconds" destination="Bsc-bt-fdI" id="0Po-RR-9JG"/>
                 <outlet property="timeStartEnd" destination="fqT-4s-tAL" id="daJ-pr-XYm"/>
             </connections>
-            <point key="canvasLocation" x="324" y="184"/>
+            <point key="canvasLocation" x="324" y="189.5"/>
         </tableViewCell>
     </objects>
 </document>

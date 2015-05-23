@@ -67,4 +67,7 @@
     [self.data removeObjectAtIndex:(NSUInteger) index];
 }
 
+- (void)remove:(LostTimeRecord *)record {
+    [self removeAtIndex:[self.data indexOfObject:record]];
+}
 @end

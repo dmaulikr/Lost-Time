@@ -20,4 +20,6 @@
 - (void)loadFromStore;
 
 - (void)removeAtIndex:(NSInteger)index;
+
+- (void)remove:(LostTimeRecord *)record;
 @end
