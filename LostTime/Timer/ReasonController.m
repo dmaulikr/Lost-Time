@@ -9,7 +9,6 @@
     [super viewDidLoad];
     [UIImageViewHelper makeWhite:self.commuteImageView];
     [UIImageViewHelper makeWhite:self.meetingImageView];
-    [UIImageViewHelper makeWhite:self.pencilImageView];
 
     UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
     [self.view addGestureRecognizer:tap];

@@ -15,6 +15,7 @@
             authenticated();
         }
         else {
+            NSLog(@"No view or authenticated");
         }
     };
 }
