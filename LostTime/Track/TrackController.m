@@ -4,6 +4,7 @@
 #import "LostTimeDataStore.h"
 #import "LostTimeRecord.h"
 #import "GameKitHelper.h"
+#import "EditLogViewController.h"
 
 @interface TrackController ()
 @end
@@ -11,17 +12,6 @@
 @implementation TrackController
 
 const int EMPTY_VIEW = 1;
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
-    }];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.tableView reloadData];
-}
 
 - (void)registerCellNib:(Class)klass {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass(klass) bundle:nil];
@@ -34,6 +24,18 @@ const int EMPTY_VIEW = 1;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
+    self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)addEmptyView {
@@ -127,6 +129,12 @@ const int EMPTY_VIEW = 1;
         [_sectionTitleDateFormatter setDateFormat:@"MMMM d"];
     }
     return _sectionTitleDateFormatter;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    EditLogViewController *controller = [[UIStoryboard storyboardWithName:NSStringFromClass([EditLogViewController class]) bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:controller animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
