@@ -5,4 +5,7 @@
 
 + (NSDate *)truncateSecondsForDate:(NSDate *)fromDate;
 
++ (BOOL)isToday:(NSDate *)date;
+
++ (BOOL)isYesterday:(NSDate *)date;
 @end

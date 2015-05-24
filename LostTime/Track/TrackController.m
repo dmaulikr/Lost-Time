@@ -5,6 +5,7 @@
 #import "LostTimeRecord.h"
 #import "GameKitHelper.h"
 #import "EditLogViewController.h"
+#import "DateHelper.h"
 
 @interface TrackController ()
 @end
@@ -99,7 +100,14 @@ const int EMPTY_VIEW = 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return [self.sectionTitleDateFormatter stringFromDate:[self.recordsGroupedByDay[(NSUInteger) section][0] date]];
+    NSDate *date = [self.recordsGroupedByDay[(NSUInteger) section][0] date];
+    if ([DateHelper isToday:date]) {
+        return @"Today";
+    }
+    else if ([DateHelper isYesterday:date]) {
+        return @"Yesterday";
+    }
+    return [self.sectionTitleDateFormatter stringFromDate:date];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
