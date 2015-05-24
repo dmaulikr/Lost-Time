@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <XCTest/XCtest.h>
+#import <XCTest/XCTest.h>
 #import "LostTimeDataStore.h"
 #import "LostTimeRecord.h"
 #import "HourAchievement.h"
