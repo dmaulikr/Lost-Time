@@ -25,6 +25,7 @@ const int EMPTY_VIEW = 1;
     self.tableView.estimatedRowHeight = 44;
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
     self.automaticallyAdjustsScrollViewInsets = NO;
+    [self checkAddEmptyView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

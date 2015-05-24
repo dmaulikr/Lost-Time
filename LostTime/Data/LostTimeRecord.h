@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+extern const NSString *NO_REASON;
 @interface LostTimeRecord : NSObject
 
 @property(nonatomic, strong) NSDate *date;

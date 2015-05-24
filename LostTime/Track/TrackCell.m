@@ -4,7 +4,7 @@
 @implementation TrackCell
 
 - (void)setRecord:(LostTimeRecord *)record {
-    [self.reason setText:[record.reason isEqualToString:@""] ? @"no reason" : record.reason];
+    [self.reason setText:record.reason];
 
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
     [timeFormatter setDateFormat:@"h:mma"];

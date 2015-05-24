@@ -1,5 +1,7 @@
 #import "LostTimeRecord.h"
 
+const NSString *NO_REASON = @"no reason";
+
 @implementation LostTimeRecord
 
 - (instancetype)initWithDate:(NSDate *)date seconds:(NSNumber *)seconds reason:(NSString *)reason {
@@ -43,5 +45,13 @@
                                   seconds:dict[@"seconds"]
                                    reason:dict[@"reason"]];
 };
+
+- (NSString *)reason {
+    if (!_reason || [_reason isEqualToString:@""]) {
+        return (NSString *) NO_REASON;
+    }
+    return _reason;
+}
+
 
 @end

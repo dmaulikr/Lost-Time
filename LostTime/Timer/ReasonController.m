@@ -9,6 +9,7 @@
     [super viewDidLoad];
     [UIImageViewHelper makeWhite:self.commuteImageView];
     [UIImageViewHelper makeWhite:self.meetingImageView];
+    [UIImageViewHelper makeWhite:self.socialImageView];
 
     UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
     [self.view addGestureRecognizer:tap];
@@ -27,6 +28,10 @@
 
 - (IBAction)meetingButtonTapped:(id)sender {
     [self.delegate setReason:@"meeting"];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (IBAction)socialButtonTapped:(id)sender {
+    [self.delegate setReason:@"social"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

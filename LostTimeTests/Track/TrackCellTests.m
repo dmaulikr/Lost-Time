@@ -41,7 +41,7 @@
     NSDateFormatter *formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"h:mm:ssa"];
     [cell setRecord:[LostTimeRecord recordWithDate:[formatter dateFromString:@"10:01:32PM"] seconds:@(51 * 60) reason:@""]];
-    XCTAssertEqualObjects([cell.reason text], @"no reason");
+    XCTAssertEqualObjects([cell.reason text], NO_REASON);
 }
 
 @end

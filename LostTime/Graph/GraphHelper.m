@@ -9,7 +9,7 @@
     NSMutableArray *serieses = [@[] mutableCopy];
 
     for (LostTimeRecord *record in [[records sortedArrayUsingSelector:@selector(date)] reverseObjectEnumerator]) {
-        NSString *name = [record.reason isEqualToString:@""] ? @"no reason" : record.reason;
+        NSString *name = record.reason;
         NSArray *matchingSeries = [serieses filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"name = %@",
                                                                                                          name]];
         NSDictionary *series;

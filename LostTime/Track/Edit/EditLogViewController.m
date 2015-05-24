@@ -1,6 +1,7 @@
 #import "EditLogViewController.h"
 #import "LostTimeRecord.h"
 #import "DateHelper.h"
+#import "LostTimeDataStore.h"
 
 @implementation EditLogViewController
 
@@ -33,7 +34,7 @@
     }
     self.record.date = picker.date;
     [self updateDatePicker:self.startTimeField withDate:[self.record.date dateByAddingTimeInterval:-[self.record.seconds intValue]]];
-    [self updateFieldsForRecordValues];
+    [self updateFieldsForRecordValuesAndSave];
 
     [self removeSecondsFromRecord];
 }
@@ -48,7 +49,7 @@
         self.record.date = [picker.date dateByAddingTimeInterval:-[self.record.seconds intValue]];
         [self updateDatePicker:self.endTimeField withDate:self.record.date];
     }
-    [self updateFieldsForRecordValues];
+    [self updateFieldsForRecordValuesAndSave];
 
     [self removeSecondsFromRecord];
 }
@@ -75,19 +76,21 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
-    [self updateFieldsForRecordValues];
+    [self updateFieldsForRecordValuesAndSave];
 }
 
-- (void)updateFieldsForRecordValues {
+- (void)updateFieldsForRecordValuesAndSave {
     [self.reasonTextField setText:self.record.reason];
     [self.endTimeField setText:
             [self.dateTimeFormatter stringFromDate:self.record.date]];
     [self.startTimeField setText:
             [self.dateTimeFormatter stringFromDate:[self.record startDate]]];
+    [[LostTimeDataStore instance] save];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     self.record.reason = [self.reasonTextField text];
+    [self updateFieldsForRecordValuesAndSave];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

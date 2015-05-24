@@ -25,7 +25,7 @@
     [self.timeView presentScene:self.timeScene];
 
     self.secondsPassed = 0;
-    self.reason = nil;
+    self.reason = @"";
     [self updateLabels];
     [self createAndStartTimer];
     self.running = YES;
@@ -37,7 +37,7 @@
 }
 
 - (void)updateReasonLabel {
-    [self.reasonLabel setText:self.reason];
+    [self.reasonLabel setText:(NSString *) ([self.reason isEqualToString:@""] ? NO_REASON : self.reason)];
 }
 
 - (void)setReason:(NSString *)reason {
