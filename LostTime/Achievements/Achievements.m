@@ -4,6 +4,7 @@
 #import "FirstAchievement.h"
 #import "WorkDayInWeekAchievement.h"
 #import "SpecificityAchievement.h"
+#import "AccountantAchievement.h"
 
 @implementation Achievements
 
@@ -12,7 +13,8 @@
             [FirstAchievement new],
             [HourAchievement new],
             [WorkDayInWeekAchievement new],
-            [SpecificityAchievement new]
+            [SpecificityAchievement new],
+            [AccountantAchievement new]
     ];
     for (NSObject <AchievementTest> *achievement in achievements) {
         if ([achievement achieved]) {
