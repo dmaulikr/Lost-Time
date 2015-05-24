@@ -3,7 +3,7 @@
 
 @class LostTimeRecord;
 
-@interface EditLogViewController : UIViewController {
+@interface EditLogViewController : UIViewController <UITextFieldDelegate> {
 }
 
 @property(nonatomic, strong) LostTimeRecord *record;

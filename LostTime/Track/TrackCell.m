@@ -15,15 +15,13 @@
 
 
     int hours = [record.seconds intValue] / 3600;
-    [self.hours setText:[NSString stringWithFormat:@"%dh", hours]];
-    [self.hours setHidden:hours == 0];
+    [self.hours setText:hours == 0 ? @"" : [NSString stringWithFormat:@"%dh", hours]];
 
     int minutes = [record.seconds intValue] / 60 % 60;
-    [self.minutes setHidden:minutes == 0];
-    [self.minutes setText:[NSString stringWithFormat:@"%dm", minutes]];
+    [self.minutes setText:minutes == 0 ? @"" : [NSString stringWithFormat:@"%dm", minutes]];
 
     int seconds = [record.seconds intValue] % 60;
-    [self.seconds setText:[NSString stringWithFormat:@"%ds", seconds]];
+    [self.seconds setText:seconds == 0 ? @"" : [NSString stringWithFormat:@"%ds", seconds]];
 }
 
 @end
