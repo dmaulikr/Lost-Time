@@ -46,11 +46,10 @@
         self.record.seconds = @(-secondsFromEndDate);
     }
     else {
-        self.record.date = [picker.date dateByAddingTimeInterval:-[self.record.seconds intValue]];
+        self.record.date = [picker.date dateByAddingTimeInterval:[self.record.seconds intValue]];
         [self updateDatePicker:self.endTimeField withDate:self.record.date];
     }
     [self updateFieldsForRecordValuesAndSave];
-
     [self removeSecondsFromRecord];
 }
 
