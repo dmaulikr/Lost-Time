@@ -77,28 +77,40 @@
                 self.reason ? self.reason : @""];
         [[LostTimeDataStore instance] addEntry:record];
         [[LostTimeDataStore instance] save];
-
-        [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
-        [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
-
-        self.secondsPassed = 0;
-        self.reason = nil;
-        [self updateTimerLabels];
-
         [self.tabBarController setSelectedIndex:1];
     }
     else {
         [self createAndStartTimer];
+    }
+    self.secondsPassed = 0;
+    [self setControlsStateForRunning];
+}
+
+- (void)setControlsStateForRunning {
+    if (!self.running) {
+        [self.startStopButton setTitle:@"Start :(" forState:UIControlStateNormal];
+        [self.startStopButton setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+        self.reason = nil;
+    }
+    else {
         [self.startStopButton setTitle:@"Done!" forState:UIControlStateNormal];
         [self.startStopButton                                            setBackgroundImage:
                 [UIImage imageWithColor:[AVHexColor colorWithHexString:@"87D37C"]] forState:UIControlStateNormal];
     }
+    [self updateTimerLabels];
 }
 
 - (IBAction)reasonButtonTapped:(id)sender {
     ReasonController *controller = [[UIStoryboard storyboardWithName:@"ReasonController" bundle:nil] instantiateInitialViewController];
     [controller setDelegate:self];
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)cancelButtonTapped:(id)sender {
+    self.running = NO;
+    [self.timer invalidate];
+    self.secondsPassed = 0;
+    [self setControlsStateForRunning];
 }
 
 @end
