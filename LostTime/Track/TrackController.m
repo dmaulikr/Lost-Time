@@ -126,7 +126,7 @@ const int EMPTY_VIEW = 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LostTimeRecord *record = [[LostTimeDataStore instance] findAll][(NSUInteger) indexPath.row];
+    LostTimeRecord *record = [self recordsGroupedByDay][(NSUInteger) indexPath.section][(NSUInteger) indexPath.row];
     TrackCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(TrackCell.class) forIndexPath:indexPath];
     [cell setRecord:record];
     return cell;
