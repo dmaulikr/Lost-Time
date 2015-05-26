@@ -34,13 +34,18 @@
 }
 
 - (void)setSeconds:(int)passed {
+    self.secondsPassed = passed;
+}
+
+- (void)update:(NSTimeInterval)currentTime {
     TimeTickNode *hoursNode = (TimeTickNode *) [self childNodeWithName:@"hours"];
     TimeTickNode *minutesNode = (TimeTickNode *) [self childNodeWithName:@"minutes"];
     TimeTickNode *secondsNode = (TimeTickNode *) [self childNodeWithName:@"seconds"];
 
-    [secondsNode setText:[NSString stringWithFormat:@"%ds", passed % 60]];
-    [minutesNode setText:[NSString stringWithFormat:@"%dm", passed / 60]];
-    [hoursNode setText:[NSString stringWithFormat:@"%dh", passed / (60 * 60)]];
+    [secondsNode setText:[NSString stringWithFormat:@"%ds", self.secondsPassed % 60]];
+    [minutesNode setText:[NSString stringWithFormat:@"%dm", self.secondsPassed / 60]];
+    [hoursNode setText:[NSString stringWithFormat:@"%dh", self.secondsPassed / (60 * 60)]];
 }
+
 
 @end

@@ -7,6 +7,7 @@
 #import "LostTimeDataStore.h"
 #import "ReasonController.h"
 #import "ReasonDelegate.h"
+#import "IntroPageController.h"
 
 @interface TimerController () <ReasonDelegate>
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
@@ -27,6 +28,21 @@
     self.secondsPassed = 0;
     self.reason = @"";
     [self updateLabels];
+
+    [self showIntro];
+
+//    [self startRunning];
+}
+
+- (void)showIntro {
+    IntroPageController *pages = [[UIStoryboard storyboardWithName:@"Intro" bundle:nil] instantiateInitialViewController];
+    pages.onDismiss = ^{
+        [self startRunning];
+    };
+    [self presentViewController:pages animated:NO completion:nil];
+}
+
+- (void)startRunning {
     [self createAndStartTimer];
     self.running = YES;
 }

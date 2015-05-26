@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N3S-KO-o0G">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro Page Controller-->
+        <scene sceneID="3fc-nx-7P9">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="N3S-KO-o0G" customClass="IntroPageController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUW-jD-gfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="246"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2qV-b5-pzr">
+            <objects>
+                <viewController storyboardIdentifier="page1" id="hmL-fA-AT0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dYS-7E-nVy"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ns-bt-JhX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n0W-qj-HnU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CE-Cd-D9E">
+                                <rect key="frame" x="84" y="20" width="153" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a warning." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8G-iF-N4v">
+                                <rect key="frame" x="95" y="227" width="130" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.61960784310000006" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning" translatesAutoresizingMaskIntoConstraints="NO" id="vw0-QT-Q3U">
+                                <rect key="frame" x="123" y="259" width="75" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="g95-Qb-oYm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every time you open the app, the timer starts, and you start losing time." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnL-cX-Rwf">
+                                <rect key="frame" x="16" y="382" width="288" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1432619282_icon_16" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-vt-BTU">
+                                <rect key="frame" x="96" y="75" width="128" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6CE-Cd-D9E" firstAttribute="top" secondItem="dYS-7E-nVy" secondAttribute="bottom" id="26e-Eu-LEW"/>
+                            <constraint firstItem="Y8G-iF-N4v" firstAttribute="top" secondItem="4HG-vt-BTU" secondAttribute="bottom" constant="24" id="Dsg-Z9-S7q"/>
+                            <constraint firstAttribute="centerX" secondItem="4HG-vt-BTU" secondAttribute="centerX" id="KZd-kg-Cma"/>
+                            <constraint firstAttribute="centerX" secondItem="vw0-QT-Q3U" secondAttribute="centerX" id="Ooj-gt-Lg7"/>
+                            <constraint firstItem="tnL-cX-Rwf" firstAttribute="leading" secondItem="n0W-qj-HnU" secondAttribute="leadingMargin" id="POo-yy-e8V"/>
+                            <constraint firstAttribute="centerX" secondItem="6CE-Cd-D9E" secondAttribute="centerX" constant="-0.5" id="RfG-Ur-4Bh"/>
+                            <constraint firstItem="3ns-bt-JhX" firstAttribute="top" secondItem="tnL-cX-Rwf" secondAttribute="bottom" constant="16" id="f4D-Rl-MD1"/>
+                            <constraint firstItem="tnL-cX-Rwf" firstAttribute="trailing" secondItem="n0W-qj-HnU" secondAttribute="trailingMargin" id="lf1-9s-SgL"/>
+                            <constraint firstItem="4HG-vt-BTU" firstAttribute="top" secondItem="6CE-Cd-D9E" secondAttribute="bottom" constant="8" id="nUH-Ko-wbv"/>
+                            <constraint firstItem="vw0-QT-Q3U" firstAttribute="top" secondItem="Y8G-iF-N4v" secondAttribute="bottom" constant="8" id="xiq-c1-cTh"/>
+                            <constraint firstAttribute="centerX" secondItem="Y8G-iF-N4v" secondAttribute="centerX" id="yMy-ZS-tHm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vB6-ir-lRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="246"/>
+        </scene>
+        <!--Get Started View Controller-->
+        <scene sceneID="f46-xb-l7X">
+            <objects>
+                <viewController storyboardIdentifier="page2" id="U69-6d-6Y6" customClass="GetStartedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TPP-ZG-qhl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lpu-Au-zho"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yAS-og-3Oj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5g-0Y-9Yq">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.82745098039999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <state key="normal" title="Got it. Let's get started!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getStartedTapped:" destination="U69-6d-6Y6" eventType="touchUpInside" id="xxc-AT-vAo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="914-skull-and-crossbones" translatesAutoresizingMaskIntoConstraints="NO" id="5Fy-s7-UPu">
+                                <rect key="frame" x="135" y="416" width="50" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="EGu-vp-Os4"/>
+                                    <constraint firstAttribute="height" constant="56" id="IW8-Nv-ATe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lpu-Au-zho" firstAttribute="top" secondItem="5Fy-s7-UPu" secondAttribute="bottom" constant="8" id="0By-6V-HuE"/>
+                            <constraint firstItem="x5g-0Y-9Yq" firstAttribute="top" secondItem="TPP-ZG-qhl" secondAttribute="top" id="3C2-1W-yhC"/>
+                            <constraint firstItem="x5g-0Y-9Yq" firstAttribute="leading" secondItem="yAS-og-3Oj" secondAttribute="leading" id="Gif-n8-92R"/>
+                            <constraint firstAttribute="centerX" secondItem="5Fy-s7-UPu" secondAttribute="centerX" id="P3n-JQ-71y"/>
+                            <constraint firstItem="Lpu-Au-zho" firstAttribute="top" secondItem="x5g-0Y-9Yq" secondAttribute="bottom" id="suJ-1F-qMm"/>
+                            <constraint firstAttribute="trailing" secondItem="x5g-0Y-9Yq" secondAttribute="trailing" id="wbP-xr-VEY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="getStartedButton" destination="x5g-0Y-9Yq" id="W3V-jz-j4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQi-B0-zR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1432619282_icon_16" width="128" height="128"/>
+        <image name="914-skull-and-crossbones" width="25" height="28"/>
+        <image name="warning" width="105" height="79"/>
+    </resources>
+</document>
