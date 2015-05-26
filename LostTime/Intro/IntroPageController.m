@@ -10,7 +10,8 @@
 
     UIViewController *p1 = [self.storyboard instantiateViewControllerWithIdentifier:@"page1"];
     UIViewController *p2 = [self.storyboard instantiateViewControllerWithIdentifier:@"page2"];
-    self.pages = @[p1, p2];
+    UIViewController *p3 = [self.storyboard instantiateViewControllerWithIdentifier:@"page3"];
+    self.pages = @[p1, p2, p3];
     [self setViewControllers:@[p1] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
 
@@ -39,8 +40,8 @@
     return 0;
 }
 
-- (void) dismiss {
-    [self dismissViewControllerAnimated:YES  completion:self.onDismiss];
+- (void)dismiss {
+    [self dismissViewControllerAnimated:YES completion:self.onDismiss];
 }
 
 @end

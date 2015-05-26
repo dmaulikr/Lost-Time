@@ -40,6 +40,7 @@
 		5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */; };
 		545907D8B843FA8451BC5F85 /* LostTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E983348DC88815EB27D /* LostTimeDataStore.m */; };
 		545908382AE827E5F288605E /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900DC7DEC3228AFF57E19 /* TimerController.m */; };
+		5459089241AB836E74B89F08 /* IntroConnectToGameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909C1DC9978B3BC47BD3D /* IntroConnectToGameCenterViewController.m */; };
 		545908C3CA60AC1FB29F677A /* ConsistencyAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BA281A434E5757EEAC6 /* ConsistencyAchievementTests.m */; };
 		545908C91EB5ECE9D7C910E8 /* SpecificityAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AD9A19269C409D000C1 /* SpecificityAchievement.m */; };
 		545908D9B4B6A6C1279D1646 /* DayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A16BAD70D01AB13079B /* DayHelper.m */; };
@@ -136,6 +137,7 @@
 		54590795C8AB6DBE18950514 /* FirstAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstAchievement.m; sourceTree = "<group>"; };
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5459080D3644EF7BD23659F7 /* IntroConnectToGameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroConnectToGameCenterViewController.h; sourceTree = "<group>"; };
 		5459081B013A0AC8459A60CB /* FirstAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstAchievement.h; sourceTree = "<group>"; };
 		54590868F0D4706C89632D3F /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		54590986DD8029469F541ACC /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
 		545909B76749A0B4259D79AE /* EditLogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditLogViewController.storyboard; sourceTree = "<group>"; };
 		545909BF3704886FF802B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		545909C1DC9978B3BC47BD3D /* IntroConnectToGameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroConnectToGameCenterViewController.m; sourceTree = "<group>"; };
 		545909C6CBB2CEF50DC2DCC9 /* GetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStartedViewController.m; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
 		54590A16BAD70D01AB13079B /* DayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHelper.m; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				5459017B62017DE9743DA875 /* GetStartedViewController.h */,
 				5459050FD37EA30F6F38830D /* FirstViewController.m */,
 				5459034D352FA949259CDD47 /* FirstViewController.h */,
+				545909C1DC9978B3BC47BD3D /* IntroConnectToGameCenterViewController.m */,
+				5459080D3644EF7BD23659F7 /* IntroConnectToGameCenterViewController.h */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				54590B81331DA9D5AEDF9AE5 /* IntroPageController.m in Sources */,
 				54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */,
 				5459020477BF2F421BA5ACBD /* FirstViewController.m in Sources */,
+				5459089241AB836E74B89F08 /* IntroConnectToGameCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
