@@ -16,6 +16,7 @@
 		545901B258CCC877777B4C6F /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590986DD8029469F541ACC /* PaddedTextField.m */; };
 		545901CF489178D7FA2A7E6D /* WorkDayInWeekAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F22F2C2090E1E6DA181 /* WorkDayInWeekAchievementTests.m */; };
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
+		5459020477BF2F421BA5ACBD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459050FD37EA30F6F38830D /* FirstViewController.m */; };
 		545902374A81286DBE0E63F3 /* HourAchievementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 545903D19AD3A34EB009125F /* HourAchievementTest.m */; };
 		545902386EC8DB45907F02CE /* AccountantAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005BD314CF90C04B40C8 /* AccountantAchievementTests.m */; };
 		545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905800149CDF6DABBB105 /* TrackCell.xib */; };
@@ -97,6 +98,7 @@
 		5459029F686CA4E72AB765FC /* EditLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditLogViewController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursNode.m; sourceTree = "<group>"; };
 		5459033EB22F9366E203152D /* TimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeHelper.h; sourceTree = "<group>"; };
+		5459034D352FA949259CDD47 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		54590397212FC7E3A1094A88 /* LostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		545903D19AD3A34EB009125F /* HourAchievementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourAchievementTest.m; sourceTree = "<group>"; };
 		5459041C8F31B171A0E00614 /* SpecificityAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificityAchievement.h; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		545904A46F4C245032776171 /* Achievements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievements.m; sourceTree = "<group>"; };
 		545904E013CCC12B1D5EC1F0 /* HundredHoursAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HundredHoursAchievement.m; sourceTree = "<group>"; };
 		545904EBCB62DF35D899ECC4 /* ConsistencyAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsistencyAchievement.h; sourceTree = "<group>"; };
+		5459050FD37EA30F6F38830D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		5459052948B867D4DDFB069D /* PaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddedTextField.h; sourceTree = "<group>"; };
 		54590567A5E9C425BC05DD8F /* MinutesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutesNode.m; sourceTree = "<group>"; };
 		54590567E3EA7FB8A9AC77C6 /* HourAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourAchievement.h; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				54590868F0D4706C89632D3F /* Intro.storyboard */,
 				545909C6CBB2CEF50DC2DCC9 /* GetStartedViewController.m */,
 				5459017B62017DE9743DA875 /* GetStartedViewController.h */,
+				5459050FD37EA30F6F38830D /* FirstViewController.m */,
+				5459034D352FA949259CDD47 /* FirstViewController.h */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -666,6 +671,7 @@
 				54590D849E9FCB0FB3657C52 /* ConsistencyAchievement.m in Sources */,
 				54590B81331DA9D5AEDF9AE5 /* IntroPageController.m in Sources */,
 				54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */,
+				5459020477BF2F421BA5ACBD /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
