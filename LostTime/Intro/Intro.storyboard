@@ -189,6 +189,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZC7-Js-A4i">
+                                <rect key="frame" x="150" y="415" width="20" height="20"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-zF-DTj">
                                 <rect key="frame" x="16" y="289" width="288" height="271"/>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.82745098039999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,17 +204,28 @@
                                     <action selector="connectToGameCenterButton:" destination="fr2-vk-WYr" eventType="touchUpInside" id="leI-6d-ZZH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connected!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gN-VV-pDq">
+                                <rect key="frame" x="16" y="408" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OJP-cX-UVb" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="1qa-gc-xhp"/>
+                            <constraint firstItem="ZC7-Js-A4i" firstAttribute="centerX" secondItem="oiF-zF-DTj" secondAttribute="centerX" id="3dJ-j9-aO4"/>
                             <constraint firstItem="Qmk-Iy-asL" firstAttribute="baseline" secondItem="Y3B-xR-Rxk" secondAttribute="baseline" id="5kY-Ny-2KL"/>
+                            <constraint firstItem="ZC7-Js-A4i" firstAttribute="centerY" secondItem="oiF-zF-DTj" secondAttribute="centerY" id="8hH-tz-ibU"/>
                             <constraint firstItem="Y3B-xR-Rxk" firstAttribute="top" secondItem="ccn-QL-e2Y" secondAttribute="bottom" constant="8" id="FJb-OF-A5Z"/>
                             <constraint firstItem="bjN-lc-gxU" firstAttribute="top" secondItem="3O0-WD-pdP" secondAttribute="bottom" constant="8" id="IDh-tx-CHM"/>
                             <constraint firstItem="oiF-zF-DTj" firstAttribute="top" secondItem="nNb-qJ-Xm8" secondAttribute="bottom" constant="8" id="Jsd-Bm-o8A"/>
+                            <constraint firstItem="9gN-VV-pDq" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="LRl-7N-QHr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oiF-zF-DTj" secondAttribute="trailing" id="OxQ-Xn-6Aa"/>
                             <constraint firstItem="oiF-zF-DTj" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="QPJ-F0-8wU"/>
+                            <constraint firstItem="9gN-VV-pDq" firstAttribute="centerY" secondItem="oiF-zF-DTj" secondAttribute="centerY" id="Ylh-Sf-3al"/>
                             <constraint firstItem="2S0-eY-fnH" firstAttribute="top" secondItem="oiF-zF-DTj" secondAttribute="bottom" constant="8" id="aRA-T5-i3F"/>
+                            <constraint firstItem="9gN-VV-pDq" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="fp9-YX-hmZ"/>
                             <constraint firstItem="mfG-AF-GNS" firstAttribute="top" secondItem="bjN-lc-gxU" secondAttribute="bottom" constant="16" id="hFi-ny-q18"/>
                             <constraint firstItem="3O0-WD-pdP" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="j2Z-4i-NRJ"/>
                             <constraint firstItem="kXi-F2-gTf" firstAttribute="top" secondItem="Y3B-xR-Rxk" secondAttribute="bottom" constant="8" id="leO-E3-xKS"/>
@@ -229,7 +243,9 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ZC7-Js-A4i" id="zlT-YF-pah"/>
                         <outlet property="connectToGameCenterButton" destination="oiF-zF-DTj" id="b4f-GP-l7F"/>
+                        <outlet property="connectedLabel" destination="9gN-VV-pDq" id="Iti-I7-r9c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p17-Jg-xuX" userLabel="First Responder" sceneMemberID="firstResponder"/>

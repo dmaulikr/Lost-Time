@@ -30,12 +30,15 @@
     }
     else {
         [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+            [self.openGameCenterButton setTitle:@"Open Game Center" forState:UIControlStateNormal];
             self.gameCenterViewController = [[GKGameCenterViewController alloc] init];
             if (self.gameCenterViewController != nil) {
                 self.gameCenterViewController.gameCenterDelegate = self;
                 self.gameCenterViewController.viewState = GKGameCenterViewControllerStateAchievements;
                 [self presentViewController:self.gameCenterViewController animated:NO completion:nil];
             }
+        } failure:^{
+            [self.openGameCenterButton setTitle:@"Couldn't connect! Retry?" forState:UIControlStateNormal];
         }];
     }
 }

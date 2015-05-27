@@ -32,6 +32,7 @@ const int EMPTY_VIEW = 1;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+    }                                   failure:^{
     }];
 }
 

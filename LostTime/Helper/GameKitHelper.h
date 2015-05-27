@@ -3,6 +3,7 @@
 
 @interface GameKitHelper : NSObject
 
-+ (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated;
++ (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated
+                             failure:(void (^)())failure;
 
 @end

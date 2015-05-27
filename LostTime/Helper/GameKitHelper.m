@@ -4,7 +4,8 @@
 
 @implementation GameKitHelper
 
-+ (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated {
++ (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated
+                             failure:(void (^)())failure {
     GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
     localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error) {
         if (viewController != nil) {
@@ -15,7 +16,7 @@
             authenticated();
         }
         else {
-            NSLog(@"No view or authenticated");
+            failure();
         }
     };
 }
