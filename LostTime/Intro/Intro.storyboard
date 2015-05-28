@@ -16,10 +16,10 @@
             </objects>
             <point key="canvasLocation" x="333" y="246"/>
         </scene>
-        <!--First View Controller-->
+        <!--View Controller-->
         <scene sceneID="2qV-b5-pzr">
             <objects>
-                <viewController storyboardIdentifier="page1" id="hmL-fA-AT0" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page1" id="hmL-fA-AT0" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dYS-7E-nVy"/>
                         <viewControllerLayoutGuide type="bottom" id="3ns-bt-JhX"/>
@@ -40,12 +40,6 @@
                                 <color key="textColor" red="0.90196078430000004" green="0.61960784310000006" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every time you open the app, the timer starts, and you start losing time." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnL-cX-Rwf">
-                                <rect key="frame" x="16" y="382" width="288" height="82"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1432619282_icon_16" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-vt-BTU">
                                 <rect key="frame" x="96" y="84" width="128" height="128"/>
                             </imageView>
@@ -55,6 +49,23 @@
                                     <constraint firstAttribute="width" constant="75" id="g95-Qb-oYm"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRn-Qs-Fj7">
+                                <rect key="frame" x="16" y="347" width="288" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every time you open the app, the timer starts, and you start losing time." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-9l-5zN">
+                                        <rect key="frame" x="0.0" y="22" width="288" height="82"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wYI-9l-5zN" secondAttribute="trailing" id="aWc-Sk-ozQ"/>
+                                    <constraint firstAttribute="centerY" secondItem="wYI-9l-5zN" secondAttribute="centerY" constant="-0.5" id="fFw-Hx-A9n"/>
+                                    <constraint firstItem="wYI-9l-5zN" firstAttribute="leading" secondItem="PRn-Qs-Fj7" secondAttribute="leading" id="hZW-Jy-plk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,19 +73,17 @@
                             <constraint firstAttribute="centerX" secondItem="Y8G-iF-N4v" secondAttribute="centerX" id="8i1-z2-gct"/>
                             <constraint firstAttribute="centerX" secondItem="vw0-QT-Q3U" secondAttribute="centerX" id="AP4-C7-7dj"/>
                             <constraint firstItem="vw0-QT-Q3U" firstAttribute="top" secondItem="Y8G-iF-N4v" secondAttribute="bottom" constant="8" id="EkU-YF-BvR"/>
-                            <constraint firstItem="tnL-cX-Rwf" firstAttribute="leading" secondItem="n0W-qj-HnU" secondAttribute="leadingMargin" id="POo-yy-e8V"/>
+                            <constraint firstItem="PRn-Qs-Fj7" firstAttribute="leading" secondItem="n0W-qj-HnU" secondAttribute="leadingMargin" id="UOv-0O-PrJ"/>
+                            <constraint firstItem="3ns-bt-JhX" firstAttribute="top" secondItem="PRn-Qs-Fj7" secondAttribute="bottom" constant="8" id="VJ8-XJ-dLd"/>
                             <constraint firstItem="Y8G-iF-N4v" firstAttribute="top" secondItem="4HG-vt-BTU" secondAttribute="bottom" constant="16" id="Y4U-S3-yqj"/>
                             <constraint firstAttribute="centerX" secondItem="6CE-Cd-D9E" secondAttribute="centerX" id="h8b-M7-ake"/>
-                            <constraint firstItem="tnL-cX-Rwf" firstAttribute="trailing" secondItem="n0W-qj-HnU" secondAttribute="trailingMargin" id="lf1-9s-SgL"/>
                             <constraint firstAttribute="centerY" secondItem="Y8G-iF-N4v" secondAttribute="centerY" id="ljJ-jY-DXs"/>
-                            <constraint firstItem="3ns-bt-JhX" firstAttribute="top" secondItem="tnL-cX-Rwf" secondAttribute="bottom" constant="16" id="vLM-Re-q8E"/>
+                            <constraint firstItem="PRn-Qs-Fj7" firstAttribute="top" secondItem="vw0-QT-Q3U" secondAttribute="bottom" constant="8" id="uyK-av-wq5"/>
+                            <constraint firstItem="PRn-Qs-Fj7" firstAttribute="trailing" secondItem="n0W-qj-HnU" secondAttribute="trailingMargin" id="xn1-8C-LKQ"/>
                             <constraint firstAttribute="centerX" secondItem="4HG-vt-BTU" secondAttribute="centerX" id="ziF-gY-MY4"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="bottomTextToBottomView" destination="vLM-Re-q8E" id="xCi-Jr-ucd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vB6-ir-lRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

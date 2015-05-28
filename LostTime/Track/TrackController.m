@@ -3,7 +3,6 @@
 #import "TrackCell.h"
 #import "LostTimeDataStore.h"
 #import "LostTimeRecord.h"
-#import "GameKitHelper.h"
 #import "EditLogViewController.h"
 #import "DateHelper.h"
 
@@ -27,13 +26,6 @@ const int EMPTY_VIEW = 1;
     self.tableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self checkAddEmptyView];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
-    }                                   failure:^{
-    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

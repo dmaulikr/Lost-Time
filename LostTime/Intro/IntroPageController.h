@@ -8,4 +8,6 @@
 @property(nonatomic, copy) void (^onDismiss)();
 
 - (void)dismiss;
+
+- (void)enableDisableNavigation:(BOOL)enable;
 @end

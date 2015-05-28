@@ -44,4 +44,8 @@
     [self dismissViewControllerAnimated:YES completion:self.onDismiss];
 }
 
+- (void)enableDisableNavigation:(BOOL)enable {
+    self.view.userInteractionEnabled = enable;
+}
+
 @end

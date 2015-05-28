@@ -4,7 +4,7 @@
 
 @implementation GameKitHelper
 
-+ (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated
+- (void)authenticateGameCenterInView:(UIViewController *)controller whenAuthenticated:(void (^)())authenticated
                              failure:(void (^)())failure {
     GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
     localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error) {
@@ -20,5 +20,15 @@
         }
     };
 }
+
++ (GameKitHelper *)instance {
+    static GameKitHelper *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [self new];
+    });
+    return instance;
+}
+
 
 @end

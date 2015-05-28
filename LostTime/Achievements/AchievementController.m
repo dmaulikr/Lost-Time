@@ -29,7 +29,7 @@
         [self presentViewController:self.gameCenterViewController animated:NO completion:nil];
     }
     else {
-        [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+        [[GameKitHelper instance] authenticateGameCenterInView:self whenAuthenticated:^{
             [self.openGameCenterButton setTitle:@"Open Game Center" forState:UIControlStateNormal];
             self.gameCenterViewController = [[GKGameCenterViewController alloc] init];
             if (self.gameCenterViewController != nil) {

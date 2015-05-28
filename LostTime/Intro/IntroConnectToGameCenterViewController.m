@@ -1,5 +1,6 @@
 #import "IntroConnectToGameCenterViewController.h"
 #import "GameKitHelper.h"
+#import "IntroPageController.h"
 
 @implementation IntroConnectToGameCenterViewController {
 }
@@ -13,11 +14,14 @@
 }
 
 - (IBAction)connectToGameCenterButton:(id)sender {
+    [(IntroPageController *) self.parentViewController enableDisableNavigation:NO];
     [self.connectToGameCenterButton setHidden:YES];
-    [GameKitHelper authenticateGameCenterInView:self whenAuthenticated:^{
+    [[GameKitHelper instance] authenticateGameCenterInView:self whenAuthenticated:^{
+        [(IntroPageController *) self.parentViewController enableDisableNavigation:YES];
         [self.activityIndicator setHidden:YES];
         [self.connectedLabel setHidden:NO];
     }                                   failure:^{
+        [(IntroPageController *) self.parentViewController enableDisableNavigation:YES];
         [self.activityIndicator setHidden:YES];
         [self.connectedLabel setHidden:NO];
         [self.connectedLabel setText:@"Error :(. You can always try again later."];
