@@ -3,4 +3,6 @@
 
 @interface Achievements : NSObject
 + (void)checkForAchievements;
+
++ (void)achievementComplete:(NSString *)achievementId;
 @end

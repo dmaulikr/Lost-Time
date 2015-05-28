@@ -1,5 +1,7 @@
+#import <GameKit/GameKit.h>
 #import "GraphController.h"
 #import "GraphHelper.h"
+#import "Achievements.h"
 
 @implementation GraphController {
 }
@@ -8,6 +10,10 @@
     [super viewDidLoad];
     [self.webView setDelegate:self];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"web/graph" ofType:@"html"] isDirectory:NO]]];
+
+    if ([[GKLocalPlayer localPlayer] isAuthenticated]) {
+        [Achievements achievementComplete:@"analyst"];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
