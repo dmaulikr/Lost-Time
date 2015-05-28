@@ -49,6 +49,7 @@
 		54590967294B733A81300402 /* TrackControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B85D40B36A45D82F357 /* TrackControllerTests.m */; };
 		5459096C6C73F2BA0646E69F /* SpecificityAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590656179D1FE4C5422F77 /* SpecificityAchievementTests.m */; };
 		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
+		54590A834ACC782B8412D86D /* FourHourWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */; };
 		54590A8A02260558688AECEB /* TimeTickNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
 		54590AD39F936714E26609CB /* EditLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BF65FEF819DAF85C4FB /* EditLogViewController.m */; };
@@ -66,6 +67,7 @@
 		54590E692AE90658135C0D52 /* TimeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AFE2827F952F9BE04A4 /* TimeScene.m */; };
 		54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */; };
 		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
+		54590F7059FF27F08B5503E1 /* FourHourWeekAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B7975EE6B004DC5078C /* FourHourWeekAchievementTests.m */; };
 		54590F8AA27794F9777F81C5 /* FirstAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590795C8AB6DBE18950514 /* FirstAchievement.m */; };
 		54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901899ED8FBEE255A6A26 /* IntroMarker.m */; };
 		DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 136313DD2F2BD938AA30A747 /* libPods.a */; };
@@ -96,7 +98,6 @@
 		545901C0B01F59F23B3A0B71 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
-		54590271681B2FF9D63246C8 /* ConsistencyAchievementTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsistencyAchievementTests.h; sourceTree = "<group>"; };
 		5459029F686CA4E72AB765FC /* EditLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditLogViewController.h; sourceTree = "<group>"; };
 		545902BC3E000D4FF5A87D8E /* HoursNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursNode.m; sourceTree = "<group>"; };
 		5459033EB22F9366E203152D /* TimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeHelper.h; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545908FC15ABF7F3F3073ABA /* GraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphController.h; sourceTree = "<group>"; };
 		5459094FA716F9E118213940 /* AccountantAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountantAchievement.m; sourceTree = "<group>"; };
+		54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourHourWeekAchievement.m; path = Tests/FourHourWeekAchievement.m; sourceTree = "<group>"; };
 		5459097678D4578C3F94DE07 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		54590986DD8029469F541ACC /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
 		545909B76749A0B4259D79AE /* EditLogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditLogViewController.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		54590ABCBA7904F6F0F3397A /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
 		54590AD9A19269C409D000C1 /* SpecificityAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificityAchievement.m; sourceTree = "<group>"; };
 		54590AFE2827F952F9BE04A4 /* TimeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeScene.m; sourceTree = "<group>"; };
+		54590B7975EE6B004DC5078C /* FourHourWeekAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourHourWeekAchievementTests.m; sourceTree = "<group>"; };
 		54590B85D40B36A45D82F357 /* TrackControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackControllerTests.m; sourceTree = "<group>"; };
 		54590BA281A434E5757EEAC6 /* ConsistencyAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsistencyAchievementTests.m; sourceTree = "<group>"; };
 		54590BD91A6F8AB9510726DB /* SecondsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsNode.m; sourceTree = "<group>"; };
@@ -301,7 +304,7 @@
 				5459005BD314CF90C04B40C8 /* AccountantAchievementTests.m */,
 				54590A5D699A80A76EAA8287 /* HundredHoursAchievementTests.m */,
 				54590BA281A434E5757EEAC6 /* ConsistencyAchievementTests.m */,
-				54590271681B2FF9D63246C8 /* ConsistencyAchievementTests.h */,
+				54590B7975EE6B004DC5078C /* FourHourWeekAchievementTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				54590A16BAD70D01AB13079B /* DayHelper.m */,
 				5459057CFB6D3583EA31ABED /* DayHelper.h */,
 				5459020FE8E8333E49F7155F /* Tests */,
+				54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -678,6 +682,7 @@
 				54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */,
 				5459089241AB836E74B89F08 /* IntroConnectToGameCenterViewController.m in Sources */,
 				54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */,
+				54590A834ACC782B8412D86D /* FourHourWeekAchievement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +702,7 @@
 				545902386EC8DB45907F02CE /* AccountantAchievementTests.m in Sources */,
 				5459006F8313F554F675393C /* HundredHoursAchievementTests.m in Sources */,
 				545908C3CA60AC1FB29F677A /* ConsistencyAchievementTests.m in Sources */,
+				54590F7059FF27F08B5503E1 /* FourHourWeekAchievementTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

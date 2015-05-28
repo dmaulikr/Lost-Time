@@ -1,7 +1,12 @@
-#import "ConsistencyAchievementTests.h"
+#import <XCTest/XCTest.h>
+
 #import "LostTimeDataStore.h"
 #import "LostTimeRecord.h"
 #import "ConsistencyAchievement.h"
+
+@interface ConsistencyAchievementTests : XCTestCase
+
+@end
 
 @implementation ConsistencyAchievementTests
 
