@@ -40,7 +40,7 @@
                                 <color key="textColor" red="0.90196078430000004" green="0.61960784310000006" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1432619282_icon_16" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-vt-BTU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1432619282_icon_16" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-vt-BTU">
                                 <rect key="frame" x="96" y="84" width="128" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning" translatesAutoresizingMaskIntoConstraints="NO" id="vw0-QT-Q3U">
