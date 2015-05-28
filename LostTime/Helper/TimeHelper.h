@@ -3,6 +3,8 @@
 
 @interface TimeHelper : NSObject
 
-+ (int) hoursInSeconds: (int) hours;
++ (int)secondsInHours:(int)hours;
+
++ (int)secondsInHours:(int)hours minutes:(int)minutes;
 
 @end

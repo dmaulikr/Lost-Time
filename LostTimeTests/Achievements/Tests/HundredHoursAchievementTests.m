@@ -17,14 +17,14 @@
 
 - (void)testDoesNotTrigger99Hours {
     [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[NSDate new] seconds:@(
-            [TimeHelper hoursInSeconds:99]
+            [TimeHelper secondsInHours:99]
     )                                                              reason:@""]];
     XCTAssertFalse([[HundredHoursAchievement new] achieved]);
 }
 
 - (void)testTriggers100Hours {
     [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[NSDate new] seconds:@(
-            [TimeHelper hoursInSeconds:100]
+            [TimeHelper secondsInHours:100]
     )                                                              reason:@""]];
     XCTAssertFalse([[HundredHoursAchievement new] achieved]);
 }

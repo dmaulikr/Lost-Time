@@ -19,23 +19,23 @@
 - (void)testDetects36HoursIn5ConsecutiveDays {
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper hoursInSeconds:4]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper secondsInHours:4]) reason:@""]];
 
     XCTAssertTrue([[FourHourWeekAchievement new] achieved]);
 }
@@ -43,23 +43,23 @@
 - (void)testDoesNotDetect35HoursIn5ConsecutiveDays {
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper hoursInSeconds:3]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper secondsInHours:3]) reason:@""]];
 
     XCTAssertFalse([[FourHourWeekAchievement new] achieved]);
 }
@@ -67,23 +67,23 @@
 - (void)testDoesNotDetect36HoursIn5NonConsecutiveDays {
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-01-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-02-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-03-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper hoursInSeconds:8]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-04-2015"] seconds:@([TimeHelper secondsInHours:8]) reason:@""]];
 
     [[LostTimeDataStore instance] addEntry:
             [LostTimeRecord                                                    recordWithDate:
-                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper hoursInSeconds:3]) reason:@""]];
+                    [[DateHelper monthDayYearFormatter] dateFromString:@"03-05-2015"] seconds:@([TimeHelper secondsInHours:3]) reason:@""]];
 
     XCTAssertFalse([[FourHourWeekAchievement new] achieved]);
 }

@@ -18,7 +18,7 @@
                 break;
             }
             totalSeconds += [currentRecord.seconds intValue];
-            if (totalSeconds >= [TimeHelper hoursInSeconds:8]) {
+            if (totalSeconds >= [TimeHelper secondsInHours:8]) {
                 return YES;
             }
         }

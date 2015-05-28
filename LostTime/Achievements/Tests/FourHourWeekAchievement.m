@@ -18,7 +18,7 @@
                 break;
             }
             totalSeconds += [currentRecord.seconds intValue];
-            if (totalSeconds >= [TimeHelper hoursInSeconds:36]) {
+            if (totalSeconds >= [TimeHelper secondsInHours:36]) {
                 return YES;
             }
         }
