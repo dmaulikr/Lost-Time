@@ -153,58 +153,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Losing time is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3B-xR-Rxk">
-                                <rect key="frame" x="16" y="28" width="148" height="33"/>
+                                <rect key="frame" x="16" y="24" width="148" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But here it can be" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXi-F2-gTf">
-                                <rect key="frame" x="16" y="69" width="190" height="33"/>
+                                <rect key="frame" x="16" y="65" width="190" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmk-Iy-asL">
-                                <rect key="frame" x="252" y="28" width="52" height="33"/>
+                                <rect key="frame" x="252" y="24" width="52" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="0.92549026010000002" green="0.074509806930000005" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJP-cX-UVb">
-                                <rect key="frame" x="227" y="69" width="77" height="33"/>
+                                <rect key="frame" x="227" y="65" width="77" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.82745098039999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged time is reportable!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O0-WD-pdP">
-                                <rect key="frame" x="16" y="126" width="286" height="33"/>
+                                <rect key="frame" x="16" y="106" width="286" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...and graphable." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjN-lc-gxU">
-                                <rect key="frame" x="120" y="167" width="184" height="33"/>
+                                <rect key="frame" x="120" y="147" width="184" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And most importantly...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfG-AF-GNS">
-                                <rect key="frame" x="16" y="216" width="258" height="33"/>
+                                <rect key="frame" x="16" y="188" width="258" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can get achievements." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNb-qJ-Xm8">
-                                <rect key="frame" x="59" y="257" width="203" height="24"/>
+                                <rect key="frame" x="59" y="229" width="203" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZC7-Js-A4i">
-                                <rect key="frame" x="150" y="415" width="20" height="20"/>
+                                <rect key="frame" x="150" y="401" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-zF-DTj">
-                                <rect key="frame" x="16" y="289" width="288" height="271"/>
+                                <rect key="frame" x="8" y="261" width="304" height="299"/>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.82745098039999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="Connect to Game Center now!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,7 +214,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connected!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gN-VV-pDq">
-                                <rect key="frame" x="16" y="408" width="288" height="33"/>
+                                <rect key="frame" x="0.0" y="394" width="320" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -222,34 +222,33 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OJP-cX-UVb" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="1qa-gc-xhp"/>
+                            <constraint firstAttribute="trailing" secondItem="OJP-cX-UVb" secondAttribute="trailing" constant="16" id="1qa-gc-xhp"/>
                             <constraint firstItem="ZC7-Js-A4i" firstAttribute="centerX" secondItem="oiF-zF-DTj" secondAttribute="centerX" id="3dJ-j9-aO4"/>
                             <constraint firstItem="Qmk-Iy-asL" firstAttribute="baseline" secondItem="Y3B-xR-Rxk" secondAttribute="baseline" id="5kY-Ny-2KL"/>
                             <constraint firstItem="ZC7-Js-A4i" firstAttribute="centerY" secondItem="oiF-zF-DTj" secondAttribute="centerY" id="8hH-tz-ibU"/>
-                            <constraint firstItem="Y3B-xR-Rxk" firstAttribute="top" secondItem="ccn-QL-e2Y" secondAttribute="bottom" constant="8" id="FJb-OF-A5Z"/>
                             <constraint firstItem="bjN-lc-gxU" firstAttribute="top" secondItem="3O0-WD-pdP" secondAttribute="bottom" constant="8" id="IDh-tx-CHM"/>
                             <constraint firstItem="oiF-zF-DTj" firstAttribute="top" secondItem="nNb-qJ-Xm8" secondAttribute="bottom" constant="8" id="Jsd-Bm-o8A"/>
-                            <constraint firstItem="9gN-VV-pDq" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="LRl-7N-QHr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oiF-zF-DTj" secondAttribute="trailing" id="OxQ-Xn-6Aa"/>
-                            <constraint firstItem="oiF-zF-DTj" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="QPJ-F0-8wU"/>
+                            <constraint firstItem="9gN-VV-pDq" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" id="LRl-7N-QHr"/>
+                            <constraint firstAttribute="trailing" secondItem="oiF-zF-DTj" secondAttribute="trailing" constant="8" id="OxQ-Xn-6Aa"/>
+                            <constraint firstItem="oiF-zF-DTj" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" constant="8" id="QPJ-F0-8wU"/>
+                            <constraint firstAttribute="bottom" secondItem="oiF-zF-DTj" secondAttribute="bottom" constant="8" id="R7Z-XT-8UI"/>
                             <constraint firstItem="9gN-VV-pDq" firstAttribute="centerY" secondItem="oiF-zF-DTj" secondAttribute="centerY" id="Ylh-Sf-3al"/>
-                            <constraint firstItem="2S0-eY-fnH" firstAttribute="top" secondItem="oiF-zF-DTj" secondAttribute="bottom" constant="8" id="aRA-T5-i3F"/>
-                            <constraint firstItem="9gN-VV-pDq" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="fp9-YX-hmZ"/>
-                            <constraint firstItem="mfG-AF-GNS" firstAttribute="top" secondItem="bjN-lc-gxU" secondAttribute="bottom" constant="16" id="hFi-ny-q18"/>
-                            <constraint firstItem="3O0-WD-pdP" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="j2Z-4i-NRJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9gN-VV-pDq" secondAttribute="trailing" id="fp9-YX-hmZ"/>
+                            <constraint firstItem="mfG-AF-GNS" firstAttribute="top" secondItem="bjN-lc-gxU" secondAttribute="bottom" constant="8" id="hFi-ny-q18"/>
+                            <constraint firstItem="3O0-WD-pdP" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" constant="16" id="j2Z-4i-NRJ"/>
                             <constraint firstItem="kXi-F2-gTf" firstAttribute="top" secondItem="Y3B-xR-Rxk" secondAttribute="bottom" constant="8" id="leO-E3-xKS"/>
-                            <constraint firstItem="bjN-lc-gxU" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="nXJ-gl-Ou4"/>
+                            <constraint firstAttribute="right" secondItem="bjN-lc-gxU" secondAttribute="right" constant="16" id="nXJ-gl-Ou4"/>
                             <constraint firstAttribute="centerX" secondItem="nNb-qJ-Xm8" secondAttribute="centerX" id="nxi-Ac-chr"/>
-                            <constraint firstItem="kXi-F2-gTf" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="rHL-M6-ndc"/>
-                            <constraint firstItem="Y3B-xR-Rxk" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="rxI-i1-KHB"/>
+                            <constraint firstItem="Y3B-xR-Rxk" firstAttribute="top" secondItem="xkE-uf-2L1" secondAttribute="top" constant="24" id="q0w-Xs-FkQ"/>
+                            <constraint firstItem="kXi-F2-gTf" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" constant="16" id="rHL-M6-ndc"/>
+                            <constraint firstItem="Y3B-xR-Rxk" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" constant="16" id="rxI-i1-KHB"/>
                             <constraint firstItem="nNb-qJ-Xm8" firstAttribute="top" secondItem="mfG-AF-GNS" secondAttribute="bottom" constant="8" id="tx1-jg-8Qb"/>
-                            <constraint firstItem="3O0-WD-pdP" firstAttribute="top" secondItem="kXi-F2-gTf" secondAttribute="bottom" constant="24" id="ubg-je-0Dp"/>
+                            <constraint firstItem="3O0-WD-pdP" firstAttribute="top" secondItem="kXi-F2-gTf" secondAttribute="bottom" constant="8" id="ubg-je-0Dp"/>
                             <constraint firstItem="OJP-cX-UVb" firstAttribute="baseline" secondItem="kXi-F2-gTf" secondAttribute="baseline" id="xYl-1Q-utU"/>
-                            <constraint firstItem="mfG-AF-GNS" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leadingMargin" id="yBe-cJ-OHv"/>
-                            <constraint firstItem="Qmk-Iy-asL" firstAttribute="trailing" secondItem="xkE-uf-2L1" secondAttribute="trailingMargin" id="zmO-S2-rwS"/>
+                            <constraint firstItem="mfG-AF-GNS" firstAttribute="leading" secondItem="xkE-uf-2L1" secondAttribute="leading" constant="16" id="yBe-cJ-OHv"/>
+                            <constraint firstAttribute="trailing" secondItem="Qmk-Iy-asL" secondAttribute="trailing" constant="16" id="zmO-S2-rwS"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="activityIndicator" destination="ZC7-Js-A4i" id="zlT-YF-pah"/>
