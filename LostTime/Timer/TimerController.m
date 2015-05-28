@@ -8,6 +8,7 @@
 #import "ReasonController.h"
 #import "ReasonDelegate.h"
 #import "IntroPageController.h"
+#import "IntroMarker.h"
 
 @interface TimerController () <ReasonDelegate>
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
@@ -29,9 +30,12 @@
     self.reason = @"";
     [self updateLabels];
 
-    [self showIntro];
-
-//    [self startRunning];
+    if (![IntroMarker hasSeenIntro]) {
+        [self showIntro];
+    }
+    else {
+        [self startRunning];
+    }
 }
 
 - (void)showIntro {

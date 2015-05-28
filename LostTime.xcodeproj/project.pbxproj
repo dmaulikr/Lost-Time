@@ -67,6 +67,7 @@
 		54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */; };
 		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
 		54590F8AA27794F9777F81C5 /* FirstAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590795C8AB6DBE18950514 /* FirstAchievement.m */; };
+		54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901899ED8FBEE255A6A26 /* IntroMarker.m */; };
 		DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 136313DD2F2BD938AA30A747 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		545901657A8C5ABE65408C6A /* TrackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackController.m; sourceTree = "<group>"; };
 		5459017B62017DE9743DA875 /* GetStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStartedViewController.h; sourceTree = "<group>"; };
 		54590188524F4D6430B8F34A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		545901899ED8FBEE255A6A26 /* IntroMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroMarker.m; sourceTree = "<group>"; };
 		545901C0B01F59F23B3A0B71 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
 		54590207DB00B71CDB6030D1 /* LostTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostTimeRecord.h; sourceTree = "<group>"; };
 		5459024D3B6C157A764AAC57 /* TimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		54590656179D1FE4C5422F77 /* SpecificityAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificityAchievementTests.m; sourceTree = "<group>"; };
 		545906596041D062D37EC032 /* HundredHoursAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HundredHoursAchievement.h; sourceTree = "<group>"; };
 		5459069F57F4D0202BF82D9A /* GraphHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphHelper.m; sourceTree = "<group>"; };
+		545906B60B8C81CBE52A90C0 /* IntroMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroMarker.h; sourceTree = "<group>"; };
 		545906BA585CD8E228734F1C /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
 		545906D01743A2CDFC0B3EAA /* SecondsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsNode.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				5459017B62017DE9743DA875 /* GetStartedViewController.h */,
 				545909C1DC9978B3BC47BD3D /* IntroConnectToGameCenterViewController.m */,
 				5459080D3644EF7BD23659F7 /* IntroConnectToGameCenterViewController.h */,
+				545901899ED8FBEE255A6A26 /* IntroMarker.m */,
+				545906B60B8C81CBE52A90C0 /* IntroMarker.h */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				54590B81331DA9D5AEDF9AE5 /* IntroPageController.m in Sources */,
 				54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */,
 				5459089241AB836E74B89F08 /* IntroConnectToGameCenterViewController.m in Sources */,
+				54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

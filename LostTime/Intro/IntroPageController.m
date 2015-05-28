@@ -1,9 +1,12 @@
 #import "IntroPageController.h"
+#import "IntroMarker.h"
 
 @implementation IntroPageController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [IntroMarker markSeen];
 
     self.dataSource = self;
     self.delegate = self;
