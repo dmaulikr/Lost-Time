@@ -18,6 +18,7 @@
 		545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545905C8756B6771B6A1D889 /* SpriteKit.framework */; };
 		545902374A81286DBE0E63F3 /* HourAchievementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 545903D19AD3A34EB009125F /* HourAchievementTest.m */; };
 		545902386EC8DB45907F02CE /* AccountantAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005BD314CF90C04B40C8 /* AccountantAchievementTests.m */; };
+		5459024E098907197DEA5FA7 /* FourHourWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590024EA6D3D44957A8528 /* FourHourWeekAchievement.m */; };
 		545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905800149CDF6DABBB105 /* TrackCell.xib */; };
 		5459028204A5A7143286C806 /* GraphHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459069F57F4D0202BF82D9A /* GraphHelper.m */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
@@ -49,7 +50,6 @@
 		54590967294B733A81300402 /* TrackControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B85D40B36A45D82F357 /* TrackControllerTests.m */; };
 		5459096C6C73F2BA0646E69F /* SpecificityAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590656179D1FE4C5422F77 /* SpecificityAchievementTests.m */; };
 		54590977C77CC793EFEC70D9 /* GraphHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D35D8E317C121003C9F /* GraphHelperTests.m */; };
-		54590A834ACC782B8412D86D /* FourHourWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */; };
 		54590A8A02260558688AECEB /* TimeTickNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */; };
 		54590AA1911C662336AF8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459006AF87A602E819F02E5 /* main.m */; };
 		54590AD39F936714E26609CB /* EditLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BF65FEF819DAF85C4FB /* EditLogViewController.m */; };
@@ -85,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		136313DD2F2BD938AA30A747 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54590024EA6D3D44957A8528 /* FourHourWeekAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourHourWeekAchievement.m; sourceTree = "<group>"; };
 		545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStoreTests.m; sourceTree = "<group>"; };
 		5459005BD314CF90C04B40C8 /* AccountantAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountantAchievementTests.m; sourceTree = "<group>"; };
 		5459006AF87A602E819F02E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
 		545907177C647A87656B433C /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		545907378EB828BF041CA440 /* GraphController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphController.m; sourceTree = "<group>"; };
+		5459073938FCFB463F125B58 /* FourHourWeekAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourHourWeekAchievement.h; sourceTree = "<group>"; };
 		54590795C8AB6DBE18950514 /* FirstAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstAchievement.m; sourceTree = "<group>"; };
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +148,6 @@
 		545908F3C027F4978E24B135 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
 		545908FC15ABF7F3F3073ABA /* GraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphController.h; sourceTree = "<group>"; };
 		5459094FA716F9E118213940 /* AccountantAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountantAchievement.m; sourceTree = "<group>"; };
-		54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourHourWeekAchievement.m; path = Tests/FourHourWeekAchievement.m; sourceTree = "<group>"; };
 		5459097678D4578C3F94DE07 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		54590986DD8029469F541ACC /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
 		545909B76749A0B4259D79AE /* EditLogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditLogViewController.storyboard; sourceTree = "<group>"; };
@@ -278,6 +279,8 @@
 				545906596041D062D37EC032 /* HundredHoursAchievement.h */,
 				54590601E80EC6F29D1E7C57 /* ConsistencyAchievement.m */,
 				545904EBCB62DF35D899ECC4 /* ConsistencyAchievement.h */,
+				5459073938FCFB463F125B58 /* FourHourWeekAchievement.h */,
+				54590024EA6D3D44957A8528 /* FourHourWeekAchievement.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -437,7 +440,6 @@
 				54590A16BAD70D01AB13079B /* DayHelper.m */,
 				5459057CFB6D3583EA31ABED /* DayHelper.h */,
 				5459020FE8E8333E49F7155F /* Tests */,
-				54590950705C1E0C5740C163 /* FourHourWeekAchievement.m */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -682,7 +684,7 @@
 				54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */,
 				5459089241AB836E74B89F08 /* IntroConnectToGameCenterViewController.m in Sources */,
 				54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */,
-				54590A834ACC782B8412D86D /* FourHourWeekAchievement.m in Sources */,
+				5459024E098907197DEA5FA7 /* FourHourWeekAchievement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,4 +32,10 @@
     return [yesterday isEqualToDate:otherDate];
 }
 
++ (NSDateFormatter *)monthDayYearFormatter {
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateFormat:@"MM-dd-yyyy"];
+    return formatter;
+}
+
 @end

@@ -8,4 +8,7 @@
 + (BOOL)isToday:(NSDate *)date;
 
 + (BOOL)isYesterday:(NSDate *)date;
+
++ (NSDateFormatter *)monthDayYearFormatter;
+
 @end
