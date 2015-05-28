@@ -13,7 +13,6 @@
 @implementation FourHourWeekAchievementTests
 
 - (void)setUp {
-    [super setUp];
     [[LostTimeDataStore instance] empty];
 }
 
