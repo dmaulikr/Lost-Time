@@ -22,6 +22,7 @@
 		5459024E098907197DEA5FA7 /* FourHourWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590024EA6D3D44957A8528 /* FourHourWeekAchievement.m */; };
 		545902697577CC6B1E3FBD0C /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905800149CDF6DABBB105 /* TrackCell.xib */; };
 		5459028204A5A7143286C806 /* GraphHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459069F57F4D0202BF82D9A /* GraphHelper.m */; };
+		5459029085C71A54F3C3BF7D /* Mailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A385762CE112DEDB909 /* Mailer.m */; };
 		545902EBDBC6272CB98C93D6 /* LostTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590609CFCB1F43173AA97E /* LostTimeTests.m */; };
 		545903034D9A64504A5A071A /* UIImageViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */; };
 		54590330B53DC74C6CE1FFA8 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5459097678D4578C3F94DE07 /* Launch.storyboard */; };
@@ -59,6 +60,7 @@
 		54590B81331DA9D5AEDF9AE5 /* IntroPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A78EE00E00DB4B2A3C0 /* IntroPageController.m */; };
 		54590BA54542ABF291FB6A31 /* circlequarter-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */; };
 		54590C146F088DFA006313B7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590868F0D4706C89632D3F /* Intro.storyboard */; };
+		54590C798942FB430FBE360B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545906EEF93D66355E6279CF /* MessageUI.framework */; };
 		54590CB7EACF3AD61B0997F0 /* AchievementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459089708CA9C0344A17DB4 /* AchievementController.m */; };
 		54590CE7409845F33A0B6F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54590D1AA258ED83E8EAD809 /* Main.storyboard */; };
 		54590D089674A6C2EA908B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54590DB57384CA77240E349C /* Images.xcassets */; };
@@ -134,6 +136,7 @@
 		545906D01743A2CDFC0B3EAA /* SecondsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsNode.h; sourceTree = "<group>"; };
 		545906D13787D6F5BFA69EB2 /* circlequarter-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-red@2x.png"; sourceTree = "<group>"; };
 		545906E45400E1058080B77E /* circlequarter-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-green@2x.png"; sourceTree = "<group>"; };
+		545906EEF93D66355E6279CF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackEmptyView.xib; sourceTree = "<group>"; };
 		5459071614D86254632935E0 /* ReasonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonController.h; sourceTree = "<group>"; };
 		545907177C647A87656B433C /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 		545909C6CBB2CEF50DC2DCC9 /* GetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStartedViewController.m; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
 		54590A16BAD70D01AB13079B /* DayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHelper.m; sourceTree = "<group>"; };
+		54590A385762CE112DEDB909 /* Mailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mailer.m; sourceTree = "<group>"; };
 		54590A4FF9C67BA265970A21 /* TrackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590A5D699A80A76EAA8287 /* HundredHoursAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HundredHoursAchievementTests.m; sourceTree = "<group>"; };
 		54590A78EE00E00DB4B2A3C0 /* IntroPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroPageController.m; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 		54590C89A5FEF19752A2DAAC /* TimeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeScene.h; sourceTree = "<group>"; };
 		54590CB1FA71A8A91CB50F79 /* FeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		54590CB913D1972F1B7895FC /* HoursNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursNode.h; sourceTree = "<group>"; };
+		54590CE118C17419C5FDECF3 /* Mailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailer.h; sourceTree = "<group>"; };
 		54590D0FE751ADF20DDEA26E /* UIImageViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewHelper.m; sourceTree = "<group>"; };
 		54590D2E70EC27D80307F5E1 /* AchievementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementController.h; sourceTree = "<group>"; };
 		54590D35D8E317C121003C9F /* GraphHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphHelperTests.m; sourceTree = "<group>"; };
@@ -204,6 +209,7 @@
 				545901FCD9EFB7567E64FAB6 /* SpriteKit.framework in Frameworks */,
 				DA6F9268739F2CCCE3B23264 /* libPods.a in Frameworks */,
 				545900E73F6BB9D6ADE0FA9F /* GameKit.framework in Frameworks */,
+				54590C798942FB430FBE360B /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +354,7 @@
 				545905C8756B6771B6A1D889 /* SpriteKit.framework */,
 				136313DD2F2BD938AA30A747 /* libPods.a */,
 				54590188524F4D6430B8F34A /* GameKit.framework */,
+				545906EEF93D66355E6279CF /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -427,6 +434,8 @@
 			children = (
 				54590CB1FA71A8A91CB50F79 /* FeedbackController.m */,
 				5459005A390B6FEBDF425B20 /* FeedbackController.h */,
+				54590A385762CE112DEDB909 /* Mailer.m */,
+				54590CE118C17419C5FDECF3 /* Mailer.h */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -699,6 +708,7 @@
 				54590FEED62FCF4F4D58D2E4 /* IntroMarker.m in Sources */,
 				5459024E098907197DEA5FA7 /* FourHourWeekAchievement.m in Sources */,
 				5459023F8C5E51FCF3A6BA1C /* FeedbackController.m in Sources */,
+				5459029085C71A54F3C3BF7D /* Mailer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
