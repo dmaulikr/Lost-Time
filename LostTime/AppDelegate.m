@@ -8,9 +8,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[LostTimeDataStore instance] loadFromStore];
+    if (![ScreenshotMode on]) {
+        [[LostTimeDataStore instance] loadFromStore];
+    }
 
-    if([ScreenshotMode on]){
+    if ([ScreenshotMode on]) {
         NSString *day1 = @"03-02-2015";
         [self example:@"commute" date:day1 hours:1 minutes:2];
         [self example:@"social" date:day1 hours:0 minutes:30];
