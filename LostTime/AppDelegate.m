@@ -4,7 +4,6 @@
 #import "DateHelper.h"
 #import "TimeHelper.h"
 
-
 @interface AppDelegate ()
 
 @end
@@ -15,7 +14,38 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [[LostTimeDataStore instance] loadFromStore];
 
-    [self example: @"commute" date: @"03-02-2015" hours: 1 minutes: 2];
+    NSString *day1 = @"03-02-2015";
+    [self example:@"commute" date:day1 hours:1 minutes:2];
+    [self example:@"social" date:day1 hours:0 minutes:30];
+    [self example:@"meeting" date:day1 hours:0 minutes:40];
+    [self example:@"commute" date:day1 hours:0 minutes:15];
+    [self example:@"commute" date:day1 hours:0 minutes:14];
+    [self example:@"social" date:day1 hours:0 minutes:45];
+    [self example:@"commute" date:day1 hours:0 minutes:46];
+
+    NSString *day2 = @"03-03-2015";
+    [self example:@"meeting" date:day2 hours:0 minutes:20];
+    [self example:@"social" date:day2 hours:0 minutes:20];
+    [self example:@"reddit" date:day2 hours:0 minutes:40];
+
+    NSString *day3 = @"03-05-2015";
+    [self example:@"commute" date:day3 hours:0 minutes:20];
+    [self example:@"social" date:day3 hours:0 minutes:20];
+    [self example:@"meeting" date:day3 hours:0 minutes:30];
+    [self example:@"social" date:day3 hours:0 minutes:15];
+    [self example:@"social" date:day3 hours:0 minutes:20];
+    [self example:@"social" date:day3 hours:0 minutes:30];
+    [self example:@"meeting" date:day3 hours:0 minutes:30];
+    [self example:@"commute" date:day3 hours:0 minutes:40];
+
+    NSString *day4 = @"03-06-2015";
+    [self example:@"reddit" date:day4 hours:1 minutes:0];
+    [self example:@"social" date:day4 hours:0 minutes:20];
+    [self example:@"commute" date:day4 hours:0 minutes:30];
+    [self example:@"meeting" date:day4 hours:0 minutes:15];
+    [self example:@"social" date:day4 hours:0 minutes:30];
+    [self example:@"meeting" date:day4 hours:0 minutes:30];
+    [self example:@"commute" date:day4 hours:0 minutes:40];
 
 //    for (int i = 1; i < 30; i++) {
 //        [[LostTimeDataStore instance] addEntry:[LostTimeRecord  recordWithDate:
