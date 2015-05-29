@@ -3,7 +3,7 @@
 @implementation ScreenshotMode
 
 + (BOOL) on {
-    return YES;
+    return NO;
 }
 
 @end
