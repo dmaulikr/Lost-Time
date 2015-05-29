@@ -3,61 +3,47 @@
 #import "LostTimeRecord.h"
 #import "DateHelper.h"
 #import "TimeHelper.h"
-
-@interface AppDelegate ()
-
-@end
+#import "ScreenshotMode.h"
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [[LostTimeDataStore instance] loadFromStore];
+    [[LostTimeDataStore instance] loadFromStore];
 
-    NSString *day1 = @"03-02-2015";
-    [self example:@"commute" date:day1 hours:1 minutes:2];
-    [self example:@"social" date:day1 hours:0 minutes:30];
-    [self example:@"meeting" date:day1 hours:0 minutes:40];
-    [self example:@"commute" date:day1 hours:0 minutes:15];
-    [self example:@"commute" date:day1 hours:0 minutes:14];
-    [self example:@"social" date:day1 hours:0 minutes:45];
-    [self example:@"commute" date:day1 hours:0 minutes:46];
+    if([ScreenshotMode on]){
+        NSString *day1 = @"03-02-2015";
+        [self example:@"commute" date:day1 hours:1 minutes:2];
+        [self example:@"social" date:day1 hours:0 minutes:30];
+        [self example:@"meeting" date:day1 hours:0 minutes:40];
+        [self example:@"commute" date:day1 hours:0 minutes:15];
+        [self example:@"commute" date:day1 hours:0 minutes:14];
+        [self example:@"social" date:day1 hours:0 minutes:45];
+        [self example:@"commute" date:day1 hours:0 minutes:46];
 
-    NSString *day2 = @"03-03-2015";
-    [self example:@"meeting" date:day2 hours:0 minutes:20];
-    [self example:@"social" date:day2 hours:0 minutes:20];
-    [self example:@"reddit" date:day2 hours:0 minutes:40];
+        NSString *day2 = @"03-03-2015";
+        [self example:@"meeting" date:day2 hours:0 minutes:20];
+        [self example:@"social" date:day2 hours:0 minutes:20];
+        [self example:@"reddit" date:day2 hours:0 minutes:40];
 
-    NSString *day3 = @"03-05-2015";
-    [self example:@"commute" date:day3 hours:0 minutes:20];
-    [self example:@"social" date:day3 hours:0 minutes:20];
-    [self example:@"meeting" date:day3 hours:0 minutes:30];
-    [self example:@"social" date:day3 hours:0 minutes:15];
-    [self example:@"social" date:day3 hours:0 minutes:20];
-    [self example:@"social" date:day3 hours:0 minutes:30];
-    [self example:@"meeting" date:day3 hours:0 minutes:30];
-    [self example:@"commute" date:day3 hours:0 minutes:40];
+        NSString *day3 = @"03-05-2015";
+        [self example:@"commute" date:day3 hours:0 minutes:20];
+        [self example:@"social" date:day3 hours:0 minutes:20];
+        [self example:@"meeting" date:day3 hours:0 minutes:30];
+        [self example:@"social" date:day3 hours:0 minutes:15];
+        [self example:@"social" date:day3 hours:0 minutes:20];
+        [self example:@"social" date:day3 hours:0 minutes:30];
+        [self example:@"meeting" date:day3 hours:0 minutes:30];
+        [self example:@"commute" date:day3 hours:0 minutes:40];
 
-    NSString *day4 = @"03-06-2015";
-    [self example:@"reddit" date:day4 hours:1 minutes:0];
-    [self example:@"social" date:day4 hours:0 minutes:20];
-    [self example:@"commute" date:day4 hours:0 minutes:30];
-    [self example:@"meeting" date:day4 hours:0 minutes:15];
-    [self example:@"social" date:day4 hours:0 minutes:30];
-    [self example:@"meeting" date:day4 hours:0 minutes:30];
-    [self example:@"commute" date:day4 hours:0 minutes:40];
-
-//    for (int i = 1; i < 30; i++) {
-//        [[LostTimeDataStore instance] addEntry:[LostTimeRecord  recordWithDate:
-//                [formatter dateFromString:
-//                        [NSString stringWithFormat:@"03-%2d-2015", i]] seconds:@1000 reason:@"A reason"]];
-//    }
-//
-//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-11-2015"] seconds:@300 reason:@""]];
-//
-//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-17-2015"] seconds:@900 reason:@"A reason"]];
-//    [[LostTimeDataStore instance] addEntry:[LostTimeRecord recordWithDate:[formatter dateFromString:@"03-17-2015"] seconds:@550 reason:@""]];
-
+        NSString *day4 = @"03-06-2015";
+        [self example:@"reddit" date:day4 hours:1 minutes:0];
+        [self example:@"social" date:day4 hours:0 minutes:20];
+        [self example:@"commute" date:day4 hours:0 minutes:30];
+        [self example:@"meeting" date:day4 hours:0 minutes:15];
+        [self example:@"social" date:day4 hours:0 minutes:30];
+        [self example:@"meeting" date:day4 hours:0 minutes:30];
+        [self example:@"commute" date:day4 hours:0 minutes:40];
+    }
     return YES;
 }
 

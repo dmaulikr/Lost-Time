@@ -2,6 +2,7 @@
 #import "SecondsNode.h"
 #import "MinutesNode.h"
 #import "HoursNode.h"
+#import "ScreenshotMode.h"
 
 @implementation TimeScene
 
@@ -14,7 +15,6 @@
     return self;
 }
 
-
 - (void)didMoveToView:(SKView *)view {
     TimeTickNode *hoursNode = [HoursNode timeNode];
     CGFloat height = [hoursNode calculateAccumulatedFrame].size.height;
@@ -23,7 +23,7 @@
     [self addChild:hoursNode];
 
     TimeTickNode *minutesNode = [MinutesNode timeNode];
-    minutesNode.position = CGPointMake(self.size.width / 2, 2.5 * height);
+    minutesNode.position = CGPointMake(self.size.width / 2, (CGFloat) (2.5 * height));
     minutesNode.name = @"minutes";
     [self addChild:minutesNode];
 
@@ -38,6 +38,10 @@
 }
 
 - (void)update:(NSTimeInterval)currentTime {
+    if ([ScreenshotMode on]) {
+        self.secondsPassed = 3 * 60 + 43;
+    }
+
     TimeTickNode *hoursNode = (TimeTickNode *) [self childNodeWithName:@"hours"];
     TimeTickNode *minutesNode = (TimeTickNode *) [self childNodeWithName:@"minutes"];
     TimeTickNode *secondsNode = (TimeTickNode *) [self childNodeWithName:@"seconds"];
