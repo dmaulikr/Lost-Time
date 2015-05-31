@@ -38,6 +38,7 @@
 		5459065C0EFCDFB4573B0130 /* LostTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900458340AF1DB7AFCAB0 /* LostTimeDataStoreTests.m */; };
 		54590667D7D78C6703FEC5C1 /* WorkDayInWeekAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459060157B174C935DC9355 /* WorkDayInWeekAchievement.m */; };
 		5459067C3852C919F5CA143D /* TrackCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459047CA5ED46BBD7653C29 /* TrackCellTests.m */; };
+		5459068F19D82E767C5D78A7 /* StartTimeDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908147289B099FF79596E /* StartTimeDataStore.m */; };
 		545906E8AFC01A594A5A715C /* SecondsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BD91A6F8AB9510726DB /* SecondsNode.m */; };
 		5459073E60D1D2A7ADE118AB /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590ABCBA7904F6F0F3397A /* DateHelper.m */; };
 		5459074C79568255C7FE1422 /* TrackEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590703FF6A2C42C821DA6B /* TrackEmptyView.xib */; };
@@ -70,6 +71,7 @@
 		54590DC89CD4D4AA0AAF57C9 /* GetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909C6CBB2CEF50DC2DCC9 /* GetStartedViewController.m */; };
 		54590E692AE90658135C0D52 /* TimeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AFE2827F952F9BE04A4 /* TimeScene.m */; };
 		54590EA5E85CDD6DDD76E91D /* LostTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AAE8BF0DC85F2DD4585 /* LostTimeRecordTests.m */; };
+		54590EC7D4FAA99216F09458 /* StartTimeDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A26FBC749DFCF2B909B /* StartTimeDataStoreTests.m */; };
 		54590ECF2595AE211E0CE927 /* circlequarter-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545906E45400E1058080B77E /* circlequarter-green@2x.png */; };
 		54590F7059FF27F08B5503E1 /* FourHourWeekAchievementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B7975EE6B004DC5078C /* FourHourWeekAchievementTests.m */; };
 		54590F8AA27794F9777F81C5 /* FirstAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590795C8AB6DBE18950514 /* FirstAchievement.m */; };
@@ -149,6 +151,7 @@
 		545907B7BFAC7F2A370B02A0 /* AchievementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTest.h; sourceTree = "<group>"; };
 		545907D05BBB587BBACDE9C1 /* LostTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5459080D3644EF7BD23659F7 /* IntroConnectToGameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroConnectToGameCenterViewController.h; sourceTree = "<group>"; };
+		545908147289B099FF79596E /* StartTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTimeDataStore.m; sourceTree = "<group>"; };
 		5459081B013A0AC8459A60CB /* FirstAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstAchievement.h; sourceTree = "<group>"; };
 		54590868F0D4706C89632D3F /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		54590878D6C560687F112486 /* ReasonController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReasonController.storyboard; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 		545909C6CBB2CEF50DC2DCC9 /* GetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStartedViewController.m; sourceTree = "<group>"; };
 		545909D61D9FC2F1EFC875A9 /* LostTimeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeRecord.m; sourceTree = "<group>"; };
 		54590A16BAD70D01AB13079B /* DayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHelper.m; sourceTree = "<group>"; };
+		54590A26FBC749DFCF2B909B /* StartTimeDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTimeDataStoreTests.m; sourceTree = "<group>"; };
 		54590A385762CE112DEDB909 /* Mailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mailer.m; sourceTree = "<group>"; };
 		54590A4FF9C67BA265970A21 /* TrackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackController.h; sourceTree = "<group>"; };
 		54590A5D699A80A76EAA8287 /* HundredHoursAchievementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HundredHoursAchievementTests.m; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		54590D4BD8F8222C20162ECF /* circlequarter-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circlequarter-yellow@2x.png"; sourceTree = "<group>"; };
 		54590DA26D71F0CE0C571972 /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
 		54590DB57384CA77240E349C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54590E8943163E451001F6C4 /* StartTimeDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTimeDataStore.h; sourceTree = "<group>"; };
 		54590E983348DC88815EB27D /* LostTimeDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostTimeDataStore.m; sourceTree = "<group>"; };
 		54590EB72DDB2CFD3F2B725C /* TimeTickNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTickNode.m; sourceTree = "<group>"; };
 		54590EC359A116A9667FD786 /* TimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeHelper.m; sourceTree = "<group>"; };
@@ -309,6 +314,7 @@
 				5459031C907702E11EF175AF /* Track */,
 				5459038F722B1C86899E4276 /* Achievements */,
 				54590B5AC23CE48CF70BC58F /* Graph */,
+				54590FEE8BD57ACBB5E493C2 /* Timer */,
 			);
 			path = LostTimeTests;
 			sourceTree = "<group>";
@@ -525,6 +531,16 @@
 				5459071614D86254632935E0 /* ReasonController.h */,
 				54590878D6C560687F112486 /* ReasonController.storyboard */,
 				54590C3CB8D8C0C767686A47 /* ReasonDelegate.h */,
+				545908147289B099FF79596E /* StartTimeDataStore.m */,
+				54590E8943163E451001F6C4 /* StartTimeDataStore.h */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		54590FEE8BD57ACBB5E493C2 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				54590A26FBC749DFCF2B909B /* StartTimeDataStoreTests.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -715,6 +731,7 @@
 				5459023F8C5E51FCF3A6BA1C /* FeedbackController.m in Sources */,
 				5459029085C71A54F3C3BF7D /* Mailer.m in Sources */,
 				5459015108D04460303E8E73 /* ScreenshotMode.m in Sources */,
+				5459068F19D82E767C5D78A7 /* StartTimeDataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +752,7 @@
 				5459006F8313F554F675393C /* HundredHoursAchievementTests.m in Sources */,
 				545908C3CA60AC1FB29F677A /* ConsistencyAchievementTests.m in Sources */,
 				54590F7059FF27F08B5503E1 /* FourHourWeekAchievementTests.m in Sources */,
+				54590EC7D4FAA99216F09458 /* StartTimeDataStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

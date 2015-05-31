@@ -9,6 +9,7 @@
 #import "ReasonDelegate.h"
 #import "IntroPageController.h"
 #import "IntroMarker.h"
+#import "StartTimeDataStore.h"
 
 @interface TimerController () <ReasonDelegate>
 @property(weak, nonatomic) IBOutlet UIButton *startStopButton;
@@ -67,6 +68,7 @@
 
 - (void)createAndStartTimer {
     self.startTime = [NSDate timeIntervalSinceReferenceDate];
+    [StartTimeDataStore saveStartTime:self.startTime];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
                                                 selector:@selector(tick:)
@@ -87,23 +89,6 @@
         self.secondsPassed++;
     }
     [self updateTimerLabels];
-}
-
-- (IBAction)startStopTapped:(id)sender {
-    self.running = !self.running;
-    [self.timer invalidate];
-    if (!self.running) {
-        LostTimeRecord *record = [LostTimeRecord recordWithDate:[NSDate date] seconds:@(self.secondsPassed) reason:
-                self.reason ? self.reason : @""];
-        [[LostTimeDataStore instance] addEntry:record];
-        [[LostTimeDataStore instance] save];
-        [self.tabBarController setSelectedIndex:1];
-    }
-    else {
-        [self createAndStartTimer];
-    }
-    self.secondsPassed = 0;
-    [self setControlsStateForRunning];
 }
 
 - (void)setControlsStateForRunning {
@@ -127,8 +112,27 @@
 }
 
 - (IBAction)cancelButtonTapped:(id)sender {
+    [StartTimeDataStore clearStoredTime];
     self.running = NO;
     [self.timer invalidate];
+    self.secondsPassed = 0;
+    [self setControlsStateForRunning];
+}
+
+- (IBAction)startStopTapped:(id)sender {
+    self.running = !self.running;
+    [self.timer invalidate];
+    if (!self.running) {
+        [StartTimeDataStore clearStoredTime];
+        LostTimeRecord *record = [LostTimeRecord recordWithDate:[NSDate date] seconds:@(self.secondsPassed) reason:
+                self.reason ? self.reason : @""];
+        [[LostTimeDataStore instance] addEntry:record];
+        [[LostTimeDataStore instance] save];
+        [self.tabBarController setSelectedIndex:1];
+    }
+    else {
+        [self createAndStartTimer];
+    }
     self.secondsPassed = 0;
     [self setControlsStateForRunning];
 }
